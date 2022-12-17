@@ -1,4 +1,4 @@
-vim.opt.guicursor = 'a:blinkon1'
+jim.opt.guicursor = 'a:blinkon1'
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -21,8 +21,7 @@ vim.opt.incsearch = true
 
 vim.opt.colorcolumn = '100'
 vim.opt.isfname:append('@-@')
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = 'auto'
 vim.opt.termguicolors = true
 
 vim.opt.updatetime = 50
-

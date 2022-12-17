@@ -7,6 +7,15 @@ vim.keymap.set('n', '<A-j>', '<C-w>j')
 vim.keymap.set('n', '<A-k>', '<C-w>k')
 vim.keymap.set('n', '<A-l>', '<C-w>l')
 
+vim.keymap.set('n', '<A-c>', '<C-w>c')
+vim.keymap.set('n', '<A-i>', '<C-w>s')
+vim.keymap.set('n', '<A-o>', '<C-w>v')
+
+vim.keymap.set('n', '<A-P>', '<C-w>10+')
+vim.keymap.set('n', '<A-U>', '<C-w>10-')
+vim.keymap.set('n', '<A-p>', '<C-w>10>')
+vim.keymap.set('n', '<A-u>', '<C-w>10<')
+
 vim.keymap.set('i', '<C-h>', '<left>')
 vim.keymap.set('i', '<C-j>', '<down>')
 vim.keymap.set('i', '<C-k>', '<up>')

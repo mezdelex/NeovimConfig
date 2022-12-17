@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
     use('wbthomason/packer.nvim')
     use({'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = {{'nvim-lua/plenary.nvim'}}})
+    use({'nvim-tree/nvim-tree.lua', requires = {'nvim-tree/nvim-web-devicons'}})
     use({'VonHeikemen/lsp-zero.nvim', requires = {
         {'L3MON4D3/LuaSnip'},
         {'hrsh7th/cmp-buffer'},
