@@ -6,6 +6,10 @@ vim.keymap.set('n', '<A-C>', ':wqa<CR>')
 vim.keymap.set('n', '<C-S>', ':wa<CR>')
 vim.keymap.set('n', '<C-s>', ':w<CR>')
 
+vim.keymap.set('n', '<A-q>', ':bd<CR>')
+vim.keymap.set('n', '<S-Tab>', ':bp<CR>')
+vim.keymap.set('n', '<Tab>', ':bn<CR>')
+
 vim.keymap.set('n', '<A-h>', '<C-w>h')
 vim.keymap.set('n', '<A-j>', '<C-w>j')
 vim.keymap.set('n', '<A-k>', '<C-w>k')

@@ -1,4 +1,5 @@
 require('nvim-treesitter.configs').setup {
+    auto_install = true,
     ensure_installed = {
         'c_sharp',
         'cpp',
@@ -23,10 +24,9 @@ require('nvim-treesitter.configs').setup {
         'vue',
         'yaml'
     },
-    sync_install = false,
-    auto_install = true,
     highlight = {
-        enable = true,
         additional_vim_regex_highlighting = false,
+        enable = true,
     },
+    sync_install = false,
 }
