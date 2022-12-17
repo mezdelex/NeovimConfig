@@ -1,5 +1,5 @@
-vim.keymap.set('n', '<leader>n', '<cmd>NvimTreeToggle<CR>')
 vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeFocus<CR>')
+vim.keymap.set('n', '<leader>n', '<cmd>NvimTreeToggle<CR>')
 
 local tree = require("nvim-tree")
 local options = {

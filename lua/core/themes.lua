@@ -1,21 +1,21 @@
 vim.o.background = 'dark'
 
 require('gruvbox').setup({
-    undercurl = true,
-    underline = true,
     bold = true,
-    italic = false,
-    strikethrough = true,
+    contrast = '',
+    dim_inactive = false,
+    inverse = true,
+    invert_intend_guides = false,
     invert_selection = false,
     invert_signs = false,
     invert_tabline = false,
-    invert_intend_guides = false,
-    inverse = true,
-    contrast = '',
-    palette_overrides = {},
+    italic = false,
     overrides = {},
-    dim_inactive = false,
+    palette_overrides = {},
+    strikethrough = true,
     transparent_mode = false,
+    undercurl = true,
+    underline = true,
 })
 
 vim.cmd.colorscheme('gruvbox')

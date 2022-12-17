@@ -2,7 +2,7 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 lsp.on_attach(function(client, bufnr)
-    local opts = {buffer = bufnr, remap = false}
+    local opts = { buffer = bufnr, remap = false }
     vim.keymap.set('i', '<C-e>', function() vim.lsp.buf.signature_help() end, opts)
     vim.keymap.set('n', '<C-f>', function() vim.lsp.buf.format() end, opts)
     vim.keymap.set('n', '<leader>,', function() vim.lsp.diagnostic.open_float() end, opts)
