@@ -1,6 +1,9 @@
-# NeovimConfig
+# Neovim Config
 
-Neovim Config
+OS: Windows 11
+Terminal: Windows Terminal
+Shell: Powershell Core
+Editor: Neovim :)
 
 ![image](https://user-images.githubusercontent.com/59997405/208242383-16746991-f510-4290-ab1a-8f306f0889ae.png)
 
@@ -17,5 +20,3 @@ Neovim Config
 ![image](https://user-images.githubusercontent.com/59997405/208308113-3ecfd34e-0fa4-455d-b2d6-c986dfcd42c9.png)
 
 ![image](https://user-images.githubusercontent.com/59997405/208308312-c5c14c4b-53c0-4a3b-a1ce-8403020be06c.png)
-
-
