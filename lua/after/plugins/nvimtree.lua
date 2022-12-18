@@ -1,8 +1,7 @@
 vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeFocus<CR>')
 vim.keymap.set('n', '<leader>n', '<cmd>NvimTreeToggle<CR>')
 
-local tree = require("nvim-tree")
-local options = {
+require('nvim-tree').setup({
     actions = {
         open_file = {
             resize_window = true,
@@ -72,5 +71,4 @@ local options = {
         side = "left",
         width = 25,
     },
-}
-tree.setup(options)
+})

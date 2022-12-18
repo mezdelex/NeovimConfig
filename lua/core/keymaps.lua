@@ -41,10 +41,5 @@ vim.keymap.set('n', '<leader>Y', '"+Y')
 vim.keymap.set('n', '<leader>y', '"+y')
 vim.keymap.set('v', '<leader>y', '"+y')
 
-vim.keymap.set('n', '<C-[>', '<cmd>cnext<CR>')
-vim.keymap.set('n', '<C-]>', '<cmd>cprev<CR>')
-vim.keymap.set('n', '<leader>[', '<cmd>lnext<CR>')
-vim.keymap.set('n', '<leader>]', '<cmd>lprev<CR>')
-
 vim.keymap.set('n', '<A-/>', ':%s/<C-r><C-w>/<C-r><C-w>')
 vim.keymap.set('v', '<A-/>', ':s/^\\(.*\\)/\\1<left><left>')
