@@ -20,8 +20,9 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.colorcolumn = '100'
-vim.opt.isfname:append('@-@')
-vim.opt.signcolumn = 'auto'
+vim.opt.signcolumn = 'yes'
 vim.opt.termguicolors = true
 
-vim.opt.updatetime = 50
+vim.opt.isfname:append('@-@')
+
+vim.opt.updatetime = 250

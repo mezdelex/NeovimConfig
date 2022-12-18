@@ -1,12 +1,12 @@
 vim.g.mapleader = ' '
 
-vim.keymap.set('n', '<A-C>', ':q<CR>')
 vim.keymap.set('n', '<A-Q>', ':qa!<CR>')
 vim.keymap.set('n', '<A-q>', ':qa<CR>')
 
 vim.keymap.set('n', '<C-S>', ':wa<CR>')
 vim.keymap.set('n', '<C-s>', ':w<CR>')
 
+vim.keymap.set('n', '<A-C>', ':q<CR>')
 vim.keymap.set('n', '<A-c>', ':bd<CR>')
 vim.keymap.set('n', '<S-Tab>', ':bp<CR>')
 vim.keymap.set('n', '<Tab>', ':bn<CR>')
