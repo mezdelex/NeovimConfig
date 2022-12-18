@@ -3,7 +3,7 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 lsp.set_preferences({ set_lsp_keymaps = false })
 lsp.on_attach(function(_, bufnr)
-    local opts = { buffer = bufnr, remap = false }
+    local opts = { buffer = bufnr, noremap = true, silent = true }
 
     vim.diagnostic.config({
         float = true,

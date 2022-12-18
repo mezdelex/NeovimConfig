@@ -1,1 +1,3 @@
-vim.keymap.set('n', '<leader>u', '<cmd>UndotreeToggle<CR>')
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set('n', '<leader>u', '<Cmd>UndotreeToggle<CR>', opts)

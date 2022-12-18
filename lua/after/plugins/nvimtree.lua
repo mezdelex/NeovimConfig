@@ -1,5 +1,7 @@
-vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeFocus<CR>')
-vim.keymap.set('n', '<leader>n', '<cmd>NvimTreeToggle<CR>')
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set('n', '<leader>e', '<Cmd>NvimTreeFocus<CR>', opts)
+vim.keymap.set('n', '<leader>n', '<Cmd>NvimTreeToggle<CR>', opts)
 
 require('nvim-tree').setup({
     actions = {
@@ -24,30 +26,30 @@ require('nvim-tree').setup({
     open_on_setup = false,
     renderer = {
         highlight_git = false,
-        highlight_opened_files = "none",
+        highlight_opened_files = 'none',
         icons = {
             glyphs = {
-                default = "",
+                default = '',
                 folder = {
-                    arrow_closed = "",
-                    arrow_open = "",
-                    default = "",
-                    empty = "",
-                    empty_open = "",
-                    open = "",
-                    symlink = "",
-                    symlink_open = "",
+                    arrow_closed = '',
+                    arrow_open = '',
+                    default = '',
+                    empty = '',
+                    empty_open = '',
+                    open = '',
+                    symlink = '',
+                    symlink_open = '',
                 },
                 git = {
-                    deleted = "",
-                    ignored = "◌",
-                    renamed = "➜",
-                    staged = "✓",
-                    unmerged = "",
-                    unstaged = "✗",
-                    untracked = "★",
+                    deleted = '',
+                    ignored = '◌',
+                    renamed = '➜',
+                    staged = '✓',
+                    unmerged = '',
+                    unstaged = '✗',
+                    untracked = '★',
                 },
-                symlink = "",
+                symlink = '',
             },
             show = {
                 file = true,
@@ -68,7 +70,7 @@ require('nvim-tree').setup({
     view = {
         adaptive_size = true,
         hide_root_folder = true,
-        side = "left",
+        side = 'left',
         width = 25,
     },
 })

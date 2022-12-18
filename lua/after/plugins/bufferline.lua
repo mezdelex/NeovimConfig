@@ -1,4 +1,4 @@
-require("bufferline").setup {
+require('bufferline').setup {
     highlights = {
         buffer = { italic = false },
         buffer_selected = { italic = false },
