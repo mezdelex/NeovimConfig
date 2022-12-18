@@ -11,7 +11,7 @@ lsp.on_attach(function(_, bufnr)
         signs = true,
         underline = true,
         update_in_insert = false,
-        virtual_text = true,
+        virtual_text = true
     })
 
     vim.keymap.set('n', '<C-f>', function() vim.lsp.buf.format() end, opts)

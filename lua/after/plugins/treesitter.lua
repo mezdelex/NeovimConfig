@@ -26,7 +26,7 @@ require('nvim-treesitter.configs').setup {
     },
     highlight = {
         additional_vim_regex_highlighting = false,
-        enable = true,
+        enable = true
     },
     sync_install = false,
 }

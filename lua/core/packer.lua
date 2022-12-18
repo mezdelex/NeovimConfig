@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
             'rafamadriz/friendly-snippets',
             'saadparwaiz1/cmp_luasnip',
             'williamboman/mason-lspconfig.nvim',
-            'williamboman/mason.nvim',
+            'williamboman/mason.nvim'
         }
     })
 end)

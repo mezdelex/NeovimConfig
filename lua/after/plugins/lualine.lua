@@ -12,20 +12,13 @@ require('lualine').setup {
     options = {
         always_divide_middle = true,
         component_separators = { left = '', right = '' },
-        disabled_filetypes = {
-            statusline = {},
-            winbar = {},
-        },
+        disabled_filetypes = { statusline = {}, winbar = {} },
         globalstatus = false,
         icons_enabled = true,
         ignore_focus = {},
-        refresh = {
-            statusline = 1000,
-            tabline = 1000,
-            winbar = 1000,
-        },
+        refresh = { statusline = 1000, tabline = 1000, winbar = 1000 },
         section_separators = { left = '', right = '' },
-        theme = 'gruvbox',
+        theme = 'gruvbox'
     },
     sections = {
         lualine_a = { 'mode' },
@@ -36,5 +29,5 @@ require('lualine').setup {
         lualine_z = { 'location' }
     },
     tabline = {},
-    winbar = {},
+    winbar = {}
 }

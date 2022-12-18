@@ -14,7 +14,7 @@ require('bufferline').setup {
         hint_visible = { italic = false },
         pick = { italic = false },
         pick_selected = { italic = false },
-        pick_visible = { italic = false },
+        pick_visible = { italic = false }
     },
     options = { themable = true }
 }

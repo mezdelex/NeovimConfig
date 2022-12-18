@@ -13,7 +13,7 @@ require('gruvbox').setup({
     strikethrough = true,
     transparent_mode = false,
     undercurl = true,
-    underline = true,
+    underline = true
 })
 
 vim.cmd.colorscheme('gruvbox')

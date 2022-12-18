@@ -5,7 +5,7 @@ vim.opt.relativenumber = true
 
 vim.opt.cursorline = true
 vim.opt.expandtab = true
-vim.opt.scrolloff = 24
+vim.opt.scrolloff = 25
 vim.opt.shiftwidth = 4
 vim.opt.smartindent = true
 vim.opt.softtabstop = 4

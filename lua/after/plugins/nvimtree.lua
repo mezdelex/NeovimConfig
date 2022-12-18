@@ -4,22 +4,11 @@ vim.keymap.set('n', '<leader>e', '<Cmd>NvimTreeFocus<CR>', opts)
 vim.keymap.set('n', '<leader>n', '<Cmd>NvimTreeToggle<CR>', opts)
 
 require('nvim-tree').setup({
-    actions = {
-        open_file = {
-            resize_window = true,
-        },
-    },
+    actions = { open_file = { resize_window = true } },
     disable_netrw = true,
-    filesystem_watchers = {
-        enable = true,
-    },
-    filters = {
-        dotfiles = false,
-    },
-    git = {
-        enable = false,
-        ignore = true,
-    },
+    filesystem_watchers = { enable = true },
+    filters = { dotfiles = false },
+    git = { enable = false, ignore = true },
     hijack_cursor = true,
     hijack_netrw = true,
     hijack_unnamed_buffer_when_opening = false,
@@ -38,7 +27,7 @@ require('nvim-tree').setup({
                     empty_open = '',
                     open = '',
                     symlink = '',
-                    symlink_open = '',
+                    symlink_open = ''
                 },
                 git = {
                     deleted = '',
@@ -47,30 +36,25 @@ require('nvim-tree').setup({
                     staged = '✓',
                     unmerged = '',
                     unstaged = '✗',
-                    untracked = '★',
+                    untracked = '★'
                 },
-                symlink = '',
+                symlink = ''
             },
             show = {
                 file = true,
                 folder = true,
                 folder_arrow = true,
-                git = false,
+                git = false
             },
         },
-        indent_markers = {
-            enable = false,
-        },
+        indent_markers = { enable = false },
     },
     update_cwd = true,
-    update_focused_file = {
-        enable = true,
-        update_cwd = false,
-    },
+    update_focused_file = { enable = true, update_cwd = false },
     view = {
         adaptive_size = true,
         hide_root_folder = true,
         side = 'left',
-        width = 25,
+        width = 25
     },
 })

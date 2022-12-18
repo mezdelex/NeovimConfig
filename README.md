@@ -2,7 +2,7 @@
 
 - OS: Windows 11
 - Terminal: Windows Terminal
-- Shell: Powershell Core
+- Shell: PowerShell Core
 - Editor: Neovim :)
 
 ![image](https://user-images.githubusercontent.com/59997405/208242383-16746991-f510-4290-ab1a-8f306f0889ae.png)
