@@ -3,6 +3,7 @@ vim.opt.guicursor = 'a:blinkon1'
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.scrolloff = 24
 vim.opt.shiftwidth = 4
@@ -19,7 +20,6 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.opt.colorcolumn = '100'
 vim.opt.signcolumn = 'yes'
 vim.opt.termguicolors = true
 
