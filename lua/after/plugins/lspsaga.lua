@@ -33,7 +33,7 @@ saga.init_lsp_saga({
         Struct = colors.neutral_purple,
         TypeAlias = colors.neutral_green,
         TypeParameter = colors.neutral_green,
-        Variable = colors.neutral_blue,
+        Variable = colors.neutral_blue
     }
 })
 
