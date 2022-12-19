@@ -1,4 +1,7 @@
+require('after.plugins.autopairs')
+require('after.plugins.autotags')
 require('after.plugins.bufferline')
+require('after.plugins.comment')
 require('after.plugins.devicons')
 require('after.plugins.fugitive')
 require('after.plugins.gitsigns')

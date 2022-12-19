@@ -36,4 +36,3 @@ vim.keymap.set('v', 'J', ":m'>+1<CR>gv=gv", opts)
 vim.keymap.set('v', 'K', ":m'<-2<CR>gv=gv", opts)
 
 vim.keymap.set('n', '<A-/>', ':%s/<C-r><C-w>/<C-r><C-w>', opts)
-vim.keymap.set('v', '<A-/>', ':s/^\\(.*\\)/\\1<left><left>', opts)
