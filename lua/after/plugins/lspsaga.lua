@@ -13,7 +13,7 @@ saga.init_lsp_saga({
         EnumMember = colors.neutral_green,
         Event = colors.neutral_purple,
         Field = colors.neutral_teal,
-        File = colors.gray,
+        File = colors.yellow,
         Function = colors.neutral_purple,
         Interface = colors.neutral_orange,
         Key = colors.neutral_red,
