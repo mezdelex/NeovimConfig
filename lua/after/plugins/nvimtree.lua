@@ -1,8 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-vim.keymap.set('n', '<leader>e', '<Cmd>NvimTreeFocus<CR>', opts)
-vim.keymap.set('n', '<leader>n', '<Cmd>NvimTreeToggle<CR>', opts)
-
 require('nvim-tree').setup({
     actions = { open_file = { resize_window = true } },
     disable_netrw = true,
@@ -59,3 +56,6 @@ require('nvim-tree').setup({
         width = 25
     }
 })
+
+vim.keymap.set('n', '<leader>e', '<Cmd>NvimTreeFocus<CR>', opts)
+vim.keymap.set('n', '<leader>n', '<Cmd>NvimTreeToggle<CR>', opts)
