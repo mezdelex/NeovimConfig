@@ -13,6 +13,7 @@ require('nvim-tree').setup({
     hijack_netrw = true,
     hijack_unnamed_buffer_when_opening = false,
     open_on_setup = false,
+    remove_keymaps = { '<C-k>' },
     renderer = {
         highlight_git = false,
         highlight_opened_files = 'none',
@@ -45,7 +46,7 @@ require('nvim-tree').setup({
                 folder = true,
                 folder_arrow = true,
                 git = false
-            },
+            }
         },
         indent_markers = { enable = false },
     },
@@ -56,5 +57,5 @@ require('nvim-tree').setup({
         hide_root_folder = true,
         side = 'left',
         width = 25
-    },
+    }
 })
