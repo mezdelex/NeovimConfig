@@ -8,4 +8,4 @@ require('nvim_comment').setup({
     marker_padding = true
 })
 
-vim.keymap.set('n', '<A-/>', "<Cmd>'<,'>CommentToggle<CR>", opts)
+vim.keymap.set({ 'n', 'v' }, '<A-/>', "<Cmd>'<,'>CommentToggle<CR>", opts)
