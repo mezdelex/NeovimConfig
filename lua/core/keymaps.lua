@@ -29,7 +29,7 @@ vim.keymap.set('n', '<A-l>', '<C-w>l', opts)
 vim.keymap.set('n', '<C-h>', '5b', opts)
 vim.keymap.set('n', '<C-j>', '5j', opts)
 vim.keymap.set('n', '<C-k>', '5k', opts)
-vim.keymap.set('n', '<C-l>', '5w', opts)
+vim.keymap.set('n', '<C-l>', '5e', opts)
 
 vim.keymap.set('i', '<C-h>', '<left>', opts)
 vim.keymap.set('i', '<C-j>', '<down>', opts)
