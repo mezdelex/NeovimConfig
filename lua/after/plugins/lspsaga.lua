@@ -1,6 +1,70 @@
 local colors = require('gruvbox.palette')
 local saga = require('lspsaga')
 local opts = { noremap = true, silent = true }
+local highlights = {
+    ColInLineDiagnostic = { link = 'Comment' },
+    DefinitionArrow = { fg = colors.neutral_red },
+    DefinitionBorder = { fg = colors.neutral_aqua },
+    DefinitionCount = { link = 'Title' },
+    DefinitionFile = { bg = colors.neutral_blue },
+    DefinitionSearch = { link = 'Search' },
+    Definitions = { fg = colors.neutral_purple, bold = true },
+    DefinitionsIcon = { fg = colors.neutral_yellow },
+    DiagnosticLineCol = { fg = colors.gray },
+    DiagnosticMap = { fg = colors.neutral_purple },
+    DiagnosticQuickFix = { fg = colors.neutral_green, bold = true },
+    FinderParam = { fg = colors.neutral_purple, bg = colors.dark0, bold = true },
+    FinderPreviewSearch = { link = 'Search' },
+    FinderSpinner = { fg = colors.neutral_purple, bold = true },
+    FinderSpinnerBorder = { fg = colors.neutral_blue },
+    FinderSpinnerTitle = { fg = colors.neutral_purple, bold = true },
+    FinderVirtText = { fg = colors.neutral_red },
+    Implements = { fg = colors.neutral_purple, bold = true },
+    ImplementsCount = { link = 'Title' },
+    ImplementsIcon = { fg = colors.neutral_yellow },
+    LSOutlinePreviewBorder = { fg = colors.neutral_aqua },
+    LspFloatWinNormal = { link = 'Normal' },
+    LspSagaAutoPreview = { fg = colors.neutral_blue },
+    LspSagaBorderTitle = { link = 'String' },
+    LspSagaCodeActionBorder = { fg = colors.neutral_purple },
+    LspSagaCodeActionContent = { fg = colors.neutral_green, bold = true },
+    LspSagaCodeActionTitle = { fg = colors.neutral_orange, bold = true },
+    LspSagaCodeActionTrunCateLine = { link = 'LspSagaCodeActionBorder' },
+    LspSagaDiagnosticBorder = { fg = colors.neutral_purple },
+    LspSagaDiagnosticError = { link = 'DiagnosticError' },
+    LspSagaDiagnosticHeader = { fg = colors.neutral_green },
+    LspSagaDiagnosticHint = { link = 'DiagnosticHint' },
+    LspSagaDiagnosticInfo = { link = 'DiagnosticInfo' },
+    LspSagaDiagnosticSource = { link = 'Comment' },
+    LspSagaDiagnosticTruncateLine = { link = 'LspSagaDiagnosticBorder' },
+    LspSagaDiagnosticWarn = { link = 'DiagnosticWarn' },
+    LspSagaErrorTrunCateLine = { link = 'DiagnosticError' },
+    LspSagaFinderSelection = { fg = colors.neutral_green, bold = true },
+    LspSagaHintTrunCateLine = { link = 'DiagnosticHint' },
+    LspSagaHoverBorder = { fg = colors.neutral_yellow },
+    LspSagaHoverTrunCateLine = { link = 'LspSagaHoverBorder' },
+    LspSagaInfoTrunCateLine = { link = 'DiagnosticInfo' },
+    LspSagaLightBulb = { link = 'DiagnosticSignHint' },
+    LspSagaLspFinderBorder = { fg = colors.neutral_blue },
+    LspSagaRenameBorder = { fg = colors.neutral_aqua },
+    LspSagaRenameMatch = { link = 'Search' },
+    LspSagaShTrunCateLine = { link = 'LspSagaSignatureHelpBorder' },
+    LspSagaSignatureHelpBorder = { fg = colors.neutral_green },
+    LspSagaWarnTrunCateLine = { link = 'DiagnosticWarn' },
+    OutlineDetail = { fg = colors.gray },
+    OutlineFoldPrefix = { fg = colors.neutral_red },
+    OutlineIndentEvn = { fg = colors.neutral_purple },
+    OutlineIndentOdd = { fg = colors.neutral_orange },
+    References = { fg = colors.neutral_purple, bold = true },
+    ReferencesCount = { link = 'Title' },
+    ReferencesIcon = { fg = colors.neutral_yellow },
+    SagaShadow = { fg = colors.dark0 },
+    TargetFileName = { fg = colors.gray }
+}
+
+for group, values in pairs(highlights) do
+    vim.api.nvim_set_hl(0, group, vim.tbl_extend('keep', values, { default = true }))
+end
 
 saga.init_lsp_saga({
     custom_kind = {
