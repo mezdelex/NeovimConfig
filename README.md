@@ -5,18 +5,16 @@
 - Shell: PowerShell Core
 - Editor: Neovim
 
-![image](https://user-images.githubusercontent.com/59997405/208242383-16746991-f510-4290-ab1a-8f306f0889ae.png)
+![image](https://user-images.githubusercontent.com/59997405/209222938-ea1c55b3-2965-45d1-9033-fd9a773eca02.png)
 
-![image](https://user-images.githubusercontent.com/59997405/208242393-903fd676-102b-473c-bd1b-5298423c83f4.png)
+![image](https://user-images.githubusercontent.com/59997405/209223030-2849f5b4-83f8-49ec-8496-f15978abbd03.png)
 
-![image](https://user-images.githubusercontent.com/59997405/208242400-ee525080-8e4d-4b23-b50f-4266ea488bda.png)
+![image](https://user-images.githubusercontent.com/59997405/209223067-cb394ab8-307b-4a4b-8659-2236fc723e3c.png)
 
-![image](https://user-images.githubusercontent.com/59997405/208308028-8ca40ca5-9e4d-425a-9100-5b692e3b4e36.png)
+![image](https://user-images.githubusercontent.com/59997405/209223140-a40b2e64-a8ba-49e1-8ee0-e550e8010855.png)
 
-![image](https://user-images.githubusercontent.com/59997405/208308050-0476b321-8883-4416-9bfd-cd033e07be25.png)
+![image](https://user-images.githubusercontent.com/59997405/209223965-43fbc1a8-3b92-48b9-9ca0-1192c55abd5b.png)
 
-![image](https://user-images.githubusercontent.com/59997405/208308091-402b9238-a804-4229-bc31-f800a2b49643.png)
+![image](https://user-images.githubusercontent.com/59997405/209224154-fbd8592b-0dd0-444e-b82a-f2b301c4bdea.png)
 
-![image](https://user-images.githubusercontent.com/59997405/208308113-3ecfd34e-0fa4-455d-b2d6-c986dfcd42c9.png)
-
-![image](https://user-images.githubusercontent.com/59997405/208308312-c5c14c4b-53c0-4a3b-a1ce-8403020be06c.png)
+![image](https://user-images.githubusercontent.com/59997405/209224914-91354ac6-f78f-49e2-8620-1dac25e0cb28.png)
