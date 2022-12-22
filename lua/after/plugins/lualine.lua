@@ -14,7 +14,7 @@ require('lualine').setup {
     options = {
         always_divide_middle = true,
         component_separators = { left = '', right = '' },
-        disabled_filetypes = { 'packer', 'NvimTree', statusline = {}, winbar = {} },
+        disabled_filetypes = { 'lspsagaoutline', 'NvimTree', 'packer', statusline = {}, winbar = {} },
         globalstatus = false,
         icons_enabled = true,
         ignore_focus = {},
