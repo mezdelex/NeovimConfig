@@ -10,7 +10,7 @@ require('nvim-tree').setup({
     hijack_netrw = true,
     hijack_unnamed_buffer_when_opening = false,
     open_on_setup = false,
-    remove_keymaps = { '<C-k>' },
+    remove_keymaps = { '<C-k>', '<Tab>' },
     renderer = {
         highlight_git = false,
         highlight_opened_files = 'none',
