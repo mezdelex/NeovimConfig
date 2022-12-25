@@ -36,6 +36,9 @@ vim.keymap.set('i', '<C-j>', '<down>', opts)
 vim.keymap.set('i', '<C-k>', '<up>', opts)
 vim.keymap.set('i', '<C-l>', '<right>', opts)
 
+vim.keymap.set('n', '[q', ':cnext<CR>')
+vim.keymap.set('n', ']q', ':cprev<CR>')
+
 vim.keymap.set('v', '<leader>p', '"_dP', opts)
 vim.keymap.set('v', '<leader>y', '"+y', opts)
 
