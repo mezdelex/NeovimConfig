@@ -36,7 +36,7 @@ vim.keymap.set('i', '<C-j>', '<down>', opts)
 vim.keymap.set('i', '<C-k>', '<up>', opts)
 vim.keymap.set('i', '<C-l>', '<right>', opts)
 
-vim.keymap.set('v', '<leader>p', '"+p', opts)
+vim.keymap.set('v', '<leader>p', '"_dP', opts)
 vim.keymap.set('v', '<leader>y', '"+y', opts)
 
 vim.keymap.set('n', 'J', 'mzJ`z', opts)
