@@ -5,10 +5,10 @@ require('nvim-tree').setup({
     disable_netrw = true,
     filesystem_watchers = { enable = true },
     filters = { dotfiles = false },
-    git = { enable = false, ignore = true },
+    git = { enable = true, ignore = false },
     hijack_cursor = true,
     hijack_netrw = true,
-    hijack_unnamed_buffer_when_opening = false,
+    hijack_unnamed_buffer_when_opening = true,
     open_on_setup = false,
     remove_keymaps = { '<C-k>', '<Tab>' },
     renderer = {
@@ -23,7 +23,7 @@ require('nvim-tree').setup({
                     default = '',
                     empty = '',
                     empty_open = '',
-                    open = '',
+                    open = '',
                     symlink = '',
                     symlink_open = ''
                 },
@@ -42,7 +42,7 @@ require('nvim-tree').setup({
                 file = true,
                 folder = true,
                 folder_arrow = true,
-                git = false
+                git = true
             }
         },
         indent_markers = { enable = false },
