@@ -25,8 +25,8 @@ require('nvim-treesitter.configs').setup {
         'yaml'
     },
     highlight = {
-        additional_vim_regex_highlighting = false,
+        additional_vim_regex_highlighting = true,
         enable = true
     },
-    sync_install = false,
+    sync_install = true
 }
