@@ -103,7 +103,6 @@ saga.init_lsp_saga({
 
 vim.keymap.set('n', '<leader>.', ':Lspsaga code_action<CR>', opts)
 vim.keymap.set('n', '<leader>i', ':Lspsaga hover_doc<CR>', opts)
-vim.keymap.set('n', '<leader>o', ':Lspsaga outline<CR>', opts)
 vim.keymap.set('n', '[d', ':Lspsaga diagnostic_jump_prev<CR>', opts)
 vim.keymap.set('n', ']d', ':Lspsaga diagnostic_jump_next<CR>', opts)
 vim.keymap.set('n', 'gh', ':Lspsaga lsp_finder<CR>', opts)
