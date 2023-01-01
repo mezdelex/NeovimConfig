@@ -5,6 +5,8 @@
 - Shell: PowerShell Core
 - Editor: Neovim
 
+## Images
+
 ![image](https://user-images.githubusercontent.com/59997405/209222938-ea1c55b3-2965-45d1-9033-fd9a773eca02.png)
 
 ![image](https://user-images.githubusercontent.com/59997405/209223030-2849f5b4-83f8-49ec-8496-f15978abbd03.png)
