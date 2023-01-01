@@ -1,9 +1,9 @@
+vim.opt.cursorline = true
 vim.opt.guicursor = 'a:blinkon1'
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
-vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.scrolloff = 25
 vim.opt.shiftwidth = 4
@@ -18,11 +18,14 @@ vim.opt.undodir = os.getenv('HOMEPATH') .. '/.nvim/undodir'
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
+vim.opt.ignorecase = true
 vim.opt.incsearch = true
+vim.opt.smartcase = true
 
 vim.opt.signcolumn = 'yes'
 vim.opt.termguicolors = true
 
 vim.opt.isfname:append('@-@')
+vim.opt.iskeyword:append('@-@')
 
 vim.opt.updatetime = 250
