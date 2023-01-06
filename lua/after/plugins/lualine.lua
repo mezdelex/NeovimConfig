@@ -58,7 +58,7 @@ require('lualine').setup {
         lualine_b = { 'branch', 'diff' },
         lualine_c = {},
         lualine_x = {},
-        lualine_y = { 'diagnostics', 'encoding' },
+        lualine_y = { 'diagnostics', 'progress' },
         lualine_z = { 'filename' }
     },
     tabline = {},
