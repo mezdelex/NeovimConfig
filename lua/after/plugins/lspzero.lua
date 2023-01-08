@@ -14,7 +14,7 @@ lsp.on_attach(function(_, bufnr)
         virtual_text = true
     })
 
-    vim.keymap.set('n', '<C-a>', function() vim.lsp.buf.format() end, opts)
+    vim.keymap.set('n', '<A-f>', function() vim.lsp.buf.format() end, opts)
     vim.keymap.set('n', '<leader>r', function() vim.lsp.buf.rename() end, opts)
 end)
 lsp.nvim_workspace()

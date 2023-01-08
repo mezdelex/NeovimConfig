@@ -5,8 +5,8 @@ vim.g.mapleader = ' '
 vim.keymap.set('n', '<A-Q>', ':qa!<CR>', opts)
 vim.keymap.set('n', '<A-q>', ':qa<CR>', opts)
 
-vim.keymap.set('n', '<C-S>', ':wa<CR>', opts)
-vim.keymap.set('n', '<C-s>', ':w<CR>', opts)
+vim.keymap.set('n', '<A-S>', ':wa<CR>', opts)
+vim.keymap.set('n', '<A-s>', ':w<CR>', opts)
 
 vim.keymap.set('n', '<A-C>', ':q<CR>', opts)
 vim.keymap.set('n', '<A-c>', ':bp|sp|bn|bd<CR>', opts)
