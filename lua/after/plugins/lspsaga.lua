@@ -1,6 +1,4 @@
 local colors = require('gruvbox.palette')
-local saga = require('lspsaga')
-local opts = { noremap = true, silent = true }
 local highlights = {
     ColInLineDiagnostic = { link = 'Comment' },
     DefinitionArrow = { fg = colors.neutral_red },
@@ -61,12 +59,13 @@ local highlights = {
     SagaShadow = { fg = colors.dark0 },
     TargetFileName = { fg = colors.gray }
 }
+local opts = { noremap = true, silent = true }
 
 for group, values in pairs(highlights) do
     vim.api.nvim_set_hl(0, group, vim.tbl_extend('keep', values, { default = true }))
 end
 
-saga.init_lsp_saga({
+require('lspsaga').setup({
     custom_kind = {
         Array = colors.neutral_blue,
         Boolean = colors.neutral_orange,
