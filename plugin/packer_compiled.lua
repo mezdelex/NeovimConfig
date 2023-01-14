@@ -137,7 +137,7 @@ _G.packer_plugins = {
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Mezdelex\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspsaga.nvim",
-    url = "https://github.com/glepnir/lspsaga.nvim"
+    url = "https://github.com/mezdelex/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
