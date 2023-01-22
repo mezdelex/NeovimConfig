@@ -19,3 +19,24 @@ lsp.on_attach(function(_, bufnr)
 end)
 lsp.nvim_workspace()
 lsp.setup()
+
+local null_ls = require('null-ls')
+local null_opts = lsp.build_options('null-ls', {})
+
+null_ls.setup({
+    on_attach = function(client, bufnr)
+        null_opts.on_attach(client, bufnr)
+    end,
+    sources = {
+        null_ls.builtins.formatting.prettier
+    }
+})
+
+local mason_null_ls = require('mason-null-ls')
+
+mason_null_ls.setup({
+    automatic_installation = true,
+    automatic_setup = true
+})
+
+mason_null_ls.setup_handlers()
