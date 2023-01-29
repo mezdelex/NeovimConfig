@@ -5,41 +5,32 @@
 - Shell: PowerShell Core
 - Editor: Neovim
 
-<table border="0">
-<tr>
-<td>
 ## Core
 
-|  Name   |                                          File                                           |
-| :-----: | :-------------------------------------------------------------------------------------: |
-| colors  | [uri](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/colors.lua)  |
-| keymaps | [uri](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/keymaps.lua) |
-| options | [uri](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/options.lua) |
-| packer  | [uri](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/packer.lua)  |
+|  Name   |                                             Uri                                             |
+| :-----: | :-----------------------------------------------------------------------------------------: |
+| Colors  |  [colors](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/colors.lua)  |
+| Keymaps | [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/keymaps.lua) |
+| Options | [options](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/options.lua) |
+| Packer  |  [packer](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/packer.lua)  |
 
-</td>
-<td>
 ## Plugins
 
-|    Name    |                                            File                                            |
-| :--------: | :----------------------------------------------------------------------------------------: |
-|  autotags  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/autotags.lua)  |
-| autopairs  | [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/autopairs.lua)  |
-| bufferline | [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/bufferline.lua) |
-|  comment   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/comment.lua)   |
-|  devicons  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/devicons.lua)  |
-|  gitsigns  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/gitsigns.lua)  |
-|  lspsaga   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lspsaga.lua)   |
-|  lspzero   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lspzero.lua)   |
-|  lualine   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lualine.lua)   |
-|  nvimtree  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/nvimtree.lua)  |
-| telescope  | [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/telescope.lua)  |
-| treesitter | [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/treesitter.lua) |
-|  undotree  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/undotree.lua)  |
-
-</td>
-</tr>
-</table>
+|    Name     |                                                Uri                                                |
+| :---------: | :-----------------------------------------------------------------------------------------------: |
+|  Auto Tags  |   [autotags](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/autotags.lua)   |
+| Auto Pairs  |  [autopairs](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/autopairs.lua)  |
+| Buffer Line | [bufferline](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/bufferline.lua) |
+|   Comment   |    [comment](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/comment.lua)    |
+|  Dev Icons  |   [devicons](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/devicons.lua)   |
+|  Git Signs  |   [gitsigns](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/gitsigns.lua)   |
+|  LSP Saga   |    [lspsaga](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lspsaga.lua)    |
+|  LSP Zero   |    [lspzero](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lspzero.lua)    |
+|  Lua Line   |    [lualine](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lualine.lua)    |
+|  Nvim Tree  |   [nvimtree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/nvimtree.lua)   |
+|  Telescope  |  [telescope](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/telescope.lua)  |
+| Tree Sitter | [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/treesitter.lua) |
+|  Undo Tree  |   [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/undotree.lua)   |
 
 ## Images
 
