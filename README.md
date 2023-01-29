@@ -5,6 +5,33 @@
 - Shell: PowerShell Core
 - Editor: Neovim
 
+## Core
+
+|  Name   |                                          File                                           |
+| :-----: | :-------------------------------------------------------------------------------------: |
+| colors  | [uri](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/colors.lua)  |
+| keymaps | [uri](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/keymaps.lua) |
+| options | [uri](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/options.lua) |
+| packer  | [uri](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/packer.lua)  |
+
+## Plugins
+
+|    Name    |                                            File                                            |
+| :--------: | :----------------------------------------------------------------------------------------: |
+|  autotags  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/autotags.lua)  |
+| autopairs  | [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/autopairs.lua)  |
+| bufferline | [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/bufferline.lua) |
+|  comment   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/comment.lua)   |
+|  devicons  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/devicons.lua)  |
+|  gitsigns  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/gitsigns.lua)  |
+|  lspsaga   |   [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lspsga.lua)   |
+|  lspzero   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lspzero.lua)   |
+|  lualine   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lualine.lua)   |
+|  nvimtree  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/nvimtree.lua)  |
+| telescope  | [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/telescope.lua)  |
+| treesitter | [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/treesitter.lua) |
+|  undotree  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/undotree.lua)  |
+
 ## Images
 
 ![image](https://user-images.githubusercontent.com/59997405/209222938-ea1c55b3-2965-45d1-9033-fd9a773eca02.png)
