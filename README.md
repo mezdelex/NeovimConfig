@@ -5,6 +5,9 @@
 - Shell: PowerShell Core
 - Editor: Neovim
 
+<table border="0">
+<tr>
+<td>
 ## Core
 
 |  Name   |                                          File                                           |
@@ -14,6 +17,8 @@
 | options | [uri](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/options.lua) |
 | packer  | [uri](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/settings/packer.lua)  |
 
+</td>
+<td>
 ## Plugins
 
 |    Name    |                                            File                                            |
@@ -24,13 +29,17 @@
 |  comment   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/comment.lua)   |
 |  devicons  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/devicons.lua)  |
 |  gitsigns  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/gitsigns.lua)  |
-|  lspsaga   |   [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lspsga.lua)   |
+|  lspsaga   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lspsaga.lua)   |
 |  lspzero   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lspzero.lua)   |
 |  lualine   |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/lualine.lua)   |
 |  nvimtree  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/nvimtree.lua)  |
 | telescope  | [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/telescope.lua)  |
 | treesitter | [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/treesitter.lua) |
 |  undotree  |  [uri](https://github.com/mezdelex/NeovimConfig/tree/main/lua/after/plugins/undotree.lua)  |
+
+</td>
+</tr>
+</table>
 
 ## Images
 
