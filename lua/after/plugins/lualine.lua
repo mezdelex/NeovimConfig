@@ -23,33 +23,33 @@ require('lualine').setup {
         theme = {
             command = {
                 a = { bg = colors.neutral_yellow, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark0, fg = colors.neutral_yellow },
-                c = { bg = colors.dark0, fg = colors.neutral_yellow }
+                b = { bg = colors.dark1, fg = colors.neutral_yellow },
+                c = { bg = colors.dark1, fg = colors.neutral_yellow }
             },
             inactive = {
                 a = { bg = colors.gray, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark0, fg = colors.gray },
-                c = { bg = colors.dark0, fg = colors.gray }
+                b = { bg = colors.dark1, fg = colors.gray },
+                c = { bg = colors.dark1, fg = colors.gray }
             },
             insert = {
                 a = { bg = colors.neutral_yellow, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark0, fg = colors.neutral_yellow },
-                c = { bg = colors.dark0, fg = colors.neutral_yellow }
+                b = { bg = colors.dark1, fg = colors.neutral_yellow },
+                c = { bg = colors.dark1, fg = colors.neutral_yellow }
             },
             normal = {
                 a = { bg = colors.neutral_yellow, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark0, fg = colors.neutral_yellow },
-                c = { bg = colors.dark0, fg = colors.neutral_yellow }
+                b = { bg = colors.dark1, fg = colors.neutral_yellow },
+                c = { bg = colors.dark1, fg = colors.neutral_yellow }
             },
             replace = {
                 a = { bg = colors.neutral_yellow, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark0, fg = colors.neutral_yellow },
-                c = { bg = colors.dark0, fg = colors.neutral_yellow }
+                b = { bg = colors.dark1, fg = colors.neutral_yellow },
+                c = { bg = colors.dark1, fg = colors.neutral_yellow }
             },
             visual = {
                 a = { bg = colors.neutral_yellow, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark0, fg = colors.neutral_yellow },
-                c = { bg = colors.dark0, fg = colors.neutral_yellow }
+                b = { bg = colors.dark1, fg = colors.neutral_yellow },
+                c = { bg = colors.dark1, fg = colors.neutral_yellow }
             }
         }
     },
