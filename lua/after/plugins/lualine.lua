@@ -1,4 +1,4 @@
-local colors = require('gruvbox.palette')
+local colors = require('gruvbox.palette').get_base_colors(vim.o.background)
 
 require('lualine').setup {
     extensions = {},
@@ -22,34 +22,34 @@ require('lualine').setup {
         section_separators = { left = '', right = '' },
         theme = {
             command = {
-                a = { bg = colors.neutral_yellow, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark1, fg = colors.neutral_yellow },
-                c = { bg = colors.dark1, fg = colors.neutral_yellow }
+                a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
+                b = { bg = colors.bg1, fg = colors.neutral_yellow },
+                c = { bg = colors.bg1, fg = colors.neutral_yellow }
             },
             inactive = {
-                a = { bg = colors.gray, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark1, fg = colors.gray },
-                c = { bg = colors.dark1, fg = colors.gray }
+                a = { bg = colors.gray, fg = colors.bg0, gui = 'bold' },
+                b = { bg = colors.bg1, fg = colors.gray },
+                c = { bg = colors.bg1, fg = colors.gray }
             },
             insert = {
-                a = { bg = colors.neutral_yellow, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark1, fg = colors.neutral_yellow },
-                c = { bg = colors.dark1, fg = colors.neutral_yellow }
+                a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
+                b = { bg = colors.bg1, fg = colors.neutral_yellow },
+                c = { bg = colors.bg1, fg = colors.neutral_yellow }
             },
             normal = {
-                a = { bg = colors.neutral_yellow, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark1, fg = colors.neutral_yellow },
-                c = { bg = colors.dark1, fg = colors.neutral_yellow }
+                a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
+                b = { bg = colors.bg1, fg = colors.neutral_yellow },
+                c = { bg = colors.bg1, fg = colors.neutral_yellow }
             },
             replace = {
-                a = { bg = colors.neutral_yellow, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark1, fg = colors.neutral_yellow },
-                c = { bg = colors.dark1, fg = colors.neutral_yellow }
+                a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
+                b = { bg = colors.bg1, fg = colors.neutral_yellow },
+                c = { bg = colors.bg1, fg = colors.neutral_yellow }
             },
             visual = {
-                a = { bg = colors.neutral_yellow, fg = colors.dark0, gui = 'bold' },
-                b = { bg = colors.dark1, fg = colors.neutral_yellow },
-                c = { bg = colors.dark1, fg = colors.neutral_yellow }
+                a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
+                b = { bg = colors.bg1, fg = colors.neutral_yellow },
+                c = { bg = colors.bg1, fg = colors.neutral_yellow }
             }
         }
     },
