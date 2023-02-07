@@ -31,3 +31,16 @@
 | Telescope  |  [telescope](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/telescope.lua)  |
 | Treesitter | [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua) |
 |  Undotree  |   [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)   |
+
+## Images
+
+![image](https://user-images.githubusercontent.com/59997405/217385236-94841285-9dbe-4dce-a69e-857b553108d7.png)
+
+![image](https://user-images.githubusercontent.com/59997405/217385289-4fc34a1b-f0bc-483b-9b93-af8d0d1e17b7.png)
+
+![image](https://user-images.githubusercontent.com/59997405/217385344-fa9e583a-ca58-41b6-8e58-e98c94c240f1.png)
+
+![image](https://user-images.githubusercontent.com/59997405/217385415-666af4ad-8008-478b-9e38-4b93ed37d061.png)
+
+![image](https://user-images.githubusercontent.com/59997405/217385455-30304fb6-f188-4783-a150-5485aee9e8c3.png)
+
