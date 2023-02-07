@@ -1,2 +1,3 @@
-require('core')
-require('after')
+require('core.keymaps')
+require('core.lazy')
+require('core.options')
