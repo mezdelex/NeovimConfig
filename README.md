@@ -10,8 +10,8 @@
 |  Name   |                                        Uri                                         |
 | :-----: | :--------------------------------------------------------------------------------: |
 | Keymaps | [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/keymaps.lua) |
-| Options | [options](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/options.lua) |
 |  Lazy   |    [lazy](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/lazy.lua)    |
+| Options | [options](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/options.lua) |
 
 ## Plugins
 
