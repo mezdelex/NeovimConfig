@@ -1,7 +1,7 @@
 return {
     'glepnir/lspsaga.nvim',
     config = function()
-        local colors = require('gruvbox.palette')
+        local colors = require('gruvbox.palette').get_base_colors(vim.o.background)
         local opts = { noremap = true, silent = true }
 
         require('lspsaga').setup({
