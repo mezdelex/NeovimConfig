@@ -6,24 +6,6 @@ return {
     config = function()
         local builtin = require('telescope.builtin')
         local opts = { noremap = true, silent = true }
-        local theme = 'dropdown'
-
-        require('telescope').setup({
-            pickers = {
-                diagnostics = { theme = theme },
-                find_files = { theme = theme },
-                grep_string = { theme = theme },
-                jumplist = { theme = theme },
-                live_grep = { theme = theme },
-                loclist = { theme = theme },
-                lsp_definitions = { theme = theme },
-                lsp_document_symbols = { theme = theme },
-                lsp_implementations = { theme = theme },
-                lsp_references = { theme = theme },
-                lsp_type_definitions = { theme = theme },
-                quickfix = { theme = theme }
-            }
-        })
 
         vim.keymap.set('n', '<leader>F', builtin.live_grep, opts)
         vim.keymap.set('n', '<leader>d', builtin.diagnostics, opts)
