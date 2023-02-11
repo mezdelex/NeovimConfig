@@ -7,6 +7,12 @@ return {
         local builtin = require('telescope.builtin')
         local opts = { noremap = true, silent = true }
 
+        require('telescope').setup({
+            defaults = {
+                path_display = { 'tail' }
+            }
+        })
+
         vim.keymap.set('n', '<leader>F', builtin.live_grep, opts)
         vim.keymap.set('n', '<leader>d', builtin.diagnostics, opts)
         vim.keymap.set('n', '<leader>f', builtin.find_files, opts)
