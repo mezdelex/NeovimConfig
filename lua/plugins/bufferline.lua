@@ -1,7 +1,7 @@
 return {
     'akinsho/bufferline.nvim',
     config = function()
-        require('bufferline').setup {
+        require('bufferline').setup({
             highlights = {
                 buffer = { italic = false },
                 buffer_selected = { italic = false },
@@ -20,6 +20,6 @@ return {
                 pick_visible = { italic = false }
             },
             options = { themable = true }
-        }
+        })
     end
 }

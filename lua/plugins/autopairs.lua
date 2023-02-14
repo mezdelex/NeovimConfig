@@ -13,7 +13,7 @@ return {
             enable_bracket_in_quote = true,
             enable_check_bracket_line = true,
             enable_moveright = true,
-            ignored_next_char = [=[[%w%%%'%[%"%.%`%$]]=],
+            ignored_next_char = [=[[%w%%%'%[%"%.%`%$]]=]
         })
     end
 }

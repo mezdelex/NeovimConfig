@@ -3,7 +3,7 @@ return {
     config = function()
         local colors = require('gruvbox.palette').get_base_colors(vim.o.background)
 
-        require('lualine').setup {
+        require('lualine').setup({
             inactive_sections = {
                 lualine_a = { 'mode' },
                 lualine_b = { 'diff' },
@@ -55,6 +55,6 @@ return {
                 lualine_y = { 'diagnostics', 'progress' },
                 lualine_z = { 'filename' }
             }
-        }
+        })
     end
 }
