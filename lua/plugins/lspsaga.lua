@@ -7,8 +7,6 @@ return {
         require('lspsaga').setup({
             ui = {
                 border = 'rounded',
-                code_action = '💡',
-                collapse = '',
                 colors = {
                     black = colors.bg0,
                     blue = colors.neutral_blue,
@@ -23,13 +21,6 @@ return {
                     white = colors.gray,
                     yellow = colors.neutral_yellow
                 },
-                diagnostic = '🐞',
-                expand = '',
-                incoming = ' ',
-                outgoing = ' ',
-                preview = ' ',
-                theme = 'round',
-                winblend = 0
             }
         })
 
