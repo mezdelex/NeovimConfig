@@ -8,9 +8,7 @@ return {
         local opts = { noremap = true, silent = true }
 
         require('telescope').setup({
-            defaults = {
-                path_display = { 'tail' }
-            }
+            defaults = { path_display = { 'tail' } }
         })
 
         vim.keymap.set('n', '<leader>F', builtin.live_grep, opts)
