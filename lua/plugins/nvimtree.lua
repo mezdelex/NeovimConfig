@@ -4,6 +4,7 @@ return {
         local opts = { noremap = true, silent = true }
 
         require('nvim-tree').setup({
+            actions = { open_file = { resize_window = true } },
             remove_keymaps = { '<C-k>', '<Tab>' }
         })
 
