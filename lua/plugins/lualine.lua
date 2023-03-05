@@ -2,7 +2,7 @@ return {
     'nvim-lualine/lualine.nvim',
     config = function()
         local colors = require('gruvbox.palette').get_base_colors(vim.o.background)
-        local function diff_source()
+        local diff_source = function()
             local gitsigns = vim.b.gitsigns_status_dict
 
             if gitsigns then
@@ -13,7 +13,7 @@ return {
         require('lualine').setup({
             inactive_sections = {
                 lualine_a = { 'mode' },
-                lualine_b = { 'diff' },
+                lualine_b = { 'diff', source = diff_source },
                 lualine_c = {},
                 lualine_x = {},
                 lualine_y = { 'diagnostics' },
