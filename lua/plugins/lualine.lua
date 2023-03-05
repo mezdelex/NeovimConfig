@@ -13,7 +13,7 @@ return {
         require('lualine').setup({
             inactive_sections = {
                 lualine_a = { 'mode' },
-                lualine_b = { 'diff', source = diff_source },
+                lualine_b = { { 'diff', source = diff_source } },
                 lualine_c = {},
                 lualine_x = {},
                 lualine_y = { 'diagnostics' },
