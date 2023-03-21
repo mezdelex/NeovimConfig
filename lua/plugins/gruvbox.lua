@@ -3,14 +3,19 @@ return {
     config = function()
         require('gruvbox').setup({
             bold = true,
-            contrast = '',
+            contrast = "",
             dim_inactive = false,
             inverse = true,
             invert_intend_guides = false,
             invert_selection = false,
             invert_signs = false,
             invert_tabline = false,
-            italic = false,
+            italic = {
+                comments = false,
+                folds = false,
+                operators = false,
+                strings = false
+            },
             overrides = {},
             palette_overrides = {},
             strikethrough = true,
