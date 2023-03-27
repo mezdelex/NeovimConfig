@@ -42,6 +42,5 @@ vim.keymap.set('n', ']j', '<C-i>', opts)
 vim.keymap.set('v', '<leader>p', '"_dP', opts)
 vim.keymap.set('v', '<leader>y', '"+y', opts)
 
-vim.keymap.set('n', 'J', 'mzJ`z', opts)
 vim.keymap.set('v', 'J', ":m'>+1<CR>gv=gv", opts)
 vim.keymap.set('v', 'K', ":m'<-2<CR>gv=gv", opts)
