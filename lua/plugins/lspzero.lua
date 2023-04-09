@@ -56,6 +56,5 @@ return {
             automatic_installation = true,
             automatic_setup = true
         })
-        mason_null_ls.setup_handlers()
     end
 }
