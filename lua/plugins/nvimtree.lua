@@ -4,7 +4,8 @@ return {
         local opts = { noremap = true, silent = true }
 
         require('nvim-tree').setup({
-            remove_keymaps = { '<C-k>', '<Tab>' }
+            remove_keymaps = { '<C-k>', '<Tab>' },
+            view = {}
         })
 
         vim.keymap.set('n', '<leader>e', ':NvimTreeFocus<CR>', opts)
