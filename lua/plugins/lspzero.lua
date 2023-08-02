@@ -7,8 +7,6 @@ return {
         'hrsh7th/cmp-nvim-lua',
         'hrsh7th/cmp-path',
         'hrsh7th/nvim-cmp',
-        'jay-babu/mason-null-ls.nvim',
-        'jose-elias-alvarez/null-ls.nvim',
         'neovim/nvim-lspconfig',
         'rafamadriz/friendly-snippets',
         'saadparwaiz1/cmp_luasnip',
@@ -65,23 +63,10 @@ return {
         lsp.nvim_workspace()
         lsp.setup()
 
-        local null_ls = require('null-ls')
-        local null_opts = lsp.build_options('null-ls', {})
+        local cmp = require('cmp')
 
-        null_ls.setup({
-            on_attach = function(client, bufnr)
-                null_opts.on_attach(client, bufnr)
-            end,
-            sources = {
-                null_ls.builtins.formatting.prettier
-            }
-        })
-
-        local mason_null_ls = require('mason-null-ls')
-
-        mason_null_ls.setup({
-            automatic_installation = true,
-            automatic_setup = true
+        cmp.setup({
+            mapping = { ['<CR>'] = cmp.mapping.confirm({ select = true }) }
         })
     end
 }

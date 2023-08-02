@@ -1,4 +1,4 @@
-# Neovim Config (Discontinued)
+# Neovim Config
 
 - OS: Windows 11
 - Terminal: Windows Terminal
