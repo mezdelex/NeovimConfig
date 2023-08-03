@@ -20,7 +20,7 @@ return {
                 lualine_z = { 'filename' }
             },
             options = {
-                disabled_filetypes = { 'NvimTree', 'packer', statusline = {}, winbar = {} },
+                disabled_filetypes = { 'NvimTree', statusline = {}, winbar = {} },
                 theme = {
                     command = {
                         a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
