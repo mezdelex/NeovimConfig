@@ -1,8 +1,5 @@
 return {
     'nvim-telescope/telescope.nvim',
-    dependencies = {
-        'nvim-lua/plenary.nvim'
-    },
     config = function()
         local builtin = require('telescope.builtin')
         local opts = { noremap = true, silent = true }
@@ -23,5 +20,6 @@ return {
         vim.keymap.set('n', 'gr', builtin.lsp_references, opts)
         vim.keymap.set('n', 'gs', builtin.grep_string, opts)
         vim.keymap.set('n', 'gt', builtin.lsp_type_definitions, opts)
-    end
+    end,
+    dependencies = { 'nvim-lua/plenary.nvim' }
 }
