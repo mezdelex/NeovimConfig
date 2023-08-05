@@ -9,6 +9,18 @@ return {
                 return { added = gitsigns.added, modified = gitsigns.changed, removed = gitsigns.removed }
             end
         end
+        local templates = {
+            default = {
+                a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
+                b = { bg = colors.bg1, fg = colors.neutral_yellow },
+                c = { bg = colors.bg1, fg = colors.neutral_yellow }
+            },
+            inactive = {
+                a = { bg = colors.gray, fg = colors.bg0, gui = 'bold' },
+                b = { bg = colors.bg1, fg = colors.gray },
+                c = { bg = colors.bg1, fg = colors.gray }
+            }
+        }
 
         require('lualine').setup({
             inactive_sections = {
@@ -22,36 +34,12 @@ return {
             options = {
                 disabled_filetypes = { 'NvimTree', statusline = {}, winbar = {} },
                 theme = {
-                    command = {
-                        a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
-                        b = { bg = colors.bg1, fg = colors.neutral_yellow },
-                        c = { bg = colors.bg1, fg = colors.neutral_yellow }
-                    },
-                    inactive = {
-                        a = { bg = colors.gray, fg = colors.bg0, gui = 'bold' },
-                        b = { bg = colors.bg1, fg = colors.gray },
-                        c = { bg = colors.bg1, fg = colors.gray }
-                    },
-                    insert = {
-                        a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
-                        b = { bg = colors.bg1, fg = colors.neutral_yellow },
-                        c = { bg = colors.bg1, fg = colors.neutral_yellow }
-                    },
-                    normal = {
-                        a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
-                        b = { bg = colors.bg1, fg = colors.neutral_yellow },
-                        c = { bg = colors.bg1, fg = colors.neutral_yellow }
-                    },
-                    replace = {
-                        a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
-                        b = { bg = colors.bg1, fg = colors.neutral_yellow },
-                        c = { bg = colors.bg1, fg = colors.neutral_yellow }
-                    },
-                    visual = {
-                        a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
-                        b = { bg = colors.bg1, fg = colors.neutral_yellow },
-                        c = { bg = colors.bg1, fg = colors.neutral_yellow }
-                    }
+                    command = templates.default,
+                    inactive = templates.inactive,
+                    insert = templates.default,
+                    normal = templates.default,
+                    replace = templates.default,
+                    visual = templates.default
                 }
             },
             sections = {

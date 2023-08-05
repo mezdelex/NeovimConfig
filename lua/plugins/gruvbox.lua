@@ -3,7 +3,7 @@ return {
     config = function()
         require('gruvbox').setup({
             bold = true,
-            contrast = "",
+            contrast = '',
             dim_inactive = false,
             inverse = true,
             invert_intend_guides = false,
