@@ -11,6 +11,7 @@ return {
             marker_padding = true
         })
 
+        vim.keymap.set('n', '<A-/>', ':CommentToggle<CR>', opts)
         vim.keymap.set('v', '<A-/>', ":'<,'>CommentToggle<CR>", opts)
     end
 }
