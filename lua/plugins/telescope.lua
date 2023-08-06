@@ -12,7 +12,6 @@ return {
         vim.keymap.set('n', '<leader>d', builtin.diagnostics, opts)
         vim.keymap.set('n', '<leader>f', builtin.find_files, opts)
         vim.keymap.set('n', '<leader>j', builtin.jumplist, opts)
-        vim.keymap.set('n', '<leader>l', builtin.loclist, opts)
         vim.keymap.set('n', '<leader>q', builtin.quickfix, opts)
         vim.keymap.set('n', '<leader>s', builtin.lsp_document_symbols, opts)
         vim.keymap.set('n', 'gd', builtin.lsp_definitions, opts)
