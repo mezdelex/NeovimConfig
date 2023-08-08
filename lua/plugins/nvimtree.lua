@@ -1,8 +1,8 @@
 return {
     'nvim-tree/nvim-tree.lua',
     config = function()
-        local opts = { noremap = true, silent = true }
         local api = require('nvim-tree.api')
+        local opts = { noremap = true, silent = true }
 
         require('nvim-tree').setup({
             on_attach = function(bufnr)

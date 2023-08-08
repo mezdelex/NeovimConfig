@@ -1,18 +1,17 @@
 return {
     'VonHeikemen/lsp-zero.nvim',
     config = function()
-        local lsp = require('lsp-zero')
+        local lspzero = require('lsp-zero').preset()
 
-        lsp.preset('recommended')
-        lsp.set_preferences({ set_lsp_keymaps = false })
-        lsp.on_attach(function(_, bufnr)
+        lspzero.default_keymaps({})
+        lspzero.on_attach(function(_, bufnr)
             local opts = { buffer = bufnr, noremap = true, silent = true }
 
             vim.keymap.set('n', '<A-f>', function() vim.lsp.buf.format() end, opts)
             vim.keymap.set('n', '<leader>r', function() vim.lsp.buf.rename() end, opts)
         end)
-        lsp.nvim_workspace()
-        lsp.setup()
+        require('lspconfig').lua_ls.setup(lspzero.nvim_lua_ls())
+        lspzero.setup()
 
         local cmp = require('cmp')
 

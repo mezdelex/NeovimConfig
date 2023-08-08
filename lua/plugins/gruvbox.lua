@@ -10,12 +10,7 @@ return {
             invert_selection = false,
             invert_signs = false,
             invert_tabline = false,
-            italic = {
-                comments = false,
-                folds = false,
-                operators = false,
-                strings = false
-            },
+            italic = { comments = false, folds = false, operators = false, strings = false },
             overrides = {},
             palette_overrides = {},
             strikethrough = true,
