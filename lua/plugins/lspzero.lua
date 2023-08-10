@@ -1,19 +1,20 @@
 return {
     'VonHeikemen/lsp-zero.nvim',
     config = function()
+        local cmp = require('cmp')
         local lspzero = require('lsp-zero').preset()
 
+        require('lspconfig').lua_ls.setup(lspzero.nvim_lua_ls())
+
         lspzero.default_keymaps({})
+        lspzero.set_sign_icons({ error = '󰅚', hint = '󰌶', info = '󰋽', warn = '󰀪' })
         lspzero.on_attach(function(_, bufnr)
             local opts = { buffer = bufnr, noremap = true, silent = true }
 
             vim.keymap.set('n', '<A-f>', function() vim.lsp.buf.format() end, opts)
             vim.keymap.set('n', '<leader>r', function() vim.lsp.buf.rename() end, opts)
         end)
-        require('lspconfig').lua_ls.setup(lspzero.nvim_lua_ls())
         lspzero.setup()
-
-        local cmp = require('cmp')
 
         cmp.setup({
             mapping = { ['<CR>'] = cmp.mapping.confirm({ select = true }) }

@@ -12,8 +12,8 @@ return {
         local templates = {
             default = {
                 a = { bg = colors.neutral_yellow, fg = colors.bg0, gui = 'bold' },
-                b = { bg = colors.bg1, fg = colors.neutral_yellow },
-                c = { bg = colors.bg1, fg = colors.neutral_yellow }
+                b = { bg = colors.bg1, fg = colors.yellow },
+                c = { bg = colors.bg1, fg = colors.yellow }
             },
             inactive = {
                 a = { bg = colors.gray, fg = colors.bg0, gui = 'bold' },
@@ -28,7 +28,7 @@ return {
                 lualine_b = { { 'diff', source = diff_source } },
                 lualine_c = {},
                 lualine_x = {},
-                lualine_y = { 'diagnostics' },
+                lualine_y = { { 'diagnostics', update_in_insert = true } },
                 lualine_z = { 'filename' }
             },
             options = {
@@ -47,7 +47,7 @@ return {
                 lualine_b = { 'branch', { 'diff', source = diff_source } },
                 lualine_c = {},
                 lualine_x = {},
-                lualine_y = { 'diagnostics', 'progress' },
+                lualine_y = { { 'diagnostics', update_in_insert = true }, 'progress' },
                 lualine_z = { 'filename' }
             }
         })
