@@ -1,5 +1,5 @@
 return {
-    'glepnir/lspsaga.nvim',
+    'nvimdev/lspsaga.nvim',
     config = function()
         local opts = { noremap = true, silent = true }
 
