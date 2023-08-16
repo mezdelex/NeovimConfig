@@ -36,8 +36,6 @@ return {
         'hrsh7th/cmp-nvim-lua',
         'hrsh7th/cmp-path',
         'hrsh7th/nvim-cmp',
-        'jlcrochet/vim-cs',
-        'jlcrochet/vim-razor',
         'neovim/nvim-lspconfig',
         'rafamadriz/friendly-snippets',
         'saadparwaiz1/cmp_luasnip',
