@@ -2,18 +2,26 @@ return {
     'VonHeikemen/lsp-zero.nvim',
     config = function()
         local cmp = require('cmp')
+        local lspconfig = require('lspconfig')
         local lspzero = require('lsp-zero').preset()
-
-        require('lspconfig').lua_ls.setup(lspzero.nvim_lua_ls())
 
         lspzero.default_keymaps({})
         lspzero.set_sign_icons({ error = '󰅚', hint = '󰌶', info = '󰋽', warn = '󰀪' })
         lspzero.on_attach(function(_, bufnr)
             local opts = { buffer = bufnr, noremap = true, silent = true }
 
-            vim.keymap.set('n', '<A-f>', function() vim.lsp.buf.format() end, opts)
-            vim.keymap.set('n', '<leader>r', function() vim.lsp.buf.rename() end, opts)
+            vim.keymap.set('n', '<A-f>', vim.lsp.buf.format, opts)
+            vim.keymap.set('n', '<leader>i', vim.lsp.buf.hover, opts)
+            vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, opts)
+            vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+            vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+            vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+            vim.keymap.set('n', 'gt', vim.lsp.buf.type_definition, opts)
         end)
+        lspconfig.lua_ls.setup(lspzero.nvim_lua_ls())
+        lspconfig.omnisharp.setup({
+            handlers = { ['textDocument/definition'] = require('omnisharp_extended').handler }
+        })
         lspzero.setup()
 
         cmp.setup({
@@ -30,6 +38,7 @@ return {
         })
     end,
     dependencies = {
+        'Hoffs/omnisharp-extended-lsp.nvim',
         'L3MON4D3/LuaSnip',
         'hrsh7th/cmp-buffer',
         'hrsh7th/cmp-nvim-lsp',
