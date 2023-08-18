@@ -22,6 +22,7 @@
 | Blankline        | [repo](https://github.com/lukas-reineke/indent-blankline.nvim) | [blankline](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/blankline.lua)   |
 | Bufferline       | [repo](https://github.com/akinsho/bufferline.nvim)             | [bufferline](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/bufferline.lua) |
 | Comment          | [repo](https://github.com/terrortylor/nvim-comment)            | [comment](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/comment.lua)       |
+| Dap              | [repo](https://github.com/rcarriga/nvim-dap-ui)                | [dap](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/dap.lua)               |
 | Devicons         | [repo](https://github.com/nvim-tree/nvim-web-devicons)         | [devicons](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/devicons.lua)     |
 | Gitsigns         | [repo](https://github.com/lewis6991/gitsigns.nvim)             | [gitsigns](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/gitsigns.lua)     |
 | Gruvbox          | [repo](https://github.com/ellisonleao/gruvbox.nvim)            | [gruvbox](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/gruvbox.lua)       |
