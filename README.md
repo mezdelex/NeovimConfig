@@ -36,7 +36,7 @@
 
 ## Images
 
-![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/0c9c9fa9-1149-467b-818e-24a9d3f06441)
+![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/9e6ed9d2-26be-44ec-9a07-befe4b406108)
 
 ![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/4dd764d7-6aab-498b-a072-3892bedeb5f8)
 
