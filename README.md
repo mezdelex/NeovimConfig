@@ -43,6 +43,3 @@
 ![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/e42797ad-7024-4275-936b-54a9b81c2cf1)
 
 ![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/0bcf5dd5-5620-4a61-b1b1-6d927a50348e)
-
-
-
