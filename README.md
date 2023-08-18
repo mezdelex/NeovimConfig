@@ -36,10 +36,13 @@
 
 ## Images
 
-![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/d4c63bda-a07a-43bf-a5fa-ed4bfa749007)
+![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/0c9c9fa9-1149-467b-818e-24a9d3f06441)
 
-![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/d3f6ddd5-96cc-497b-bcb0-841f37e60048)
+![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/4dd764d7-6aab-498b-a072-3892bedeb5f8)
 
-![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/3211f8ab-859c-49f2-af53-5967cc0ee032)
+![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/e42797ad-7024-4275-936b-54a9b81c2cf1)
 
-![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/a3626d00-9f44-40f7-becb-1f56a330cca1)
+![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/0bcf5dd5-5620-4a61-b1b1-6d927a50348e)
+
+
+
