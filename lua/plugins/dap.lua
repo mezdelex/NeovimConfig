@@ -17,10 +17,10 @@ return {
         }
         dap.configurations.cs = {
             {
-                name = "launch - netcoredbg",
+                name = 'launch - netcoredbg',
                 program = function() return vim.fn.input('Path to dll: ', vim.fn.getcwd() .. '/bin/Debug/', 'file') end,
-                request = "launch",
-                type = "coreclr"
+                request = 'launch',
+                type = 'coreclr'
             }
         }
         dap.listeners.after.event_initialized['dapui_config'] = function() dapui.open() end

@@ -32,7 +32,17 @@ return {
                 lualine_z = { 'filename' }
             },
             options = {
-                disabled_filetypes = { 'NvimTree', statusline = {}, winbar = {} },
+                disabled_filetypes = {
+                    'NvimTree',
+                    'dap-repl',
+                    'dapui_breakpoints',
+                    'dapui_console',
+                    'dapui_scopes',
+                    'dapui_stacks',
+                    'dapui_watches',
+                    statusline = {},
+                    winbar = {}
+                },
                 theme = {
                     command = templates.default,
                     inactive = templates.inactive,
