@@ -3,8 +3,20 @@ return {
     config = function()
         local bold = { gui = 'bold' }
         local colors = require('gruvbox.palette').get_base_colors(vim.o.background)
+        local diff_source = function()
+            local gitsigns = vim.b.gitsigns_status_dict
+
+            if gitsigns then
+                return { added = gitsigns.added, modified = gitsigns.changed, removed = gitsigns.removed }
+            end
+        end
+
         local sections = {
-            diagnostics = { 'diagnostics', update_in_insert = true },
+            diagnostics = {
+                'diagnostics',
+                symbols = { error = ' ', hint = ' ', info = ' ', warn = ' ' },
+                update_in_insert = true
+            },
             diff = {
                 'diff',
                 diff_color = {
@@ -12,6 +24,7 @@ return {
                     modified = { fg = colors.yellow },
                     removed = { fg = colors.red }
                 },
+                source = diff_source,
                 symbols = { added = ' ', modified = ' ', removed = ' ' }
             }
         }

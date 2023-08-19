@@ -6,7 +6,7 @@ return {
         local lspzero = require('lsp-zero').preset()
 
         lspzero.default_keymaps({})
-        lspzero.set_sign_icons({ error = '󰅚', hint = '󰌶', info = '󰋽', warn = '󰀪' })
+        lspzero.set_sign_icons({ error = '', hint = '', info = '', warn = '' })
         lspzero.on_attach(function(_, bufnr)
             local opts = { buffer = bufnr, noremap = true, silent = true }
 

@@ -4,7 +4,7 @@ return {
         local opts = { noremap = true, silent = true }
 
         require('lspsaga').setup({
-            ui = { border = 'rounded' }
+            ui = { border = 'rounded', code_action = '' }
         })
 
         vim.keymap.set('n', '<leader>.', ':Lspsaga code_action<CR>', opts)

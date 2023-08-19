@@ -63,14 +63,14 @@ return {
             {
                 linehl = 'DapBreakpoint',
                 numhl = 'DapBreakpoint',
-                text = '•',
+                text = '',
                 texthl = 'DapBreakpointSymbol'
             })
         vim.fn.sign_define('DapStopped',
             {
                 linehl = 'DapBreakpoint',
                 numhl = 'DapBreakpoint',
-                text = '•',
+                text = '',
                 texthl = 'DapStoppedSymbol'
             })
 
