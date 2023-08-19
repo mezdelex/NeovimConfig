@@ -12,7 +12,22 @@ return {
                 vim.keymap.del('n', '<C-k>', { buffer = bufnr })
                 vim.keymap.set('n', '<Tab>', '', { buffer = bufnr })
                 vim.keymap.del('n', '<Tab>', { buffer = bufnr })
-            end
+            end,
+            renderer = {
+                icons = {
+                    glyphs = {
+                        git = {
+                            deleted = '',
+                            ignored = '',
+                            renamed = '',
+                            staged = '',
+                            unmerged = '',
+                            unstaged = '',
+                            untracked = ''
+                        }
+                    }
+                }
+            }
         })
 
         vim.keymap.set('n', '<leader>e', ':NvimTreeFocus<CR>', opts)

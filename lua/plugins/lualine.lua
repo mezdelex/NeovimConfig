@@ -10,7 +10,6 @@ return {
                 return { added = gitsigns.added, modified = gitsigns.changed, removed = gitsigns.removed }
             end
         end
-
         local sections = {
             diagnostics = {
                 'diagnostics',
@@ -21,7 +20,7 @@ return {
                 'diff',
                 diff_color = {
                     added = { fg = colors.green },
-                    modified = { fg = colors.yellow },
+                    modified = { fg = colors.aqua },
                     removed = { fg = colors.red }
                 },
                 source = diff_source,
