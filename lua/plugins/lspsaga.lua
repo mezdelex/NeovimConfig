@@ -4,6 +4,7 @@ return {
         local opts = { noremap = true, silent = true }
 
         require('lspsaga').setup({
+            lightbulb = { virtual_text = false },
             ui = { border = 'rounded', code_action = '' }
         })
 
