@@ -25,6 +25,11 @@ return {
                 },
                 source = diff_source,
                 symbols = { added = ' ', modified = ' ', removed = ' ' }
+            },
+            filename = {
+                'filename',
+                newfile_status = true,
+                symbols = { modified = '', newfile = '', readonly = '', unnamed = '[No Name]' }
             }
         }
         local templates = {
@@ -47,7 +52,7 @@ return {
                 lualine_c = { sections.diff },
                 lualine_x = { sections.diagnostics },
                 lualine_y = {},
-                lualine_z = { 'filename' }
+                lualine_z = { sections.filename }
             },
             options = {
                 disabled_filetypes = {
@@ -76,7 +81,7 @@ return {
                 lualine_c = { sections.diff },
                 lualine_x = { sections.diagnostics },
                 lualine_y = { 'progress' },
-                lualine_z = { 'filename' }
+                lualine_z = { sections.filename }
             }
         })
     end
