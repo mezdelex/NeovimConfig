@@ -1,7 +1,6 @@
 return {
     'rcarriga/nvim-dap-ui',
     config = function()
-        local colors = require('gruvbox.palette').get_base_colors(vim.o.background)
         local dap = require('dap')
         local dapui = require('dapui')
         local opts = { noremap = true, silent = true }
@@ -27,37 +26,6 @@ return {
         dap.listeners.before.event_exited['dapui_config'] = function() dapui.close() end
         dap.listeners.before.event_terminated['dapui_config'] = function() dapui.close() end
         dapui.setup()
-
-        vim.api.nvim_set_hl(0, 'DapBreakpointSymbol', { fg = colors.red, bg = colors.bg1 })
-        vim.api.nvim_set_hl(0, 'DapStoppedSymbol', { fg = colors.green, bg = colors.bg1 })
-        vim.api.nvim_set_hl(0, 'DapUIBreakpointsCurrentLine', { fg = colors.yellow })
-        vim.api.nvim_set_hl(0, 'DapUIBreakpointsDisabledLine', { fg = colors.gray })
-        vim.api.nvim_set_hl(0, 'DapUIBreakpointsInfo', { fg = colors.aqua })
-        vim.api.nvim_set_hl(0, 'DapUIBreakpointsLine', { fg = colors.yellow })
-        vim.api.nvim_set_hl(0, 'DapUIBreakpointsPath', { fg = colors.blue })
-        vim.api.nvim_set_hl(0, 'DapUICurrentFrameName', { fg = colors.purple })
-        vim.api.nvim_set_hl(0, 'DapUIDecoration', { fg = colors.purple })
-        vim.api.nvim_set_hl(0, 'DapUIEndofBuffer', { fg = colors.bg2 })
-        vim.api.nvim_set_hl(0, 'DapUIFloatBorder', { fg = colors.aqua })
-        vim.api.nvim_set_hl(0, 'DapUILineNumber', { fg = colors.yellow })
-        vim.api.nvim_set_hl(0, 'DapUIModifiedValue', { fg = colors.red })
-        vim.api.nvim_set_hl(0, 'DapUIPlayPause', { fg = colors.green })
-        vim.api.nvim_set_hl(0, 'DapUIRestart', { fg = colors.green })
-        vim.api.nvim_set_hl(0, 'DapUIScope', { fg = colors.blue })
-        vim.api.nvim_set_hl(0, 'DapUISource', { fg = colors.fg1 })
-        vim.api.nvim_set_hl(0, 'DapUIStepBack', { fg = colors.blue })
-        vim.api.nvim_set_hl(0, 'DapUIStepInto', { fg = colors.blue })
-        vim.api.nvim_set_hl(0, 'DapUIStepOut', { fg = colors.blue })
-        vim.api.nvim_set_hl(0, 'DapUIStepOver', { fg = colors.blue })
-        vim.api.nvim_set_hl(0, 'DapUIStop', { fg = colors.red })
-        vim.api.nvim_set_hl(0, 'DapUIStoppedThread', { fg = colors.blue })
-        vim.api.nvim_set_hl(0, 'DapUIThread', { fg = colors.blue })
-        vim.api.nvim_set_hl(0, 'DapUIType', { fg = colors.orange })
-        vim.api.nvim_set_hl(0, 'DapUIUnavailable', { fg = colors.gray })
-        vim.api.nvim_set_hl(0, 'DapUIWatchesEmpty', { fg = colors.gray })
-        vim.api.nvim_set_hl(0, 'DapUIWatchesError', { fg = colors.red })
-        vim.api.nvim_set_hl(0, 'DapUIWatchesValue', { fg = colors.yellow })
-        vim.api.nvim_set_hl(0, 'DapUIWinSelect', { fg = colors.yellow })
 
         vim.fn.sign_define('DapBreakpoint',
             {
