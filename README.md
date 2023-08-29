@@ -5,6 +5,12 @@
 - Shell: PowerShell Core
 - Editor: Neovim
 
+## Setup
+
+- Install `neovim` via `scoop install neovim`
+- Install `ripgrep` via `scoop install ripgrep`
+- Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
+
 ## Core
 
 |       Name       |                           Source             |                                             Uri                                    |
