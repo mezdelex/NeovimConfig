@@ -1,12 +1,13 @@
 return {
     'VonHeikemen/lsp-zero.nvim',
+    branch = 'dev-v3',
     config = function()
         local cmp = require('cmp')
         local lspconfig = require('lspconfig')
         local lspzero = require('lsp-zero').preset()
 
         lspzero.default_keymaps({})
-        lspzero.set_sign_icons({ error = '', hint = '', info = '', warn = '' })
+        lspzero.extend_cmp()
         lspzero.on_attach(function(_, bufnr)
             local opts = { buffer = bufnr, noremap = true, silent = true }
 
@@ -18,11 +19,22 @@ return {
             vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
             vim.keymap.set('n', 'gt', vim.lsp.buf.type_definition, opts)
         end)
-        lspconfig.lua_ls.setup(lspzero.nvim_lua_ls())
-        lspconfig.omnisharp.setup({
-            handlers = { ['textDocument/definition'] = require('omnisharp_extended').handler }
+        lspzero.set_sign_icons({ error = '', hint = '', info = '', warn = '' })
+
+        require('mason').setup()
+        require('mason-lspconfig').setup({
+            handlers = {
+                lspzero.default_setup,
+                lua_ls = function()
+                    lspconfig.lua_ls.setup(lspzero.nvim_lua_ls())
+                end,
+                omnisharp = function()
+                    lspconfig.omnisharp.setup({
+                        handlers = { ['textDocument/definition'] = require('omnisharp_extended').handler }
+                    })
+                end
+            }
         })
-        lspzero.setup()
 
         cmp.setup({
             mapping = { ['<CR>'] = cmp.mapping.confirm({ select = true }) }
