@@ -4,10 +4,8 @@ return {
     config = function()
         local cmp = require('cmp')
         local lspconfig = require('lspconfig')
-        local lspzero = require('lsp-zero').preset()
+        local lspzero = require('lsp-zero')
 
-        lspzero.default_keymaps({})
-        lspzero.extend_cmp()
         lspzero.on_attach(function(_, bufnr)
             local opts = { buffer = bufnr, noremap = true, silent = true }
 
