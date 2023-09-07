@@ -5,6 +5,13 @@ return {
         local opts = { noremap = true, silent = true }
 
         require('nvim-tree').setup({
+            actions = {
+                open_file = {
+                    window_picker = {
+                        enable = false
+                    }
+                }
+            },
             on_attach = function(bufnr)
                 api.config.mappings.default_on_attach(bufnr)
 
