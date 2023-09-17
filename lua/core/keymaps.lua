@@ -9,7 +9,7 @@ vim.keymap.set('n', '<a-S>', ':wa<cr>', opts)
 vim.keymap.set('n', '<a-s>', ':w<cr>', opts)
 
 vim.keymap.set('n', '<a-C>', ':q<cr>', opts)
-vim.keymap.set('n', '<a-c>', ':bp|sp|bn|bd<cr>', opts)
+vim.keymap.set('n', '<a-c>', ':bw<cr>', opts)
 vim.keymap.set('n', '<s-tab>', ':bp<cr>', opts)
 vim.keymap.set('n', '<tab>', ':bn<cr>', opts)
 
@@ -47,5 +47,5 @@ vim.keymap.set('n', 'U', '<c-r>')
 vim.keymap.set('v', '<leader>p', '"_dP', opts)
 vim.keymap.set('v', '<leader>y', '"+y', opts)
 
-vim.keymap.set('v', 'J', ":m'>+1<cr>gv=gv", opts)
-vim.keymap.set('v', 'K', ":m'<-2<cr>gv=gv", opts)
+vim.keymap.set('v', 'J', ":m '>+1<cr>gv=gv", opts)
+vim.keymap.set('v', 'K', ":m '<-2<cr>gv=gv", opts)
