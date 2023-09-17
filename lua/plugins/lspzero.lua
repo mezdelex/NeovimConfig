@@ -9,7 +9,7 @@ return {
         lspzero.on_attach(function(_, bufnr)
             local opts = { buffer = bufnr, noremap = true, silent = true }
 
-            vim.keymap.set('n', '<A-f>', vim.lsp.buf.format, opts)
+            vim.keymap.set('n', '<a-f>', vim.lsp.buf.format, opts)
             vim.keymap.set('n', '<leader>i', vim.lsp.buf.hover, opts)
             vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, opts)
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
@@ -36,7 +36,7 @@ return {
         })
 
         cmp.setup({
-            mapping = { ['<CR>'] = cmp.mapping.confirm({ select = true }) }
+            mapping = { ['<cr>'] = cmp.mapping.confirm({ select = true }) }
         })
 
         vim.diagnostic.config({

@@ -15,10 +15,10 @@ return {
             on_attach = function(bufnr)
                 api.config.mappings.default_on_attach(bufnr)
 
-                vim.keymap.set('n', '<C-k>', '', { buffer = bufnr })
-                vim.keymap.del('n', '<C-k>', { buffer = bufnr })
-                vim.keymap.set('n', '<Tab>', '', { buffer = bufnr })
-                vim.keymap.del('n', '<Tab>', { buffer = bufnr })
+                vim.keymap.set('n', '<c-k>', '', { buffer = bufnr })
+                vim.keymap.del('n', '<c-k>', { buffer = bufnr })
+                vim.keymap.set('n', '<tab>', '', { buffer = bufnr })
+                vim.keymap.del('n', '<tab>', { buffer = bufnr })
             end,
             renderer = {
                 icons = {
@@ -37,7 +37,7 @@ return {
             }
         })
 
-        vim.keymap.set('n', '<leader>e', ':NvimTreeFocus<CR>', opts)
-        vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', opts)
+        vim.keymap.set('n', '<leader>e', ':NvimTreeFocus<cr>', opts)
+        vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<cr>', opts)
     end
 }
