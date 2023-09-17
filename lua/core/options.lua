@@ -1,6 +1,6 @@
 vim.opt.cursorline = true
 vim.opt.guicursor = 'a:blinkon1'
-vim.opt.scrolloff = 25
+vim.opt.scrolloff = math.floor(0.5 * vim.o.lines)
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
