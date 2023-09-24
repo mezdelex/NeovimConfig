@@ -2,7 +2,7 @@ return {
     'nvim-lualine/lualine.nvim',
     config = function()
         local bold = { gui = 'bold' }
-        local colors = require('gruvbox.palette').get_base_colors(vim.o.background)
+        local colors = require('gruvbox.palette').get_base_colors({})
         local diff_source = function()
             local gitsigns = vim.b.gitsigns_status_dict
 
