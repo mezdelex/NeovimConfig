@@ -2,7 +2,7 @@ vim.opt.cursorline = true
 vim.opt.guicursor = 'a:blinkon1'
 vim.opt.scrolloff = math.floor(0.5 * vim.o.lines)
 
-vim.opt.nu = true
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.signcolumn = 'yes'
@@ -26,8 +26,5 @@ vim.opt.backup = false
 vim.opt.swapfile = false
 vim.opt.undodir = os.getenv('HOMEPATH') .. '/.nvim/undodir'
 vim.opt.undofile = true
-
-vim.opt.isfname:append('@-@')
-vim.opt.iskeyword:append('@-@')
 
 vim.opt.updatetime = 250

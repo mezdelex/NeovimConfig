@@ -2,7 +2,7 @@ return {
     'nvim-lualine/lualine.nvim',
     config = function()
         local bold = { gui = 'bold' }
-        local colors = require('gruvbox.palette').get_base_colors({})
+        local colors = require('gruvbox').palette
         local diff_source = function()
             local gitsigns = vim.b.gitsigns_status_dict
 
@@ -19,9 +19,9 @@ return {
             diff = {
                 'diff',
                 diff_color = {
-                    added = { fg = colors.green },
-                    modified = { fg = colors.aqua },
-                    removed = { fg = colors.red }
+                    added = { fg = colors.bright_green },
+                    modified = { fg = colors.bright_aqua },
+                    removed = { fg = colors.bright_red }
                 },
                 source = diff_source,
                 symbols = { added = ' ', modified = ' ', removed = ' ' }
@@ -34,14 +34,14 @@ return {
         }
         local templates = {
             default = {
-                a = { bg = colors.neutral_yellow, fg = colors.bg0, bold },
-                b = { bg = colors.bg2, fg = colors.yellow, bold },
-                c = { bg = colors.bg1, fg = colors.yellow, bold }
+                a = { bg = colors.neutral_yellow, fg = colors.dark0, bold },
+                b = { bg = colors.dark2, fg = colors.bright_yellow, bold },
+                c = { bg = colors.dark1, fg = colors.bright_yellow, bold }
             },
             inactive = {
-                a = { bg = colors.gray, fg = colors.bg0, bold },
+                a = { bg = colors.gray, fg = colors.dark0, bold },
                 b = {},
-                c = { bg = colors.bg1, fg = colors.yellow, bold }
+                c = { bg = colors.dark1, fg = colors.bright_yellow, bold }
             }
         }
 

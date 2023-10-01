@@ -51,6 +51,7 @@ return {
     dependencies = {
         'Hoffs/omnisharp-extended-lsp.nvim',
         'L3MON4D3/LuaSnip',
+        'SirVer/ultisnips',
         'dcampos/cmp-snippy',
         'dcampos/nvim-snippy',
         'hrsh7th/cmp-buffer',
