@@ -21,7 +21,6 @@ return {
 
         require('mason').setup()
         require('mason-lspconfig').setup({
-            automatic_installation = true,
             handlers = {
                 lspzero.default_setup,
                 lua_ls = function()
@@ -51,19 +50,13 @@ return {
     dependencies = {
         'Hoffs/omnisharp-extended-lsp.nvim',
         'L3MON4D3/LuaSnip',
-        'SirVer/ultisnips',
-        'dcampos/cmp-snippy',
-        'dcampos/nvim-snippy',
         'hrsh7th/cmp-buffer',
         'hrsh7th/cmp-cmdline',
         'hrsh7th/cmp-nvim-lsp',
         'hrsh7th/cmp-nvim-lua',
         'hrsh7th/cmp-path',
-        'hrsh7th/cmp-vsnip',
         'hrsh7th/nvim-cmp',
-        'hrsh7th/vim-vsnip',
         'neovim/nvim-lspconfig',
-        'quangnguyen30192/cmp-nvim-ultisnips',
         'rafamadriz/friendly-snippets',
         'saadparwaiz1/cmp_luasnip',
         'williamboman/mason-lspconfig.nvim',
