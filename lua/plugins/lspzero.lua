@@ -39,12 +39,9 @@ return {
         })
 
         vim.diagnostic.config({
-            float = true,
             severity_sort = true,
-            signs = true,
-            underline = true,
-            update_in_insert = true,
-            virtual_text = true
+            underline = false,
+            update_in_insert = true
         })
     end,
     dependencies = {
