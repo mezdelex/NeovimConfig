@@ -55,6 +55,7 @@ return {
                 lualine_z = { sections.filename }
             },
             options = {
+                component_separators = {},
                 disabled_filetypes = {
                     'NvimTree',
                     'dap-repl',
@@ -66,6 +67,7 @@ return {
                     statusline = {},
                     winbar = {}
                 },
+                section_separators = {},
                 theme = {
                     command = templates.default,
                     inactive = templates.inactive,
