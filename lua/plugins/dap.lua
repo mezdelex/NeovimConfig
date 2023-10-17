@@ -1,7 +1,6 @@
 return {
     'rcarriga/nvim-dap-ui',
     config = function()
-        local colors = require('gruvbox').palette
         local dap = require('dap')
         local dapui = require('dapui')
         local opts = { noremap = true, silent = true }
@@ -29,22 +28,19 @@ return {
         dap.listeners.before.event_terminated['dapui_config'] = function() dapui.close() end
         dapui.setup()
 
-        vim.api.nvim_set_hl(0, 'DapBreakpoint', { fg = colors.bright_red })
-        vim.api.nvim_set_hl(0, 'DapStopped', { fg = colors.bright_green })
-
         vim.fn.sign_define('DapBreakpoint',
             {
-                linehl = 'DapBreakpoint',
-                numhl = 'DapBreakpoint',
+                linehl = 'debugBreakpoint',
+                numhl = 'debugBreakpoint',
                 text = '',
-                texthl = 'DapBreakpoint'
+                texthl = 'debugBreakpoint'
             })
         vim.fn.sign_define('DapStopped',
             {
-                linehl = 'DapStopped',
-                numhl = 'DapStopped',
+                linehl = 'debugPC',
+                numhl = 'debugPC',
                 text = '',
-                texthl = 'DapStopped'
+                texthl = 'debugPC'
             })
 
         vim.keymap.set('n', '<down>', function() dap.step_into() end, opts)
