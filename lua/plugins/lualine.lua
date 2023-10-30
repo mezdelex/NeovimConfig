@@ -1,8 +1,6 @@
 return {
     'nvim-lualine/lualine.nvim',
     config = function()
-        local bold = { gui = 'bold' }
-        local colors = require('gruvbox').palette
         local diff_source = function()
             local gitsigns = vim.b.gitsigns_status_dict
 
@@ -18,11 +16,6 @@ return {
             },
             diff = {
                 'diff',
-                diff_color = {
-                    added = { fg = colors.bright_green },
-                    modified = { fg = colors.bright_aqua },
-                    removed = { fg = colors.bright_red }
-                },
                 source = diff_source,
                 symbols = { added = ' ', modified = ' ', removed = ' ' }
             },
@@ -30,18 +23,6 @@ return {
                 'filename',
                 newfile_status = true,
                 symbols = { modified = '', newfile = '', readonly = '', unnamed = '[No Name]' }
-            }
-        }
-        local templates = {
-            default = {
-                a = { bg = colors.neutral_yellow, fg = colors.dark0, bold },
-                b = { bg = colors.dark2, fg = colors.bright_yellow, bold },
-                c = { bg = colors.dark1, fg = colors.bright_yellow, bold }
-            },
-            inactive = {
-                a = { bg = colors.gray, fg = colors.dark0, bold },
-                b = {},
-                c = { bg = colors.dark1, fg = colors.bright_yellow, bold }
             }
         }
 
@@ -68,14 +49,7 @@ return {
                     winbar = {}
                 },
                 section_separators = {},
-                theme = {
-                    command = templates.default,
-                    inactive = templates.inactive,
-                    insert = templates.default,
-                    normal = templates.default,
-                    replace = templates.default,
-                    visual = templates.default
-                }
+                theme = 'catppuccin'
             },
             sections = {
                 lualine_a = { 'mode' },
