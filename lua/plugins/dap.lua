@@ -28,20 +28,18 @@ return {
         dap.listeners.before.event_terminated['dapui_config'] = function() dapui.close() end
         dapui.setup()
 
-        vim.fn.sign_define('DapBreakpoint',
-            {
-                linehl = 'debugBreakpoint',
-                numhl = 'debugBreakpoint',
-                text = '',
-                texthl = 'debugBreakpoint'
-            })
-        vim.fn.sign_define('DapStopped',
-            {
-                linehl = 'debugPC',
-                numhl = 'debugPC',
-                text = '',
-                texthl = 'debugPC'
-            })
+        vim.fn.sign_define('DapBreakpoint', {
+            linehl = 'debugBreakpoint',
+            numhl = 'debugBreakpoint',
+            text = '',
+            texthl = 'debugBreakpoint'
+        })
+        vim.fn.sign_define('DapStopped', {
+            linehl = 'debugPC',
+            numhl = 'debugPC',
+            text = '',
+            texthl = 'debugPC'
+        })
 
         vim.keymap.set('n', '<down>', function() dap.step_into() end, opts)
         vim.keymap.set('n', '<leader>b', function() dap.continue() end, opts)
