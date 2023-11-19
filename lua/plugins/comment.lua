@@ -4,14 +4,12 @@ return {
         local opts = { noremap = true, silent = true }
 
         require('nvim_comment').setup({
-            comment_empty = true,
-            comment_empty_trim_whitespace = true,
-            create_mappings = false,
-            hook = nil,
-            marker_padding = true
+            create_mappings = false
         })
 
+        vim.g.skip_ts_context_commentstring_module = true
         vim.keymap.set('n', '<a-/>', ':CommentToggle<cr>', opts)
         vim.keymap.set('v', '<a-/>', ":'<,'>CommentToggle<cr>", opts)
-    end
+    end,
+    dependencies = { 'JoosepAlviste/nvim-ts-context-commentstring' }
 }
