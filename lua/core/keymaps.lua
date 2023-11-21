@@ -9,7 +9,7 @@ vim.keymap.set('n', '<a-S>', ':wa<cr>', opts)
 vim.keymap.set('n', '<a-s>', ':w<cr>', opts)
 
 vim.keymap.set('n', '<a-C>', ':q<cr>', opts)
-vim.keymap.set('n', '<a-c>', ':bp|sp|bn|bw<cr>', opts)
+vim.keymap.set('n', '<a-c>', ':bp|sp|bn|bw!<cr>', opts)
 vim.keymap.set('n', '<s-tab>', ':bp<cr>', opts)
 vim.keymap.set('n', '<tab>', ':bn<cr>', opts)
 
