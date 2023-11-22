@@ -16,6 +16,7 @@ return {
             end,
             renderer = {
                 icons = {
+                    git_placement = "after",
                     glyphs = {
                         git = {
                             deleted = '',
@@ -31,7 +32,7 @@ return {
             }
         })
 
-        vim.keymap.set('n', '<leader>e', ':NvimTreeFocus<cr>', opts)
+        vim.keymap.set('n', '<leader>e', ':NvimTreeFindFile<cr>', opts)
         vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<cr>', opts)
     end
 }
