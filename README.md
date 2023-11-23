@@ -35,7 +35,7 @@
 | Lspsaga          | [repo](https://github.com/nvimdev/lspsaga.nvim)                | [lspsaga](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsaga.lua)       |
 | Lspzero          | [repo](https://github.com/VonHeikemen/lsp-zero.nvim)           | [lspzero](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspzero.lua)       |
 | Lualine          | [repo](https://github.com/nvim-lualine/lualine.nvim)           | [lualine](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lualine.lua)       |
-| Nvimtree         | [repo](https://github.com/nvim-tree/nvim-tree.lua)             | [nvimtree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/nvimtree.lua)     |
+| Oil              | [repo](https://github.com/stevearc/oil.nvim)                   | [oil](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/oil.lua)               |
 | Telescope        | [repo](https://github.com/nvim-telescope/telescope.nvim)       | [telescope](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/telescope.lua)   |
 | Treesitter       | [repo](https://github.com/nvim-treesitter/nvim-treesitter)     | [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua) |
 | Undotree         | [repo](https://github.com/mbbill/undotree)                     | [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)     |

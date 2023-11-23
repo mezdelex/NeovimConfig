@@ -38,7 +38,6 @@ return {
             options = {
                 component_separators = {},
                 disabled_filetypes = {
-                    'NvimTree',
                     'dap-repl',
                     'dapui_breakpoints',
                     'dapui_console',

@@ -17,8 +17,9 @@ return {
         }
         dap.configurations.cs = {
             {
-                name = 'launch - netcoredbg',
-                program = function() return vim.fn.input('Path to dll: ', vim.fn.getcwd() .. '/bin/Debug/', 'file') end,
+                program = function()
+                    return vim.fn.input('Path to dll: ', vim.fn.getcwd() .. '/bin/Debug/', 'file')
+                end,
                 request = 'launch',
                 type = 'coreclr'
             }
