@@ -15,13 +15,47 @@ return {
             command = vim.fn.stdpath('data') .. '/mason/packages/netcoredbg/netcoredbg/netcoredbg.exe',
             type = 'executable'
         }
+        dap.adapters.codelldb = {
+            executable = {
+                command = vim.fn.stdpath('data') .. '/mason/packages/codelldb/extension/adapter/codelldb.exe',
+                args = { '--port', '${port}' }
+            },
+            port = '${port}',
+            type = 'server'
+        }
         dap.configurations.cs = {
             {
                 program = function()
-                    return vim.fn.input('Path to dll: ', vim.fn.getcwd() .. '/bin/Debug/', 'file')
+                    return vim.fn.input('Path to dll: ', vim.fn.getcwd() .. '/', 'file')
                 end,
                 request = 'launch',
                 type = 'coreclr'
+            }
+        }
+        dap.configurations.rust = {
+            {
+                cargo = { args = { 'build' } },
+                name = 'Build',
+                program = function()
+                    return vim.fn.input('Path to exe: ', vim.fn.getcwd() .. '/', 'file')
+                end,
+                request = 'launch',
+                setupCommands = {
+                    { text = '-interpreter-exec console "settings set target.x86-disassembly-flavor none"' }
+                },
+                type = 'codelldb'
+            },
+            {
+                cargo = { args = { 'test', '--no-run' } },
+                name = 'Test',
+                program = function()
+                    return vim.fn.input('Path to exe: ', vim.fn.getcwd() .. '/', 'file')
+                end,
+                request = 'launch',
+                setupCommands = {
+                    { text = '-interpreter-exec console "settings set target.x86-disassembly-flavor none"' }
+                },
+                type = 'codelldb'
             }
         }
         dap.listeners.after.event_initialized['dapui_config'] = function() dapui.open() end
