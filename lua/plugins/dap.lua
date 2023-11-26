@@ -77,7 +77,9 @@ return {
         })
 
         vim.keymap.set('n', '<down>', function() dap.step_into() end, opts)
+        vim.keymap.set('n', '<leader>B', function() dap.terminate() end, opts)
         vim.keymap.set('n', '<leader>b', function() dap.continue() end, opts)
+        vim.keymap.set('n', '<left>', function() dap.step_back() end, opts)
         vim.keymap.set('n', '<right>', function() dap.step_over() end, opts)
         vim.keymap.set('n', '<up>', function() dap.step_out() end, opts)
         vim.keymap.set('n', 'gb', function() dap.toggle_breakpoint() end, opts)
