@@ -31,11 +31,6 @@ vim.keymap.set({ 'n', 'v' }, '<c-j>', '5j', opts)
 vim.keymap.set({ 'n', 'v' }, '<c-k>', '5k', opts)
 vim.keymap.set({ 'n', 'v' }, '<c-l>', '5e', opts)
 
-vim.keymap.set('i', '<c-h>', '<left>', opts)
-vim.keymap.set('i', '<c-j>', '<down>', opts)
-vim.keymap.set('i', '<c-k>', '<up>', opts)
-vim.keymap.set('i', '<c-l>', '<right>', opts)
-
 vim.keymap.set('n', '[j', '<c-o>', opts)
 vim.keymap.set('n', ']j', '<c-i>', opts)
 
@@ -47,5 +42,6 @@ vim.keymap.set('n', 'U', '<c-r>')
 vim.keymap.set('v', '<leader>p', '"_dP', opts)
 vim.keymap.set('v', '<leader>y', '"+y', opts)
 
+vim.keymap.set('n', '<a-v>', '<c-v>', opts)
 vim.keymap.set('v', 'J', ":m '>+1<cr>gv=gv", opts)
 vim.keymap.set('v', 'K', ":m '<-2<cr>gv=gv", opts)
