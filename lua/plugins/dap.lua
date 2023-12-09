@@ -3,7 +3,7 @@ return {
     config = function()
         local dap = require('dap')
         local dapui = require('dapui')
-        local opts = { noremap = true, silent = true }
+        local opts = { silent = true }
 
         require('neodev').setup({
             library = { plugins = { 'nvim-dap-ui' }, types = true }

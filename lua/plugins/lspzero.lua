@@ -7,7 +7,7 @@ return {
         local lspzero = require('lsp-zero')
 
         lspzero.on_attach(function(_, bufnr)
-            local opts = { buffer = bufnr, noremap = true, silent = true }
+            local opts = { buffer = bufnr, silent = true }
 
             vim.keymap.set('n', '<a-f>', vim.lsp.buf.format, opts)
             vim.keymap.set('n', '<leader>i', vim.lsp.buf.hover, opts)

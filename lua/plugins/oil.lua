@@ -1,7 +1,7 @@
 return {
     'stevearc/oil.nvim',
     config = function()
-        local opts = { noremap = true, silent = true }
+        local opts = { silent = true }
 
         require('oil').setup({
             cleanup_delay_ms = 250,

@@ -2,7 +2,7 @@ return {
     'nvim-telescope/telescope.nvim',
     config = function()
         local builtin = require('telescope.builtin')
-        local opts = { noremap = true, silent = true }
+        local opts = { silent = true }
 
         require('telescope').setup({
             defaults = { path_display = { 'truncate' } }

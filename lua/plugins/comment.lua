@@ -1,7 +1,7 @@
 return {
     'terrortylor/nvim-comment',
     config = function()
-        local opts = { noremap = true, silent = true }
+        local opts = { silent = true }
 
         require('nvim_comment').setup({
             create_mappings = false
