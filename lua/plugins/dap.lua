@@ -10,6 +10,7 @@ return {
         })
 
         require('dap-go').setup()
+        require('dap-python').setup(vim.fn.stdpath('data') .. '/mason/packages/debugpy/venv/Scripts/python.exe')
         dap.adapters.coreclr = {
             args = { '--interpreter=vscode' },
             command = vim.fn.stdpath('data') .. '/mason/packages/netcoredbg/netcoredbg/netcoredbg.exe',
@@ -87,6 +88,7 @@ return {
     dependencies = {
         'folke/neodev.nvim',
         'leoluz/nvim-dap-go',
-        'mfussenegger/nvim-dap'
+        'mfussenegger/nvim-dap',
+        'mfussenegger/nvim-dap-python'
     }
 }
