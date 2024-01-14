@@ -3,8 +3,15 @@ return {
     config = function()
         local opts = { silent = true }
 
+        require('ts_context_commentstring').setup({
+            enable_autocmd = false
+        })
+
         require('nvim_comment').setup({
-            create_mappings = false
+            create_mappings = false,
+            hook = function()
+                require('ts_context_commentstring').update_commentstring()
+            end
         })
 
         vim.g.skip_ts_context_commentstring_module = true
