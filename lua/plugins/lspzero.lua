@@ -19,6 +19,7 @@ return {
         end)
         lspzero.set_sign_icons({ error = '', hint = '', info = '', warn = '' })
 
+        require('lsp_signature').setup({ hint_enable = false })
         require('mason').setup()
         require('mason-lspconfig').setup({
             handlers = {
@@ -55,6 +56,7 @@ return {
         'hrsh7th/nvim-cmp',
         'neovim/nvim-lspconfig',
         'rafamadriz/friendly-snippets',
+        'ray-x/lsp_signature.nvim',
         'saadparwaiz1/cmp_luasnip',
         'williamboman/mason-lspconfig.nvim',
         'williamboman/mason.nvim'
