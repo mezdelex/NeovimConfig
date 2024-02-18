@@ -14,7 +14,7 @@ return {
         vim.keymap.set('n', '<leader>j', builtin.jumplist, opts)
         vim.keymap.set('n', '<leader>q', builtin.quickfix, opts)
         vim.keymap.set('n', '<leader>s', builtin.lsp_document_symbols, opts)
-        vim.keymap.set('n', 'gs', builtin.grep_string, opts)
+        vim.keymap.set({ 'n', 'v' }, 'gs', builtin.grep_string, opts)
     end,
     dependencies = { 'nvim-lua/plenary.nvim' }
 }
