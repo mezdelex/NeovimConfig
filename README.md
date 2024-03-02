@@ -8,6 +8,7 @@
 ## Setup
 
 - Install `neovim` via `scoop install neovim`
+- Install `fd` via `scoop install fd`
 - Install `ripgrep` via `scoop install ripgrep`
 - Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
 
@@ -44,5 +45,3 @@
 
 ## Images
 ![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/0b70e043-0a3a-4924-a842-beb1136b8f2a)
-
-![image](https://github.com/mezdelex/NeovimConfig/assets/59997405/1f7b742b-ebb2-427b-9362-83ed488fb530)
