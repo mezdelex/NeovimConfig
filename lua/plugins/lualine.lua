@@ -18,11 +18,6 @@ return {
             },
             diff = {
                 'diff',
-                diff_color = {
-                    added = { fg = colors.bright_green },
-                    modified = { fg = colors.bright_aqua },
-                    removed = { fg = colors.bright_red }
-                },
                 source = diff_source,
                 symbols = { added = ' ', modified = ' ', removed = ' ' }
             },
