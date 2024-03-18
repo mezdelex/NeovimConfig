@@ -89,6 +89,7 @@ return {
         'folke/neodev.nvim',
         'leoluz/nvim-dap-go',
         'mfussenegger/nvim-dap',
-        'mfussenegger/nvim-dap-python'
+        'mfussenegger/nvim-dap-python',
+        'nvim-neotest/nvim-nio'
     }
 }
