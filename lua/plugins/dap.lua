@@ -73,16 +73,16 @@ return {
         vim.fn.sign_define('DapStopped', {
             linehl = 'debugPC',
             numhl = 'debugPC',
-            text = '',
+            text = '',
             texthl = 'debugPC'
         })
 
-        vim.keymap.set('n', '<down>', function() dap.step_into() end, opts)
+        vim.keymap.set('n', '<c-h>', function() dap.step_back() end, opts)
+        vim.keymap.set('n', '<c-j>', function() dap.step_into() end, opts)
+        vim.keymap.set('n', '<c-k>', function() dap.step_out() end, opts)
+        vim.keymap.set('n', '<c-l>', function() dap.step_over() end, opts)
         vim.keymap.set('n', '<leader>B', function() dap.terminate() end, opts)
         vim.keymap.set('n', '<leader>b', function() dap.continue() end, opts)
-        vim.keymap.set('n', '<left>', function() dap.step_back() end, opts)
-        vim.keymap.set('n', '<right>', function() dap.step_over() end, opts)
-        vim.keymap.set('n', '<up>', function() dap.step_out() end, opts)
         vim.keymap.set('n', 'gb', function() dap.toggle_breakpoint() end, opts)
     end,
     dependencies = {
