@@ -31,6 +31,21 @@ return {
                     lspconfig.omnisharp.setup({
                         handlers = { ['textDocument/definition'] = require('omnisharp_extended').handler }
                     })
+                end,
+                tsserver = function()
+                    lspconfig.tsserver.setup({
+                        filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue' },
+                        init_options = {
+                            plugins = {
+                                {
+                                    languages = { 'vue' },
+                                    location = require('mason-registry').get_package('vue-language-server')
+                                        :get_install_path() .. '/node_modules/@vue/language-server',
+                                    name = '@vue/typescript-plugin'
+                                }
+                            }
+                        }
+                    })
                 end
             }
         })
