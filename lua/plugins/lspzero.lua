@@ -2,6 +2,7 @@ return {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v3.x',
     config = function()
+        local cmp = require('cmp')
         local lspconfig = require('lspconfig')
         local lspzero = require('lsp-zero')
 
@@ -53,6 +54,14 @@ return {
             }
         })
 
+        cmp.setup({
+            mapping = {
+                ['<cr>'] = cmp.mapping.confirm({
+                    select = true
+                })
+            }
+        })
+
         vim.diagnostic.config({
             severity_sort = true,
             underline = false,
@@ -61,7 +70,16 @@ return {
     end,
     dependencies = {
         'Hoffs/omnisharp-extended-lsp.nvim',
+        'L3MON4D3/LuaSnip',
+        'hrsh7th/cmp-buffer',
+        'hrsh7th/cmp-cmdline',
+        'hrsh7th/cmp-nvim-lsp',
+        'hrsh7th/cmp-nvim-lua',
+        'hrsh7th/cmp-path',
+        'hrsh7th/nvim-cmp',
         'neovim/nvim-lspconfig',
+        'rafamadriz/friendly-snippets',
+        'saadparwaiz1/cmp_luasnip',
         'williamboman/mason-lspconfig.nvim',
         'williamboman/mason.nvim'
     }
