@@ -38,6 +38,7 @@
 | Lspsignature |      [repo](https://github.com/ray-x/lsp_signature.nvim)       | [lspsignature](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsignature.lua) |
 |   Lspzero    |      [repo](https://github.com/VonHeikemen/lsp-zero.nvim)      |      [lspzero](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspzero.lua)      |
 |   Lualine    |      [repo](https://github.com/nvim-lualine/lualine.nvim)      |      [lualine](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lualine.lua)      |
+|   Markview   |        [repo](https://github.com/OXY2DEV/markview.nvim)        |     [markview](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/markview.lua)     |
 |    Nonels    |       [repo](https://github.com/nvimtools/none-ls.nvim)        |       [nonels](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/nonels.lua)       |
 |     Oil      |          [repo](https://github.com/stevearc/oil.nvim)          |          [oil](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/oil.lua)          |
 |  Registers   |      [repo](https://github.com/tversteeg/registers.nvim)       |    [registers](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/registers.lua)    |
