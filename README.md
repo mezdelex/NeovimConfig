@@ -34,9 +34,9 @@
 |   Devicons   |     [repo](https://github.com/nvim-tree/nvim-web-devicons)     |     [devicons](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/devicons.lua)     |
 |   Gitsigns   |       [repo](https://github.com/lewis6991/gitsigns.nvim)       |     [gitsigns](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/gitsigns.lua)     |
 |   Gruvbox    |      [repo](https://github.com/ellisonleao/gruvbox.nvim)       |      [gruvbox](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/gruvbox.lua)      |
+|  Lspconfig   |        [repo](https://github.com/neovim/nvim-lspconfig)        |    [lspconfig](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspconfig.lua)    |
 |   Lspsaga    |        [repo](https://github.com/nvimdev/lspsaga.nvim)         |      [lspsaga](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsaga.lua)      |
 | Lspsignature |      [repo](https://github.com/ray-x/lsp_signature.nvim)       | [lspsignature](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsignature.lua) |
-|   Lspzero    |      [repo](https://github.com/VonHeikemen/lsp-zero.nvim)      |      [lspzero](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspzero.lua)      |
 |   Lualine    |      [repo](https://github.com/nvim-lualine/lualine.nvim)      |      [lualine](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lualine.lua)      |
 |   Markview   |        [repo](https://github.com/OXY2DEV/markview.nvim)        |     [markview](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/markview.lua)     |
 |    Nonels    |       [repo](https://github.com/nvimtools/none-ls.nvim)        |       [nonels](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/nonels.lua)       |

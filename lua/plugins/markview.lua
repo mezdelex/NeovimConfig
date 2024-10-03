@@ -1,9 +1,7 @@
 return {
     "OXY2DEV/markview.nvim",
     config = function()
-        local opts = {
-            silent = true,
-        }
+        local opts = { silent = true }
 
         require("markview").setup()
 
