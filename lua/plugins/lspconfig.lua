@@ -15,7 +15,6 @@ return {
 			lspconfig.util.default_config.capabilities,
 			require("cmp_nvim_lsp").default_capabilities()
 		)
-
 		vim.api.nvim_create_autocmd("LspAttach", {
 			callback = function(event)
 				local opts = {
@@ -32,7 +31,6 @@ return {
 				vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, opts)
 			end,
 		})
-
 		require("mason").setup()
 		require("mason-lspconfig").setup({
 			handlers = {
@@ -85,6 +83,8 @@ return {
 		require("luasnip.loaders.from_vscode").lazy_load()
 		cmp.setup({
 			mapping = {
+				["<c-n>"] = cmp.mapping.select_next_item(),
+				["<c-p>"] = cmp.mapping.select_prev_item(),
 				["<cr>"] = cmp.mapping.confirm({
 					select = true,
 				}),
