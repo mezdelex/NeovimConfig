@@ -1,10 +1,8 @@
 return {
-    "OXY2DEV/markview.nvim",
-    config = function()
-        local opts = { silent = true }
+	"OXY2DEV/markview.nvim",
+	config = function()
+		require("markview").setup()
 
-        require("markview").setup()
-
-        vim.keymap.set("n", "<leader>m", ":Markview<cr>", opts)
-    end,
+		vim.keymap.set("n", "<leader>m", ":Markview<cr>")
+	end,
 }
