@@ -47,9 +47,7 @@ return {
 				end,
 				omnisharp = function()
 					lspconfig.omnisharp.setup({
-						handlers = {
-							["textDocument/definition"] = require("omnisharp_extended").handler,
-						},
+						handlers = { ["textDocument/definition"] = require("omnisharp_extended").handler },
 					})
 				end,
 				ts_ls = function()
@@ -93,9 +91,7 @@ return {
 				["<c-n>"] = cmp.mapping.select_next_item(),
 				["<c-p>"] = cmp.mapping.select_prev_item(),
 				["<c-u>"] = cmp.mapping.scroll_docs(-5),
-				["<cr>"] = cmp.mapping.confirm({
-					select = true,
-				}),
+				["<cr>"] = cmp.mapping.confirm({ select = true }),
 			},
 			snippet = {
 				expand = function(args)
@@ -138,9 +134,7 @@ return {
 				texthl = hl,
 			})
 		end
-		vim.diagnostic.config({
-			update_in_insert = true,
-		})
+		vim.diagnostic.config({ update_in_insert = true })
 	end,
 	dependencies = {
 		"Hoffs/omnisharp-extended-lsp.nvim",

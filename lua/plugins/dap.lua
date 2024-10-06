@@ -20,10 +20,7 @@ return {
 		}
 		dap.adapters.codelldb = {
 			executable = {
-				args = {
-					"--port",
-					"${port}",
-				},
+				args = { "--port", "${port}" },
 				command = vim.fn.stdpath("data") .. "/mason/packages/codelldb/extension/adapter/codelldb.exe",
 			},
 			port = "${port}",
@@ -55,10 +52,7 @@ return {
 			},
 			{
 				cargo = {
-					args = {
-						"test",
-						"--no-run",
-					},
+					args = { "test", "--no-run" },
 				},
 				name = "Test",
 				program = function()

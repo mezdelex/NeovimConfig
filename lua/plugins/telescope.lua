@@ -10,10 +10,7 @@ return {
 					width = vim.o.columns,
 				},
 				layout_strategy = "vertical",
-				path_display = {
-					"filename_first",
-					"truncate",
-				},
+				path_display = { "filename_first", "truncate" },
 			},
 		})
 

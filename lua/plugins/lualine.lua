@@ -49,13 +49,13 @@ return {
             default = {
                 a = {
                     bg = colors.neutral_yellow,
-                    fg = colors.dark0,
                     bold,
+                    fg = colors.dark0,
                 },
                 b = {
                     bg = colors.dark2,
-                    fg = colors.bright_yellow,
                     bold,
+                    fg = colors.bright_yellow,
                 },
                 c = {
                     bg = colors.dark1,
@@ -65,8 +65,8 @@ return {
             inactive = {
                 a = {
                     bg = colors.gray,
-                    fg = colors.dark0,
                     bold,
+                    fg = colors.dark0,
                 },
                 b = {},
                 c = {
@@ -94,6 +94,8 @@ return {
                     "dapui_scopes",
                     "dapui_stacks",
                     "dapui_watches",
+                    "diff",
+                    "undotree",
                     statusline = {},
                     winbar = {},
                 },
