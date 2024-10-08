@@ -1,8 +1,6 @@
 return {
     "nvim-lualine/lualine.nvim",
     config = function()
-        local bold = { gui = "bold" }
-        local colors = require("gruvbox").palette
         local diff_source = function()
             local gitsigns = vim.b.gitsigns_status_dict
 
@@ -45,36 +43,6 @@ return {
                 },
             },
         }
-        local templates = {
-            default = {
-                a = {
-                    bg = colors.neutral_yellow,
-                    bold,
-                    fg = colors.dark0,
-                },
-                b = {
-                    bg = colors.dark2,
-                    bold,
-                    fg = colors.bright_yellow,
-                },
-                c = {
-                    bg = colors.dark1,
-                    bold,
-                },
-            },
-            inactive = {
-                a = {
-                    bg = colors.gray,
-                    bold,
-                    fg = colors.dark0,
-                },
-                b = {},
-                c = {
-                    bg = colors.dark1,
-                    bold,
-                },
-            },
-        }
 
         require("lualine").setup({
             inactive_sections = {
@@ -100,14 +68,7 @@ return {
                     winbar = {},
                 },
                 section_separators = {},
-                theme = {
-                    command = templates.default,
-                    inactive = templates.inactive,
-                    insert = templates.default,
-                    normal = templates.default,
-                    replace = templates.default,
-                    visual = templates.default,
-                },
+                theme = "everforest",
             },
             sections = {
                 lualine_a = { "mode" },

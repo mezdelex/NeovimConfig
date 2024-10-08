@@ -1,4 +1,4 @@
-# Neovim Config
+# Neovim
 
 - OS: Windows 11
 - Terminal: Windows Terminal
@@ -7,9 +7,7 @@
 
 ## Setup
 
-- Install `neovim` via `scoop install neovim`
-- Install `fd` via `scoop install fd`
-- Install `ripgrep` via `scoop install ripgrep`
+- Install `neovim`, `fd` & `ripgrep` via `scoop install neovim fd ripgrep` @ PowerShell
 - Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
 
 ## Core
@@ -32,8 +30,8 @@
 |  Colorizer   |     [repo](https://github.com/norcalli/nvim-colorizer.lua)     |    [colorizer](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/colorizer.lua)    |
 |     Dap      |        [repo](https://github.com/rcarriga/nvim-dap-ui)         |          [dap](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/dap.lua)          |
 |   Devicons   |     [repo](https://github.com/nvim-tree/nvim-web-devicons)     |     [devicons](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/devicons.lua)     |
+|  Everforest  |         [repo](https://github.com/sainnhe/everforest)          |   [everforest](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/everforest.lua)   |
 |   Gitsigns   |       [repo](https://github.com/lewis6991/gitsigns.nvim)       |     [gitsigns](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/gitsigns.lua)     |
-|   Gruvbox    |      [repo](https://github.com/ellisonleao/gruvbox.nvim)       |      [gruvbox](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/gruvbox.lua)      |
 |  Lspconfig   |        [repo](https://github.com/neovim/nvim-lspconfig)        |    [lspconfig](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspconfig.lua)    |
 |   Lspsaga    |        [repo](https://github.com/nvimdev/lspsaga.nvim)         |      [lspsaga](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsaga.lua)      |
 | Lspsignature |      [repo](https://github.com/ray-x/lsp_signature.nvim)       | [lspsignature](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsignature.lua) |
@@ -45,12 +43,3 @@
 |  Telescope   |    [repo](https://github.com/nvim-telescope/telescope.nvim)    |    [telescope](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/telescope.lua)    |
 |  Treesitter  |   [repo](https://github.com/nvim-treesitter/nvim-treesitter)   |   [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua)   |
 |   Undotree   |           [repo](https://github.com/mbbill/undotree)           |     [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)     |
-
-## Images
-
-![image](https://github.com/user-attachments/assets/f8806019-4972-4f71-b4e7-92bdeaeaf72e)
-![image](https://github.com/user-attachments/assets/f0aed3f7-99cb-4b3e-9318-ed2c39479895)
-![image](https://github.com/user-attachments/assets/c480bead-84ec-423d-996d-863544f4874c)
-![image](https://github.com/user-attachments/assets/46557575-2773-4cad-8ef0-ddbbcb31480f)
-![image](https://github.com/user-attachments/assets/05ff0aa5-310e-46e8-a384-43bc3665c784)
-
