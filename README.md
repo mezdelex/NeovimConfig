@@ -1,7 +1,7 @@
 # Neovim
 
 - OS: Windows 11
-- Terminal: Windows Terminal
+- Terminal: Wezterm
 - Shell: PowerShell Core
 - Editor: Neovim
 
