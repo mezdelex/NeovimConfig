@@ -1,5 +1,4 @@
 vim.opt.cursorline = true
-vim.opt.guicursor = "a:blinkon1"
 vim.opt.scrolloff = math.floor(0.5 * vim.o.lines)
 
 vim.opt.number = true
