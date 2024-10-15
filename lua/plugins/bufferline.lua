@@ -7,6 +7,7 @@ return {
             options = {
                 indicator = { style = "none" },
                 separator_style = {},
+                show_buffer_close_icons = false,
                 style_preset = bufferline.style_preset.no_italic,
             },
         })
