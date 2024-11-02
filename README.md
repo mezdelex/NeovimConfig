@@ -12,11 +12,12 @@
 
 ## Core
 
-|  Name   |                   Source                   |                                        Uri                                         |
-| :-----: | :----------------------------------------: | :--------------------------------------------------------------------------------: |
-| Keymaps |                    n/a                     | [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/keymaps.lua) |
-|  Lazy   | [repo](https://github.com/folke/lazy.nvim) |    [lazy](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/lazy.lua)    |
-| Options |                    n/a                     | [options](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/options.lua) |
+|   Name   |                   Source                   |                                         Uri                                          |
+| :------: | :----------------------------------------: | :----------------------------------------------------------------------------------: |
+| Autocmds |                    n/a                     | [autocmds](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/autocmds.lua) |
+| Keymaps  |                    n/a                     |  [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/keymaps.lua)  |
+|   Lazy   | [repo](https://github.com/folke/lazy.nvim) |     [lazy](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/lazy.lua)     |
+| Options  |                    n/a                     |  [options](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/options.lua)  |
 
 ## Plugins
 
