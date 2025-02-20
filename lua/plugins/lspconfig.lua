@@ -15,20 +15,9 @@ return {
 			lspconfig.util.default_config.capabilities,
 			require("cmp_nvim_lsp").default_capabilities()
 		)
-		vim.api.nvim_create_autocmd("LspAttach", {
-			callback = function(event)
-				local opts = { buffer = event.buf }
-
-				vim.keymap.set("n", "<a-f>", vim.lsp.buf.format, opts)
-				vim.keymap.set("n", "<leader>i", vim.lsp.buf.hover, opts)
-				vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
-				vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-				vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-				vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-				vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, opts)
-			end,
+		require("mason").setup({
+			registries = { "github:crashdummyy/mason-registry", "github:mason-org/mason-registry" },
 		})
-		require("mason").setup()
 		require("mason-lspconfig").setup({
 			handlers = {
 				function(server_name)
@@ -43,11 +32,6 @@ return {
 								},
 							},
 						},
-					})
-				end,
-				omnisharp = function()
-					lspconfig.omnisharp.setup({
-						handlers = { ["textDocument/definition"] = require("omnisharp_extended").handler },
 					})
 				end,
 				ts_ls = function()
@@ -74,6 +58,7 @@ return {
 				end,
 			},
 		})
+		require("roslyn").setup()
 
 		require("luasnip.loaders.from_vscode").lazy_load()
 		cmp.setup({
@@ -137,7 +122,6 @@ return {
 		vim.diagnostic.config({ update_in_insert = true })
 	end,
 	dependencies = {
-		"Hoffs/omnisharp-extended-lsp.nvim",
 		"L3MON4D3/LuaSnip",
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-cmdline",
@@ -148,6 +132,7 @@ return {
 		"onsails/lspkind.nvim",
 		"rafamadriz/friendly-snippets",
 		"saadparwaiz1/cmp_luasnip",
+		"seblyng/roslyn.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"williamboman/mason.nvim",
 	},
