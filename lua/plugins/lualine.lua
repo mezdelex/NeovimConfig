@@ -36,9 +36,9 @@ return {
                 "filename",
                 newfile_status = true,
                 symbols = {
-                    modified = "",
-                    newfile = "",
-                    readonly = "",
+                    modified = "[]",
+                    newfile = "[]",
+                    readonly = "[]",
                     unnamed = "[No Name]",
                 },
             },
