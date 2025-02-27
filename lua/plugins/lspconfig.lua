@@ -58,9 +58,7 @@ return {
 		require("roslyn").setup()
 
 		blink.setup({
-			fuzzy = {
-				prebuilt_binaries = { download = false },
-			},
+			fuzzy = { implementation = "prefer_rust" },
 			keymap = { preset = "enter" },
 			signature = { enabled = true },
 		})
