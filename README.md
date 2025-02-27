@@ -7,7 +7,8 @@
 
 ## Setup
 
-- Install `neovim`, `fd` & `ripgrep` via `scoop install neovim fd ripgrep` @ PowerShell
+- Install `neovim`, `fd`, `ripgrep` & `rustup` via `scoop install neovim fd ripgrep rustup` @ PowerShell
+- Install `Desktop development with C++` package with `Visual Studio Build Tools` installer
 - Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
 
 ## Core

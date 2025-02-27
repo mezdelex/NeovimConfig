@@ -58,7 +58,6 @@ return {
 		require("roslyn").setup()
 
 		blink.setup({
-			fuzzy = { implementation = "prefer_rust" },
 			keymap = { preset = "enter" },
 			signature = { enabled = true },
 		})
@@ -78,6 +77,6 @@ return {
 		"seblyng/roslyn.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"williamboman/mason.nvim",
-		{ "saghen/blink.cmp", version = "*" },
+		{ "saghen/blink.cmp", build = "cargo build --release" },
 	},
 }

@@ -23,4 +23,4 @@ vim.opt.undodir = os.getenv("HOMEPATH") .. "/.nvim/undodir"
 vim.opt.undofile = true
 
 vim.opt.showmode = false
-vim.opt.updatetime = 250
+vim.opt.termguicolors = true
