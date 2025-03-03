@@ -3,6 +3,7 @@ return {
 	config = function()
 		local dap = require("dap")
 		local dapui = require("dapui")
+		local options = { silent = true }
 
 		require("neodev").setup({
 			library = {
@@ -83,13 +84,13 @@ return {
 			texthl = "debugPC",
 		})
 
-		vim.keymap.set("n", "<c-h>", dap.step_back)
-		vim.keymap.set("n", "<c-j>", dap.step_into)
-		vim.keymap.set("n", "<c-k>", dap.step_out)
-		vim.keymap.set("n", "<c-l>", dap.step_over)
-		vim.keymap.set("n", "<leader>B", dap.terminate)
-		vim.keymap.set("n", "<leader>b", dap.continue)
-		vim.keymap.set("n", "gb", dap.toggle_breakpoint)
+		vim.keymap.set("n", "<c-h>", dap.step_back, options)
+		vim.keymap.set("n", "<c-j>", dap.step_into, options)
+		vim.keymap.set("n", "<c-k>", dap.step_out, options)
+		vim.keymap.set("n", "<c-l>", dap.step_over, options)
+		vim.keymap.set("n", "<leader>B", dap.terminate, options)
+		vim.keymap.set("n", "<leader>b", dap.continue, options)
+		vim.keymap.set("n", "gb", dap.toggle_breakpoint, options)
 	end,
 	dependencies = {
 		"folke/neodev.nvim",
