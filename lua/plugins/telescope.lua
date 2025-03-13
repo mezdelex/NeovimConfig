@@ -11,10 +11,13 @@ return {
                     width = vim.o.columns,
                 },
                 layout_strategy = "vertical",
-                path_display = { "filename_first", "truncate" },
+                path_display = { "truncate" },
             },
             extensions = {
-                frecency = { show_filter_column = false },
+                frecency = {
+                    matcher = "fuzzy",
+                    show_filter_column = false,
+                },
             },
         })
 
