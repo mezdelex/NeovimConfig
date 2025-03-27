@@ -3,12 +3,6 @@ return {
 	config = function()
 		local blink = require("blink.cmp")
 		local lspconfig = require("lspconfig")
-		local signs = {
-			Error = "",
-			Hint = "",
-			Info = "",
-			Warn = "",
-		}
 
 		lspconfig.util.default_config.capabilities =
 			vim.tbl_deep_extend("force", lspconfig.util.default_config.capabilities, blink.get_lsp_capabilities())
@@ -62,15 +56,24 @@ return {
 			signature = { enabled = true },
 		})
 
-		for type, icon in pairs(signs) do
-			local hl = "DiagnosticSign" .. type
-			vim.fn.sign_define(hl, {
-				numhl = hl,
-				text = icon,
-				texthl = hl,
-			})
-		end
-		vim.diagnostic.config({ update_in_insert = true })
+		vim.diagnostic.config({
+			signs = {
+				numhl = {
+					[vim.diagnostic.severity.ERROR] = "DiagnosticSignError",
+					[vim.diagnostic.severity.HINT] = "DiagnosticSignHint",
+					[vim.diagnostic.severity.INFO] = "DiagnosticSignInfo",
+					[vim.diagnostic.severity.WARN] = "DiagnosticSignWarn",
+				},
+				text = {
+					[vim.diagnostic.severity.ERROR] = "",
+					[vim.diagnostic.severity.HINT] = "",
+					[vim.diagnostic.severity.INFO] = "",
+					[vim.diagnostic.severity.WARN] = "",
+				},
+			},
+			update_in_insert = true,
+			virtual_text = true,
+		})
 	end,
 	dependencies = {
 		"rafamadriz/friendly-snippets",
