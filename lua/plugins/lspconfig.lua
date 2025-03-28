@@ -52,6 +52,9 @@ return {
 		require("roslyn").setup()
 
 		blink.setup({
+			completion = {
+				documentation = { auto_show = true },
+			},
 			keymap = { preset = "enter" },
 			signature = { enabled = true },
 		})
