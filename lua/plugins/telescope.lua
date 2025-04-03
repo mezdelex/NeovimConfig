@@ -15,6 +15,7 @@ return {
             },
             extensions = {
                 frecency = {
+                    db_safe_mode = false,
                     matcher = "fuzzy",
                     show_filter_column = false,
                 },
