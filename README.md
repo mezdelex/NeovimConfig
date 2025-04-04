@@ -42,7 +42,7 @@
 |   Nonels   |       [repo](https://github.com/nvimtools/none-ls.nvim)        |     [nonels](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/nonels.lua)     |
 |    Oil     |          [repo](https://github.com/stevearc/oil.nvim)          |        [oil](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/oil.lua)        |
 | Registers  |      [repo](https://github.com/tversteeg/registers.nvim)       |  [registers](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/registers.lua)  |
-| Telescope  |    [repo](https://github.com/nvim-telescope/telescope.nvim)    |  [telescope](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/telescope.lua)  |
+|   Snacks   |          [repo](https://github.com/folke/snacks.nvim)          |     [snacks](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/snacks.lua)     |
 | Treesitter |   [repo](https://github.com/nvim-treesitter/nvim-treesitter)   | [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua) |
 |  Undotree  |           [repo](https://github.com/mbbill/undotree)           |   [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)   |
 

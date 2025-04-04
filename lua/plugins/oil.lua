@@ -7,4 +7,5 @@ return {
 
         vim.keymap.set("n", "<leader>o", "<cmd>Oil<cr>")
     end,
+    dependencies = { "nvim-lua/plenary.nvim" },
 }
