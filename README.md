@@ -47,5 +47,4 @@
 |  Undotree  |           [repo](https://github.com/mbbill/undotree)           |   [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)   |
 
 ## Images
-
-![image](https://github.com/user-attachments/assets/5de1c4ea-e591-49b4-b779-3b17cbb24ae6)
+![image](https://github.com/user-attachments/assets/3f59362b-5d91-4c20-a1fd-c880e8530fd2)
