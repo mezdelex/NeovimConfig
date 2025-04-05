@@ -7,7 +7,7 @@
 
 ## Setup
 
-- Install `neovim`, `fd`, `ripgrep` & `rustup` via `scoop install neovim fd ripgrep rustup` @ PowerShell
+- Install `neovim`, `fd`, `imagemagick`, `ripgrep` & `rustup` via `scoop install neovim fd imagemagick ripgrep rustup` @ PowerShell
 - Install `Desktop development with C++` package with `Visual Studio Build Tools` installer
 - Allow `cargo` SSL bypass with `setx CARGO_HTTP_CHECK_REVOKE false` @ PowerShell
 - Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
@@ -47,4 +47,5 @@
 |  Undotree  |           [repo](https://github.com/mbbill/undotree)           |   [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)   |
 
 ## Images
+
 ![image](https://github.com/user-attachments/assets/3f59362b-5d91-4c20-a1fd-c880e8530fd2)
