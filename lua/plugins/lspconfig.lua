@@ -56,7 +56,6 @@ return {
 				documentation = { auto_show = true },
 			},
 			keymap = { preset = "enter" },
-			signature = { enabled = true },
 		})
 
 		vim.diagnostic.config({
