@@ -7,7 +7,9 @@ return {
             auto_install = true,
             highlight = { enable = true },
         })
-        require("ts_context_commentstring").setup({ enable_autocmd = false })
+        require("ts_context_commentstring").setup({
+            enable_autocmd = false,
+        })
         vim.filetype.get_option = function(filetype, option)
             return option == "commentstring" and require("ts_context_commentstring.internal").calculate_commentstring()
                 or vim.bo.commentstring
