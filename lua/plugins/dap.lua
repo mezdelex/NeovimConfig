@@ -82,10 +82,6 @@ return {
             texthl = "debugPC",
         })
 
-        vim.defer_fn(function()
-            vim.opt.shellslash = false
-        end, 5000)
-
         vim.keymap.set("n", "<c-h>", dap.step_back)
         vim.keymap.set("n", "<c-j>", dap.step_into)
         vim.keymap.set("n", "<c-k>", dap.step_out)

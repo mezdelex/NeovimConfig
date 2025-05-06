@@ -7,7 +7,7 @@
 
 ## Setup
 
-- Install `neovim`, `fd`, `imagemagick`, `ripgrep` & `rustup` via `scoop install neovim fd imagemagick ripgrep rustup` @ PowerShell
+- Install `neovim`, `fd`, `ripgrep` & `rustup` via `scoop install neovim fd ripgrep rustup` @ PowerShell
 - Install `Desktop development with C++` package with `Visual Studio Build Tools` installer
 - Allow `cargo` SSL bypass with `setx CARGO_HTTP_CHECK_REVOKE false` @ PowerShell
 - Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
@@ -43,7 +43,7 @@
 |    Nonels    |       [repo](https://github.com/nvimtools/none-ls.nvim)        |       [nonels](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/nonels.lua)       |
 |     Oil      |          [repo](https://github.com/stevearc/oil.nvim)          |          [oil](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/oil.lua)          |
 |  Registers   |      [repo](https://github.com/tversteeg/registers.nvim)       |    [registers](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/registers.lua)    |
-|    Snacks    |          [repo](https://github.com/folke/snacks.nvim)          |       [snacks](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/snacks.lua)       |
+|  Telescope   |    [repo](https://github.com/nvim-telescope/telescope.nvim)    |    [telescope](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/telescope.lua)    |
 |  Treesitter  |   [repo](https://github.com/nvim-treesitter/nvim-treesitter)   |   [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua)   |
 |   Undotree   |           [repo](https://github.com/mbbill/undotree)           |     [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)     |
 
