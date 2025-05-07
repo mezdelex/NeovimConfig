@@ -5,7 +5,7 @@ return {
 			registries = { "github:crashdummyy/mason-registry", "github:mason-org/mason-registry" },
 		})
 		require("mason-lspconfig").setup()
-		-- require("roslyn").setup()
+		require("roslyn").setup()
 
 		require("blink.cmp").setup({
 			completion = {
