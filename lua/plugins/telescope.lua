@@ -21,10 +21,12 @@ return {
 				},
 			},
 		})
+		telescope.load_extension("frecency")
 
 		vim.keymap.set("n", "<leader>F", builtin.live_grep)
 		vim.keymap.set("n", "<leader>d", builtin.diagnostics)
 		vim.keymap.set("n", "<leader>f", function()
+			vim.cmd("FrecencyValidate!")
 			telescope.extensions.frecency.frecency({ workspace = "CWD" })
 		end)
 		vim.keymap.set("n", "<leader>j", builtin.jumplist)
