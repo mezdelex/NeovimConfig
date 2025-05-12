@@ -75,7 +75,7 @@ return {
                 lualine_b = { "branch" },
                 lualine_c = { sections.diff },
                 lualine_x = { sections.diagnostics },
-                lualine_y = { "progress" },
+                lualine_y = { "encoding" },
                 lualine_z = { sections.filename },
             },
         })
