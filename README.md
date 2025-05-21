@@ -23,9 +23,9 @@
 
 ## Lsp
 
-| Name  |                   Source                    |                                    Uri                                    |
-| :---: | :-----------------------------------------: | :-----------------------------------------------------------------------: |
-| Volar | [repo](https://github.com/volarjs/volar.js) | [volar](https://github.com/mezdelex/NeovimConfig/blob/main/lsp/volar.lua) |
+| Name  |                   Source                    |                                    Uri                                     |
+| :---: | :-----------------------------------------: | :------------------------------------------------------------------------: |
+| Volar | [repo](https://github.com/volarjs/volar.js) | [volar](https://github.com/mezdelex/NeovimConfig/blob/main/lsp/vue_ls.lua) |
 
 ## Plugins
 
