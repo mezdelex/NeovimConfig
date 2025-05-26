@@ -10,6 +10,7 @@
 - Install `neovim`, `fd`, `ripgrep` & `rustup` via `scoop install neovim fd ripgrep rustup` @ PowerShell
 - Install `Desktop development with C++` package with `Visual Studio Build Tools` installer
 - Allow `cargo` SSL bypass with `setx CARGO_HTTP_CHECK_REVOKE false` @ PowerShell
+- Allow `curl` SSL bypass with `--ssl-no-revoke` inside `$HOME/_curlrc`
 - Set `codecompanion` adapter API key with `setx <ADAPTER>_API_KEY <API_KEY>` @ PowerShell
 - Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
 
