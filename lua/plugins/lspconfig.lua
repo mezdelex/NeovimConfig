@@ -37,7 +37,6 @@ return {
 		})
 	end,
 	dependencies = {
-		"rafamadriz/friendly-snippets",
 		"seblyng/roslyn.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"williamboman/mason.nvim",
