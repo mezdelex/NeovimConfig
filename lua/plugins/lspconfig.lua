@@ -11,9 +11,6 @@ return {
 			completion = {
 				documentation = { auto_show = true },
 			},
-			fuzzy = {
-				sorts = { "score" },
-			},
 			keymap = { preset = "enter" },
 		})
 
