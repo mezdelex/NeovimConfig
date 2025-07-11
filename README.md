@@ -23,12 +23,6 @@
 |   Lazy   | [repo](https://github.com/folke/lazy.nvim) |     [lazy](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/lazy.lua)     |
 | Options  |                    n/a                     |  [options](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/options.lua)  |
 
-## Lsp
-
-| Name  |                   Source                    |                                    Uri                                     |
-| :---: | :-----------------------------------------: | :------------------------------------------------------------------------: |
-| Volar | [repo](https://github.com/volarjs/volar.js) | [volar](https://github.com/mezdelex/NeovimConfig/blob/main/lsp/vue_ls.lua) |
-
 ## Plugins
 
 |     Name      |                             Source                             |                                                Uri                                                |
