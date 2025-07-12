@@ -30,7 +30,10 @@ return {
 				},
 			},
 			update_in_insert = true,
-			virtual_text = true,
+			virtual_text = {
+				prefix = "•",
+				spacing = 1,
+			},
 		})
 	end,
 	dependencies = {

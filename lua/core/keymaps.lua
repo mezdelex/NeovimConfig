@@ -5,8 +5,8 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<a-Q>", "<cmd>qa!<cr>")
 vim.keymap.set("n", "<a-q>", "<cmd>qa<cr>")
 
-vim.keymap.set("n", "<a-S>", "<cmd>wa<cr>")
-vim.keymap.set("n", "<a-s>", "<cmd>w<cr>")
+vim.keymap.set("n", "<a-S>", "<cmd>wa!<cr>")
+vim.keymap.set("n", "<a-s>", "<cmd>w!<cr>")
 
 vim.keymap.set("n", "<a-C>", "<cmd>q<cr>")
 vim.keymap.set("n", "<a-c>", "<cmd>bp|sp|bn|bw!<cr>")
