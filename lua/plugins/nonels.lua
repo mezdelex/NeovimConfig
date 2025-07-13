@@ -1,15 +1,15 @@
 return {
     "nvimtools/none-ls.nvim",
     config = function()
-        local null_ls = require("null-ls")
+        local null = require("null-ls")
 
-        null_ls.setup({
+        null.setup({
             sources = {
-                null_ls.builtins.formatting.csharpier,
-                null_ls.builtins.formatting.prettier,
-                null_ls.builtins.formatting.shfmt,
-                null_ls.builtins.formatting.sql_formatter,
-                null_ls.builtins.formatting.stylua,
+                null.builtins.formatting.csharpier,
+                null.builtins.formatting.prettier,
+                null.builtins.formatting.shfmt,
+                null.builtins.formatting.sql_formatter,
+                null.builtins.formatting.stylua,
             },
         })
     end,

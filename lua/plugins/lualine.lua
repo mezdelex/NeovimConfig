@@ -1,7 +1,7 @@
 return {
     "nvim-lualine/lualine.nvim",
     config = function()
-        local diff_source = function()
+        local source = function()
             local gitsigns = vim.b.gitsigns_status_dict
 
             if gitsigns then
@@ -25,7 +25,7 @@ return {
             },
             diff = {
                 "diff",
-                source = diff_source,
+                source = source,
                 symbols = {
                     added = " ",
                     modified = " ",

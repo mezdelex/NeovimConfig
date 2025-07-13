@@ -31,30 +31,32 @@
 
 ## Plugins
 
-|     Name      |                             Source                             |                                                Uri                                                |
-| :-----------: | :------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
-|   autopairs   |        [repo](https://github.com/windwp/nvim-autopairs)        |     [autopairs](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/autopairs.lua)     |
-|   autotags    |       [repo](https://github.com/windwp/nvim-ts-autotag)        |      [autotags](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/autotags.lua)      |
-|   blankline   | [repo](https://github.com/lukas-reineke/indent-blankline.nvim) |     [blankline](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/blankline.lua)     |
-|      bqf      |        [repo](https://github.com/kevinhwang91/nvim-bqf)        |           [bqf](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/bqf.lua)           |
-|  bufferline   |       [repo](https://github.com/akinsho/bufferline.nvim)       |    [bufferline](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/bufferline.lua)    |
-| codecompanion |    [repo](https://github.com/olimorris/codecompanion.nvim)     | [codecompanion](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/codecompanion.lua) |
-|   colorizer   |     [repo](https://github.com/norcalli/nvim-colorizer.lua)     |     [colorizer](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/colorizer.lua)     |
-|      dap      |        [repo](https://github.com/rcarriga/nvim-dap-ui)         |           [dap](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/dap.lua)           |
-|   devicons    |     [repo](https://github.com/nvim-tree/nvim-web-devicons)     |      [devicons](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/devicons.lua)      |
-|  everforest   |         [repo](https://github.com/sainnhe/everforest)          |    [everforest](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/everforest.lua)    |
-|   gitsigns    |       [repo](https://github.com/lewis6991/gitsigns.nvim)       |      [gitsigns](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/gitsigns.lua)      |
-|   lspconfig   |        [repo](https://github.com/neovim/nvim-lspconfig)        |     [lspconfig](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspconfig.lua)     |
-|    lspsaga    |        [repo](https://github.com/nvimdev/lspsaga.nvim)         |       [lspsaga](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsaga.lua)       |
-| lspsignature  |      [repo](https://github.com/ray-x/lsp_signature.nvim)       |  [lspsignature](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsignature.lua)  |
-|    lualine    |      [repo](https://github.com/nvim-lualine/lualine.nvim)      |       [lualine](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lualine.lua)       |
-|   markview    |        [repo](https://github.com/OXY2DEV/markview.nvim)        |      [markview](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/markview.lua)      |
-|    nonels     |       [repo](https://github.com/nvimtools/none-ls.nvim)        |        [nonels](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/nonels.lua)        |
-|      oil      |          [repo](https://github.com/stevearc/oil.nvim)          |           [oil](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/oil.lua)           |
-|   registers   |      [repo](https://github.com/tversteeg/registers.nvim)       |     [registers](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/registers.lua)     |
-|   telescope   |    [repo](https://github.com/nvim-telescope/telescope.nvim)    |     [telescope](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/telescope.lua)     |
-|  treesitter   |   [repo](https://github.com/nvim-treesitter/nvim-treesitter)   |    [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua)    |
-|   undotree    |           [repo](https://github.com/mbbill/undotree)           |      [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)      |
+|     Name      |                              Source                               |                                                Uri                                                |
+| :-----------: | :---------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+|   autopairs   |         [repo](https://github.com/windwp/nvim-autopairs)          |     [autopairs](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/autopairs.lua)     |
+|    autotag    |         [repo](https://github.com/windwp/nvim-ts-autotag)         |       [autotag](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/autotag.lua)       |
+|   blankline   |  [repo](https://github.com/lukas-reineke/indent-blankline.nvim)   |     [blankline](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/blankline.lua)     |
+|     blink     |            [repo](https://github.com/Saghen/blink.cmp)            |         [blink](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/blink.lua)         |
+|      bqf      |         [repo](https://github.com/kevinhwang91/nvim-bqf)          |           [bqf](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/bqf.lua)           |
+|  bufferline   |        [repo](https://github.com/akinsho/bufferline.nvim)         |    [bufferline](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/bufferline.lua)    |
+|  codeaction   |    [repo](https://github.com/rachartier/tiny-code-action.nvim)    |    [codeaction](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/codeaction.lua)    |
+| codecompanion |      [repo](https://github.com/olimorris/codecompanion.nvim)      | [codecompanion](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/codecompanion.lua) |
+|   colorizer   |      [repo](https://github.com/norcalli/nvim-colorizer.lua)       |     [colorizer](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/colorizer.lua)     |
+|      dap      |          [repo](https://github.com/rcarriga/nvim-dap-ui)          |           [dap](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/dap.lua)           |
+|   devicons    |      [repo](https://github.com/nvim-tree/nvim-web-devicons)       |      [devicons](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/devicons.lua)      |
+|  diagnostic   | [repo](https://github.com/rachartier/tiny-inline-diagnostic.nvim) |    [diagnostic](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/diagnostic.lua)    |
+|  everforest   |           [repo](https://github.com/sainnhe/everforest)           |    [everforest](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/everforest.lua)    |
+|   gitsigns    |        [repo](https://github.com/lewis6991/gitsigns.nvim)         |      [gitsigns](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/gitsigns.lua)      |
+|   lspconfig   |         [repo](https://github.com/neovim/nvim-lspconfig)          |     [lspconfig](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspconfig.lua)     |
+| lspsignature  |        [repo](https://github.com/ray-x/lsp_signature.nvim)        |  [lspsignature](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsignature.lua)  |
+|    lualine    |       [repo](https://github.com/nvim-lualine/lualine.nvim)        |       [lualine](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lualine.lua)       |
+|   markview    |         [repo](https://github.com/OXY2DEV/markview.nvim)          |      [markview](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/markview.lua)      |
+|    nonels     |         [repo](https://github.com/nvimtools/none-ls.nvim)         |        [nonels](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/nonels.lua)        |
+|      oil      |           [repo](https://github.com/stevearc/oil.nvim)            |           [oil](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/oil.lua)           |
+|   registers   |        [repo](https://github.com/tversteeg/registers.nvim)        |     [registers](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/registers.lua)     |
+|   telescope   |     [repo](https://github.com/nvim-telescope/telescope.nvim)      |     [telescope](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/telescope.lua)     |
+|  treesitter   |    [repo](https://github.com/nvim-treesitter/nvim-treesitter)     |    [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua)    |
+|   undotree    |            [repo](https://github.com/mbbill/undotree)             |      [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)      |
 
 ## Images
 
