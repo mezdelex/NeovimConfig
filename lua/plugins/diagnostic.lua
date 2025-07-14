@@ -21,6 +21,10 @@ return {
 		require("tiny-inline-diagnostic").setup({
 			options = {
 				enable_on_insert = true,
+				overflow = {
+					mode = "wrap",
+					padding = 2,
+				},
 				throttle = 0,
 				use_icons_from_diagnostic = true,
 			},
