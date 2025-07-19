@@ -1,7 +1,9 @@
 return {
     "OXY2DEV/markview.nvim",
     config = function()
-        require("markview").setup({
+        local markview = require("markview")
+
+        markview.setup({
             experimental = { check_rtp_message = false },
             preview = {
                 filetypes = { "codecompanion", "markdown" },
@@ -9,6 +11,6 @@ return {
             },
         })
 
-        vim.keymap.set("n", "<leader>m", "<cmd>Markview<cr>")
+        vim.keymap.set("n", "<leader>m", markview.commands["toggle"])
     end,
 }
