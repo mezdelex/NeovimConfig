@@ -51,6 +51,8 @@ return {
                     "dapui_stacks",
                     "dapui_watches",
                     "diff",
+                    "git",
+                    "gitsigns-blame",
                     "undotree",
                     statusline = {},
                     winbar = {},
