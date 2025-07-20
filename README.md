@@ -7,7 +7,7 @@
 
 ## Setup
 
-- Install `neovim`, `fd`, `ripgrep` & `rustup` via `scoop install neovim fd ripgrep rustup` @ PowerShell
+- Install `neovim`, `fd`, `grpcurl`, `ripgrep` & `rustup` via `scoop install neovim fd grpcurl ripgrep rustup` @ PowerShell
 - Install `Desktop development with C++` package with `Visual Studio Build Tools` installer
 - Allow `cargo` SSL bypass with `setx CARGO_HTTP_CHECK_REVOKE false` @ PowerShell
 - Allow `curl` SSL bypass with `--ssl-no-revoke` inside `$HOME/_curlrc`
@@ -47,6 +47,7 @@
 |  diagnostic   | [repo](https://github.com/rachartier/tiny-inline-diagnostic.nvim) |    [diagnostic](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/diagnostic.lua)    |
 |  everforest   |           [repo](https://github.com/sainnhe/everforest)           |    [everforest](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/everforest.lua)    |
 |   gitsigns    |        [repo](https://github.com/lewis6991/gitsigns.nvim)         |      [gitsigns](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/gitsigns.lua)      |
+|    kulala     |        [repo](https://github.com/mistweaverco/kulala.nvim)        |        [kulala](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/kulala.lua)        |
 |   lspconfig   |         [repo](https://github.com/neovim/nvim-lspconfig)          |     [lspconfig](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspconfig.lua)     |
 | lspsignature  |        [repo](https://github.com/ray-x/lsp_signature.nvim)        |  [lspsignature](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsignature.lua)  |
 |    lualine    |       [repo](https://github.com/nvim-lualine/lualine.nvim)        |       [lualine](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lualine.lua)       |
@@ -62,3 +63,4 @@
 
 ![image](https://github.com/user-attachments/assets/3f59362b-5d91-4c20-a1fd-c880e8530fd2)
 ![image](https://github.com/user-attachments/assets/010b7455-4c7f-4899-b118-4043938b2919)
+![image](https://github.com/user-attachments/assets/06cd4c6f-98af-4d18-84ef-a0e6fd34685d)
