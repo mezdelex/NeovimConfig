@@ -1,6 +1,7 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     config = function()
+        local fallback = vim.filetype.get_option
         local options = { remap = true }
 
         require("nvim-treesitter.configs").setup({
@@ -10,10 +11,10 @@ return {
         require("ts_context_commentstring").setup({
             enable_autocmd = false,
         })
+
         vim.filetype.get_option = function(filetype, option)
             return option == "commentstring" and require("ts_context_commentstring.internal").calculate_commentstring()
-                or vim.bo.commentstring
-                or vim.filetype.get_option(filetype, option)
+                or fallback(filetype, option)
         end
 
         vim.keymap.set("n", "<a-/>", "gcc", options)
