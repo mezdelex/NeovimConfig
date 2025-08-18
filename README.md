@@ -25,9 +25,9 @@
 
 ## Lsp
 
-| Name  |                  Source                  |                                       Uri                                       |
-| :---: | :--------------------------------------: | :-----------------------------------------------------------------------------: |
-| vtsls | [repo](https://github.com/yioneko/vtsls) | [vtsls](https://github.com/mezdelex/NeovimConfig/blob/main/after/lsp/vtsls.lua) |
+| Name  |                                      Source                                      |                                       Uri                                       |
+| :---: | :------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| ts_ls | [repo](https://github.com/typescript-language-server/typescript-language-server) | [ts_ls](https://github.com/mezdelex/NeovimConfig/blob/main/after/lsp/ts_ls.lua) |
 
 ## Plugins
 
