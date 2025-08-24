@@ -55,6 +55,7 @@
 |   markview    |         [repo](https://github.com/OXY2DEV/markview.nvim)          |      [markview](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/markview.lua)      |
 |    nonels     |         [repo](https://github.com/nvimtools/none-ls.nvim)         |        [nonels](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/nonels.lua)        |
 |      oil      |           [repo](https://github.com/stevearc/oil.nvim)            |           [oil](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/oil.lua)           |
+|    quicker    |         [repo](https://github.com/stevearc/quicker.nvim)          |       [quicker](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/quicker.lua)       |
 |   registers   |        [repo](https://github.com/tversteeg/registers.nvim)        |     [registers](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/registers.lua)     |
 |  treesitter   |    [repo](https://github.com/nvim-treesitter/nvim-treesitter)     |    [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua)    |
 |   undotree    |            [repo](https://github.com/mbbill/undotree)             |      [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)      |

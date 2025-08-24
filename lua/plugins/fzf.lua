@@ -6,12 +6,17 @@ return {
         fzf.setup({
             defaults = { formatter = "path.filename_first" },
             keymap = {
-                fzf = { ["ctrl-q"] = "select-all+accept" },
+                builtin = { ["<a-p>"] = "toggle-preview" },
+                fzf = {
+                    ["alt-a"] = "toggle-all",
+                    ["alt-s"] = "toggle",
+                },
             },
             winopts = {
                 preview = {
                     layout = "vertical",
-                    vertical = "up:60%",
+                    scrollbar = false,
+                    vertical = "up:70%",
                 },
             },
         })
