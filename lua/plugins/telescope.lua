@@ -13,6 +13,9 @@ return {
                 layout_strategy = "vertical",
                 path_display = { "truncate" },
             },
+            extensions = {
+                live_grep_args = { auto_quoting = false },
+            },
         })
         telescope.load_extension("fzf")
         telescope.load_extension("live_grep_args")
