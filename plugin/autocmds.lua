@@ -1,4 +1,6 @@
-vim.api.nvim_create_augroup("core", { clear = true })
+local init = "Init"
+
+vim.api.nvim_create_augroup(init, { clear = true })
 
 vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(args)
@@ -12,17 +14,17 @@ vim.api.nvim_create_autocmd("LspAttach", {
         vim.keymap.set("n", "gr", vim.lsp.buf.references, options)
         vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, options)
     end,
-    group = "core",
+    group = init,
 })
 vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
         vim.highlight.on_yank({ timeout = 100 })
     end,
-    group = "core",
+    group = init,
 })
 vim.api.nvim_create_autocmd("VimEnter", {
     callback = function()
         vim.cmd("clearjumps")
     end,
-    group = "core",
+    group = init,
 })

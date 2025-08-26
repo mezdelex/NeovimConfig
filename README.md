@@ -14,22 +14,15 @@
 - Set `codecompanion` adapter API key with `setx <ADAPTER>_API_KEY <API_KEY>` @ PowerShell
 - Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
 
-## Core
+## Plugin Manager
 
-|   Name   |                   Source                   |                                         Uri                                          |
-| :------: | :----------------------------------------: | :----------------------------------------------------------------------------------: |
-| autocmds |                    n/a                     | [autocmds](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/autocmds.lua) |
-| keymaps  |                    n/a                     |  [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/keymaps.lua)  |
-|   lazy   | [repo](https://github.com/folke/lazy.nvim) |     [lazy](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/lazy.lua)     |
-| options  |                    n/a                     |  [options](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/options.lua)  |
+### Lazy
 
-## Lsp
+| Name |                   Source                   |                                 Uri                                 |
+| :--: | :----------------------------------------: | :-----------------------------------------------------------------: |
+| lazy | [repo](https://github.com/folke/lazy.nvim) | [lazy](https://github.com/mezdelex/NeovimConfig/blob/main/init.lua) |
 
-| Name  |                                      Source                                      |                                       Uri                                       |
-| :---: | :------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
-| ts_ls | [repo](https://github.com/typescript-language-server/typescript-language-server) | [ts_ls](https://github.com/mezdelex/NeovimConfig/blob/main/after/lsp/ts_ls.lua) |
-
-## Plugins
+### Plugins
 
 |     Name      |                              Source                               |                                                Uri                                                |
 | :-----------: | :---------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
@@ -59,6 +52,22 @@
 |   telescope   |     [repo](https://github.com/nvim-telescope/telescope.nvim)      |     [telescope](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/telescope.lua)     |
 |  treesitter   |    [repo](https://github.com/nvim-treesitter/nvim-treesitter)     |    [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua)    |
 |   undotree    |            [repo](https://github.com/mbbill/undotree)             |      [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)      |
+
+## Plugin
+
+|   Name   | Source |                                        Uri                                         |
+| :------: | :----: | :--------------------------------------------------------------------------------: |
+| autocmds |  n/a   | [autocmds](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/autocmds.lua) |
+| keymaps  |  n/a   |  [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/keymaps.lua)  |
+| options  |  n/a   |  [options](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/options.lua)  |
+
+## After
+
+### Lsp
+
+| Name  |                                      Source                                      |                                       Uri                                       |
+| :---: | :------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| ts_ls | [repo](https://github.com/typescript-language-server/typescript-language-server) | [ts_ls](https://github.com/mezdelex/NeovimConfig/blob/main/after/lsp/ts_ls.lua) |
 
 ## Images
 
