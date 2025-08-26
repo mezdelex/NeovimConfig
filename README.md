@@ -1,20 +1,30 @@
-# Neovim
+> [!NOTE]
+>
+> - OS: Windows 11
+> - Terminal: Wezterm
+> - Shell: PowerShell Core
+> - Editor: Neovim
 
-- OS: Windows 11
-- Terminal: Wezterm
-- Shell: PowerShell Core
-- Editor: Neovim
+---
 
-## Setup
+> [!IMPORTANT]
+>
+> - Install `neovim`, `fd`, `grpcurl`, `ripgrep`, `rustup` & `tree-sitter` via `scoop install neovim fd grpcurl ripgrep rustup tree-sitter` @ PowerShell
+> - Install `Desktop development with C++` package with `Visual Studio Build Tools` installer
+> - Allow `cargo` SSL bypass with `setx CARGO_HTTP_CHECK_REVOKE false` @ PowerShell
+> - Allow `curl` SSL bypass with `--ssl-no-revoke` inside `$HOME/_curlrc`
+> - Set `codecompanion` adapter API key with `setx <ADAPTER>_API_KEY <API_KEY>` @ PowerShell
+> - Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
 
-- Install `neovim`, `fd`, `grpcurl`, `ripgrep` & `rustup` via `scoop install neovim fd grpcurl ripgrep rustup` @ PowerShell
-- Install `Desktop development with C++` package with `Visual Studio Build Tools` installer
-- Allow `cargo` SSL bypass with `setx CARGO_HTTP_CHECK_REVOKE false` @ PowerShell
-- Allow `curl` SSL bypass with `--ssl-no-revoke` inside `$HOME/_curlrc`
-- Set `codecompanion` adapter API key with `setx <ADAPTER>_API_KEY <API_KEY>` @ PowerShell
-- Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
+---
 
-## Plugin Manager
+### Plugin
+
+|   Name   | Source |                                        Uri                                         |
+| :------: | :----: | :--------------------------------------------------------------------------------: |
+| autocmds |  n/a   | [autocmds](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/autocmds.lua) |
+| keymaps  |  n/a   |  [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/keymaps.lua)  |
+| options  |  n/a   |  [options](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/options.lua)  |
 
 ### Lazy
 
@@ -53,15 +63,11 @@
 |  treesitter   |    [repo](https://github.com/nvim-treesitter/nvim-treesitter)     |    [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua)    |
 |   undotree    |            [repo](https://github.com/mbbill/undotree)             |      [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)      |
 
-## Plugin
+### Utils
 
-|   Name   | Source |                                        Uri                                         |
-| :------: | :----: | :--------------------------------------------------------------------------------: |
-| autocmds |  n/a   | [autocmds](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/autocmds.lua) |
-| keymaps  |  n/a   |  [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/keymaps.lua)  |
-| options  |  n/a   |  [options](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/options.lua)  |
-
-## After
+|    Name    | Source |                                            Uri                                            |
+| :--------: | :----: | :---------------------------------------------------------------------------------------: |
+| treesitter |  n/a   | [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/treesitter.lua) |
 
 ### Lsp
 
@@ -69,7 +75,7 @@
 | :---: | :------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
 | ts_ls | [repo](https://github.com/typescript-language-server/typescript-language-server) | [ts_ls](https://github.com/mezdelex/NeovimConfig/blob/main/after/lsp/ts_ls.lua) |
 
-## Images
+### Images
 
 ![image](https://github.com/user-attachments/assets/3f59362b-5d91-4c20-a1fd-c880e8530fd2)
 ![image](https://github.com/user-attachments/assets/010b7455-4c7f-4899-b118-4043938b2919)
