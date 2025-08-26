@@ -8,7 +8,7 @@ vim.keymap.set("n", "<a-q>", "<cmd>qa<cr>")
 vim.keymap.set("n", "<a-S>", "<cmd>wa!<cr>")
 vim.keymap.set("n", "<a-s>", "<cmd>w!<cr>")
 
-vim.keymap.set("n", "<a-C>", "<cmd>q<cr>")
+vim.keymap.set("n", "<a-C>", "<cmd>clo<cr>")
 vim.keymap.set("n", "<a-c>", "<cmd>bp|sp|bn|bw!<cr>")
 vim.keymap.set("n", "<s-tab>", "<cmd>bp<cr>")
 vim.keymap.set("n", "<tab>", "<cmd>bn<cr>")
@@ -36,6 +36,8 @@ vim.keymap.set("n", "U", "<c-r>")
 
 vim.keymap.set("n", "<a-v>", "<c-v>")
 
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "J", ":m'>+1<cr>gv=gv", options)
 vim.keymap.set("v", "K", ":m'<-2<cr>gv=gv", options)
 
