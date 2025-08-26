@@ -2,6 +2,16 @@ local init = "Init"
 
 vim.api.nvim_create_augroup(init, { clear = true })
 
+vim.api.nvim_create_autocmd("FileType", {
+    callback = function(args)
+        if not pcall(vim.treesitter.start, args.buf) then
+            return
+        end
+
+        vim.bo[args.buf].syntax = "on"
+    end,
+    group = init,
+})
 vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(args)
         local options = { buffer = args.buf }
