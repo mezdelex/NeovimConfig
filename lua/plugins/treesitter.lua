@@ -13,14 +13,16 @@ return {
             li = "@loop.inner",
             lo = "@loop.outer",
         }
-        local ts = require("utils.treesitter")
         local to_move = require("nvim-treesitter-textobjects.move")
+        local to_repeatable = require("nvim-treesitter-textobjects.repeatable_move")
         local to_select = require("nvim-treesitter-textobjects.select")
+        local ts = require("utils.treesitter")
 
         ts.to_move_mapper("c", to_move, textobjects.co)
         ts.to_move_mapper("f", to_move, textobjects.fo)
         ts.to_move_mapper("i", to_move, textobjects.io)
         ts.to_move_mapper("l", to_move, textobjects.lo)
+        ts.to_repeatable_mapper(to_repeatable)
         ts.to_select_mapper("ac", to_select, textobjects.co)
         ts.to_select_mapper("af", to_select, textobjects.fo)
         ts.to_select_mapper("ai", to_select, textobjects.io)

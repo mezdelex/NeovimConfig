@@ -1,44 +1,62 @@
 ---@class Utils.Treesitter.TextObject.Move
----@field goto_previous_start fun(rhs: string, group: string)
----@field goto_previous_end fun(rhs: string, group: string)
----@field goto_next_start fun(rhs: string, group: string)
----@field goto_next_end fun(rhs: string, group: string)
+---@field goto_previous_start fun(query: string, group: string)
+---@field goto_previous_end fun(query: string, group: string)
+---@field goto_next_start fun(query: string, group: string)
+---@field goto_next_end fun(query: string, group: string)
+
+---@class Utils.Treesitter.TextObject.Repeatable
+---@field repeat_last_move_opposite fun()
+---@field repeat_last_move fun()
+---@field builtin_F_expr fun()
+---@field builtin_T_expr fun()
+---@field builtin_f_expr fun()
+---@field builtin_t_expr fun()
 
 ---@class Utils.Treesitter.TextObject.Select
----@field select_textobject fun(rhs: string, group: string)
+---@field select_textobject fun(query: string, group: string)
 
 local textobjects = {
-    group = "textobjects",
-    mode = { "n", "o", "x" },
+	group = "textobjects",
+	mode = { "n", "o", "x" },
+	options = { expr = true },
 }
 
 ---@class Utils.Treesitter
 M = {
-    ---@param lhs string
-    ---@param to_move Utils.Treesitter.TextObject.Move
-    ---@param rhs string
-    to_move_mapper = function(lhs, to_move, rhs)
-        vim.keymap.set(textobjects.mode, "[" .. lhs, function()
-            to_move.goto_previous_start(rhs, textobjects.group)
-        end)
-        vim.keymap.set(textobjects.mode, "[" .. string.upper(lhs), function()
-            to_move.goto_previous_end(rhs, textobjects.group)
-        end)
-        vim.keymap.set(textobjects.mode, "]" .. lhs, function()
-            to_move.goto_next_start(rhs, textobjects.group)
-        end)
-        vim.keymap.set(textobjects.mode, "]" .. string.upper(lhs), function()
-            to_move.goto_next_end(rhs, textobjects.group)
-        end)
-    end,
-    ---@param lhs string
-    ---@param to_select Utils.Treesitter.TextObject.Select
-    ---@param rhs string
-    to_select_mapper = function(lhs, to_select, rhs)
-        vim.keymap.set(textobjects.mode, lhs, function()
-            to_select.select_textobject(rhs, textobjects.group)
-        end)
-    end,
+	---@param lhs string
+	---@param to_move Utils.Treesitter.TextObject.Move
+	---@param query string
+	to_move_mapper = function(lhs, to_move, query)
+		vim.keymap.set(textobjects.mode, "[" .. lhs, function()
+			to_move.goto_previous_start(query, textobjects.group)
+		end)
+		vim.keymap.set(textobjects.mode, "[" .. string.upper(lhs), function()
+			to_move.goto_previous_end(query, textobjects.group)
+		end)
+		vim.keymap.set(textobjects.mode, "]" .. lhs, function()
+			to_move.goto_next_start(query, textobjects.group)
+		end)
+		vim.keymap.set(textobjects.mode, "]" .. string.upper(lhs), function()
+			to_move.goto_next_end(query, textobjects.group)
+		end)
+	end,
+	---@param to_repeatable Utils.Treesitter.TextObject.Repeatable
+	to_repeatable_mapper = function(to_repeatable)
+		vim.keymap.set(textobjects.mode, ",", to_repeatable.repeat_last_move_opposite)
+		vim.keymap.set(textobjects.mode, ";", to_repeatable.repeat_last_move)
+		vim.keymap.set(textobjects.mode, "F", to_repeatable.builtin_F_expr, textobjects.options)
+		vim.keymap.set(textobjects.mode, "T", to_repeatable.builtin_T_expr, textobjects.options)
+		vim.keymap.set(textobjects.mode, "f", to_repeatable.builtin_f_expr, textobjects.options)
+		vim.keymap.set(textobjects.mode, "t", to_repeatable.builtin_t_expr, textobjects.options)
+	end,
+	---@param lhs string
+	---@param to_select Utils.Treesitter.TextObject.Select
+	---@param query string
+	to_select_mapper = function(lhs, to_select, query)
+		vim.keymap.set(textobjects.mode, lhs, function()
+			to_select.select_textobject(query, textobjects.group)
+		end)
+	end,
 }
 
 return M
