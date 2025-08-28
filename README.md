@@ -51,6 +51,7 @@
 |  everforest   |           [repo](https://github.com/sainnhe/everforest)           |    [everforest](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/everforest.lua)    |
 |   gitsigns    |        [repo](https://github.com/lewis6991/gitsigns.nvim)         |      [gitsigns](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/gitsigns.lua)      |
 |    kulala     |        [repo](https://github.com/mistweaverco/kulala.nvim)        |        [kulala](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/kulala.lua)        |
+|    lazydev    |           [repo](https://github.com/folke/lazydev.nvim)           |       [lazydev](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lazydev.lua)       |
 |   lspconfig   |         [repo](https://github.com/neovim/nvim-lspconfig)          |     [lspconfig](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspconfig.lua)     |
 | lspsignature  |        [repo](https://github.com/ray-x/lsp_signature.nvim)        |  [lspsignature](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lspsignature.lua)  |
 |    lualine    |       [repo](https://github.com/nvim-lualine/lualine.nvim)        |       [lualine](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lualine.lua)       |

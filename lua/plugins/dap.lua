@@ -4,10 +4,6 @@ return {
         local dap = require("dap")
         local dapui = require("dapui")
 
-        require("lazydev").setup({
-            library = { "nvim-dap-ui" },
-        })
-
         require("dap-go").setup()
         require("dap-python").setup(vim.fn.stdpath("data") .. "/mason/packages/debugpy/venv/Scripts/python.exe")
         dap.adapters.codelldb = {
@@ -91,7 +87,6 @@ return {
         vim.keymap.set("n", "gb", dap.toggle_breakpoint)
     end,
     dependencies = {
-        "folke/lazydev.nvim",
         "leoluz/nvim-dap-go",
         "mfussenegger/nvim-dap-python",
         "nvim-neotest/nvim-nio",
