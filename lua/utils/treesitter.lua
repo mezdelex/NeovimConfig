@@ -16,7 +16,6 @@
 ---@field select_textobject fun(query: string, group: string)
 
 local textobjects = {
-    ---@type string
     group = "textobjects",
     ---@type string[]
     mode_nox = { "n", "o", "x" },

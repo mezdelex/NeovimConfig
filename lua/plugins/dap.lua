@@ -3,6 +3,7 @@ return {
     config = function()
         local dap = require("dap")
         local dapui = require("dapui")
+        local utils_dap = require("utils.dap")
 
         require("dap-go").setup()
         require("dap-python").setup(vim.fn.stdpath("data") .. "/mason/packages/debugpy/venv/Scripts/python.exe")
@@ -21,7 +22,7 @@ return {
                 },
                 name = "Build",
                 program = function()
-                    return vim.fn.input("Path to exe: ", vim.fn.getcwd() .. "/", "file")
+                    return vim.fn.input("Path to exe: ", utils_dap.find_build_dir({ "/target/debug" }), "file")
                 end,
                 request = "launch",
                 setupCommands = {
@@ -35,7 +36,7 @@ return {
                 },
                 name = "Test",
                 program = function()
-                    return vim.fn.input("Path to exe: ", vim.fn.getcwd() .. "/", "file")
+                    return vim.fn.input("Path to exe: ", utils_dap.find_build_dir({ "/target/debug" }), "file")
                 end,
                 request = "launch",
                 setupCommands = {
@@ -53,7 +54,11 @@ return {
             {
                 name = "Build",
                 program = function()
-                    return vim.fn.input("Path to dll: ", vim.fn.getcwd() .. "/", "file")
+                    return vim.fn.input(
+                        "Path to dll: ",
+                        utils_dap.find_build_dir({ "/bin/Debug", "/bin/Release" }),
+                        "file"
+                    )
                 end,
                 request = "launch",
                 type = "coreclr",

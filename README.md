@@ -68,6 +68,7 @@
 
 |    Name    | Source |                                            Uri                                            |
 | :--------: | :----: | :---------------------------------------------------------------------------------------: |
+|    dap     |  n/a   |        [dap](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/dap.lua)        |
 | treesitter |  n/a   | [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/treesitter.lua) |
 
 ### Lsp
