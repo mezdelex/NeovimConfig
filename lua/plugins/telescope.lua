@@ -26,7 +26,7 @@ return {
         vim.keymap.set("n", "<leader>j", builtin.jumplist)
         vim.keymap.set("n", "<leader>q", builtin.quickfix)
         vim.keymap.set("n", "<leader>s", builtin.lsp_document_symbols)
-        vim.keymap.set({ "n", "v" }, "gs", builtin.grep_string)
+        vim.keymap.set({ "n", "x" }, "gs", builtin.grep_string)
     end,
     dependencies = {
         "nvim-telescope/telescope-live-grep-args.nvim",

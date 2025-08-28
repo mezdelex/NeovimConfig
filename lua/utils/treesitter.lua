@@ -16,20 +16,15 @@
 ---@field select_textobject fun(query: string, group: string)
 
 local textobjects = {
+    ---@type string
     group = "textobjects",
+    ---@type string[]
     mode_nox = { "n", "o", "x" },
+    ---@type string[]
     mode_ox = { "o", "x" },
+    ---@type vim.keymap.set.Opts
     options = { expr = true },
 }
-
----@see https://github.com/nvim-treesitter/nvim-treesitter-textobjects/pull/795
----@param func function
----@return string?
-function Provisional(func)
-    local response = func()
-
-    return response and vim.api.nvim_feedkeys(vim.v.count1 .. response, "n", true)
-end
 
 ---@class Utils.Treesitter
 M = {
@@ -52,12 +47,8 @@ M = {
     end,
     ---@param to_repeatable Utils.Treesitter.TextObject.Repeatable
     to_repeatable_mapper = function(to_repeatable)
-        vim.keymap.set(textobjects.mode_nox, ",", function()
-            Provisional(to_repeatable.repeat_last_move_opposite)
-        end)
-        vim.keymap.set(textobjects.mode_nox, ";", function()
-            Provisional(to_repeatable.repeat_last_move)
-        end)
+        vim.keymap.set(textobjects.mode_nox, ",", to_repeatable.repeat_last_move_opposite)
+        vim.keymap.set(textobjects.mode_nox, ";", to_repeatable.repeat_last_move)
         vim.keymap.set(textobjects.mode_nox, "F", to_repeatable.builtin_F_expr, textobjects.options)
         vim.keymap.set(textobjects.mode_nox, "T", to_repeatable.builtin_T_expr, textobjects.options)
         vim.keymap.set(textobjects.mode_nox, "f", to_repeatable.builtin_f_expr, textobjects.options)

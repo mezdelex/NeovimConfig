@@ -34,9 +34,9 @@ vim.keymap.set("n", "U", "<c-r>")
 
 vim.keymap.set("n", "<a-v>", "<c-v>")
 
-vim.keymap.set("v", "<", "<gv")
-vim.keymap.set("v", ">", ">gv")
-vim.keymap.set("v", "J", ":m'>+1<cr>gv=gv", options)
-vim.keymap.set("v", "K", ":m'<-2<cr>gv=gv", options)
+vim.keymap.set("x", "<", "<gv")
+vim.keymap.set("x", ">", ">gv")
+vim.keymap.set("x", "J", ":m'>+1<cr>gv=gv", options)
+vim.keymap.set("x", "K", ":m'<-2<cr>gv=gv", options)
 
-vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
+vim.keymap.set({ "n", "x" }, "<leader>y", '"+y')

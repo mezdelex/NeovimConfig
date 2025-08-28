@@ -32,7 +32,7 @@ return {
         ts.to_select_mapper("ii", to_select, textobjects.ii)
         ts.to_select_mapper("il", to_select, textobjects.li)
         vim.keymap.set("n", "<a-/>", "gcc", options)
-        vim.keymap.set("v", "<a-/>", "gc", options)
+        vim.keymap.set("x", "<a-/>", "gc", options)
     end,
     dependencies = {
         { "nvim-treesitter/nvim-treesitter-textobjects", branch = "main" },
