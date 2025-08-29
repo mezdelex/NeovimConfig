@@ -32,7 +32,7 @@ end
 M = {
 	---@param base_paths string[]
 	---@return string
-	find_build_dir = function(base_paths)
+	find_file_or_default = function(base_paths)
 		local cwd = vim.fn.getcwd()
 		---@type string[]
 		local build_dirs = vim.tbl_map(function(path)
@@ -44,7 +44,7 @@ M = {
 			latest_file, latest_time = scan_dir(dir, latest_file, latest_time)
 		end
 
-		return latest_file and latest_file:match("(.*/)[^/]+$") or cwd
+		return latest_file or build_dirs[1]
 	end,
 }
 

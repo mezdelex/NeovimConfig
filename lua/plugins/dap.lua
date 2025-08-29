@@ -22,7 +22,7 @@ return {
                 },
                 name = "Build",
                 program = function()
-                    return vim.fn.input("Path to exe: ", utils_dap.find_build_dir({ "/target/debug" }), "file")
+                    return vim.fn.input("Path to exe: ", utils_dap.find_file_or_default({ "/target/debug" }), "file")
                 end,
                 request = "launch",
                 setupCommands = {
@@ -36,7 +36,7 @@ return {
                 },
                 name = "Test",
                 program = function()
-                    return vim.fn.input("Path to exe: ", utils_dap.find_build_dir({ "/target/debug" }), "file")
+                    return vim.fn.input("Path to exe: ", utils_dap.find_file_or_default({ "/target/debug" }), "file")
                 end,
                 request = "launch",
                 setupCommands = {
@@ -56,7 +56,7 @@ return {
                 program = function()
                     return vim.fn.input(
                         "Path to dll: ",
-                        utils_dap.find_build_dir({ "/bin/Debug", "/bin/Release" }),
+                        utils_dap.find_file_or_default({ "/bin/Debug", "/bin/Release" }),
                         "file"
                     )
                 end,
