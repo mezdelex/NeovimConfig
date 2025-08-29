@@ -1,6 +1,7 @@
+---@type Utils.Pack.Spec
 return {
-    "nvim-treesitter/nvim-treesitter",
-    branch = "main",
+    src = "https://github.com/nvim-treesitter/nvim-treesitter",
+    version = "main",
     config = function()
         local options = { remap = true }
         local textobjects = {
@@ -35,6 +36,6 @@ return {
         vim.keymap.set("x", "<a-/>", "gc", options)
     end,
     dependencies = {
-        { "nvim-treesitter/nvim-treesitter-textobjects", branch = "main" },
+        { src = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects", version = "main" },
     },
 }

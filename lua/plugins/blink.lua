@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-	"saghen/blink.cmp",
+	src = "https://github.com/saghen/blink.cmp",
 	build = "cargo build --release",
 	config = function()
 		require("blink.cmp").setup({

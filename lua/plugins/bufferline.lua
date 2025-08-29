@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-    "akinsho/bufferline.nvim",
+    src = "https://github.com/akinsho/bufferline.nvim",
     config = function()
         local bufferline = require("bufferline")
 

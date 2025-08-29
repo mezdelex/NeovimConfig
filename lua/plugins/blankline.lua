@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-    "lukas-reineke/indent-blankline.nvim",
+    src = "https://github.com/lukas-reineke/indent-blankline.nvim",
     config = function()
         require("ibl").setup({
             scope = {

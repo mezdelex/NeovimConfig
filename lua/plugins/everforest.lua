@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-    "sainnhe/everforest",
+    src = "https://github.com/sainnhe/everforest",
     config = function()
         vim.g.everforest_disable_italic_comment = true
         vim.g.everforest_enable_italic = false

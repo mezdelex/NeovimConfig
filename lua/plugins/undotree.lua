@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-    "mbbill/undotree",
+    src = "https://github.com/mbbill/undotree",
     config = function()
         vim.g.undotree_DiffCommand = "fc"
 

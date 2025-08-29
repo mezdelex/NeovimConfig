@@ -1,0 +1,4 @@
+---@class Utils.Pack.Spec : vim.pack.Spec
+---@field build string?
+---@field config function?
+---@field dependencies Utils.Pack.Spec[]?

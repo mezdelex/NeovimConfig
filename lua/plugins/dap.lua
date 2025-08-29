@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-    "mfussenegger/nvim-dap",
+    src = "https://github.com/mfussenegger/nvim-dap",
     config = function()
         local dap = require("dap")
         local dapui = require("dapui")
@@ -92,9 +93,9 @@ return {
         vim.keymap.set("n", "gb", dap.toggle_breakpoint)
     end,
     dependencies = {
-        "leoluz/nvim-dap-go",
-        "mfussenegger/nvim-dap-python",
-        "nvim-neotest/nvim-nio",
-        "rcarriga/nvim-dap-ui",
+        { src = "https://github.com/leoluz/nvim-dap-go" },
+        { src = "https://github.com/mfussenegger/nvim-dap-python" },
+        { src = "https://github.com/nvim-neotest/nvim-nio" },
+        { src = "https://github.com/rcarriga/nvim-dap-ui" },
     },
 }

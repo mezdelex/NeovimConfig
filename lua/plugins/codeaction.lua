@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-    "rachartier/tiny-code-action.nvim",
+    src = "https://github.com/rachartier/tiny-code-action.nvim",
     config = function()
         local codeaction = require("tiny-code-action")
 

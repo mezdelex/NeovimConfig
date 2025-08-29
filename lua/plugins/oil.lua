@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-    "stevearc/oil.nvim",
+    src = "https://github.com/stevearc/oil.nvim",
     config = function()
         local oil = require("oil")
 
@@ -9,5 +10,4 @@ return {
 
         vim.keymap.set("n", "<leader>o", oil.open)
     end,
-    dependencies = { "nvim-lua/plenary.nvim" },
 }

@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-    "kevinhwang91/nvim-bqf",
+    src = "https://github.com/kevinhwang91/nvim-bqf",
     config = function()
         require("bqf").setup({
             preview = { winblend = 0 },

@@ -1,6 +1,7 @@
+---@type Utils.Pack.Spec
 return {
-	"stevearc/quicker.nvim",
-	config = function()
-		require("quicker").setup()
-	end,
+    src = "https://github.com/stevearc/quicker.nvim",
+    config = function()
+        require("quicker").setup()
+    end,
 }

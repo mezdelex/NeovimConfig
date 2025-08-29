@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-    "nvimtools/none-ls.nvim",
+    src = "https://github.com/nvimtools/none-ls.nvim",
     config = function()
         local null = require("null-ls")
 

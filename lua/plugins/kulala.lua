@@ -1,5 +1,6 @@
+---@type Utils.Pack.Spec
 return {
-    "mistweaverco/kulala.nvim",
+    src = "https://github.com/mistweaverco/kulala.nvim",
     config = function()
         require("kulala").setup({
             global_keymaps = true,
