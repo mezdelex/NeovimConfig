@@ -29,7 +29,7 @@ local function scan_dir(dir, latest_file, latest_time)
 end
 
 ---@class Utils.Dap
-M = {
+local M = {
 	---@param base_paths string[]
 	---@return string
 	find_file_or_default = function(base_paths)

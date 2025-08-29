@@ -8,13 +8,19 @@ local pack = {
 	add_options = { confirm = false },
 	---@type vim.pack.keyset.update
 	update_options = { force = true },
-	pattern = "[^/]+$",
 }
+---@type Utils.Pack.Spec[], string[]
+local cached_plugins, cached_names
+local utils_shared = require("utils.shared")
 
 ---@return Utils.Pack.Spec[], string[]
 local function get_plugins_and_names()
+	if cached_plugins and cached_names then
+		return cached_plugins, cached_names
+	end
+
 	---@type string[]
-	local plugin_files = vim.fn.glob(vim.fn.stdpath("config") .. "/lua/plugins/*.lua", true, true)
+	local plugin_files = vim.fn.glob(utils_shared.config_path .. "/lua/plugins/*.lua", true, true)
 	---@type Utils.Pack.Spec[]
 	local plugins = {}
 	---@type string[]
@@ -27,39 +33,46 @@ local function get_plugins_and_names()
 
 		if spec.dependencies then
 			for _, dep in ipairs(spec.dependencies) do
-				table.insert(plugins, dep)
-				table.insert(names, string.match(dep.src, pack.pattern))
+				plugins[#plugins + 1] = dep
+				names[#names + 1] = vim.fn.fnamemodify(dep.src, ":t")
 			end
 		end
-		table.insert(plugins, spec)
-		table.insert(names, string.match(spec.src, pack.pattern))
+		plugins[#plugins + 1] = spec
+		names[#names + 1] = vim.fn.fnamemodify(spec.src, ":t")
 	end
+	cached_plugins, cached_names = plugins, names
 
 	return plugins, names
 end
 
 ---@param plugin Utils.Pack.Spec
----@param current_dir string
-local function handle_build(plugin, current_dir)
+local function handle_build(plugin)
 	if plugin.build then
-		local plugin_name = string.match(plugin.src, pack.pattern)
+		local plugin_name = vim.fn.fnamemodify(plugin.src, ":t")
 		---@type string
-		local plugin_path = vim.fn.stdpath("data") .. "/site/pack/core/opt/" .. plugin_name
+		local plugin_path = utils_shared.data_path .. "/site/pack/core/opt/" .. plugin_name
 
-		vim.fn.chdir(plugin_path)
 		vim.notify("Building " .. plugin_name .. "...", vim.log.levels.WARN)
-		vim.notify(vim.fn.system(plugin.build):gsub("^%s*(.-)%s*$", "%1"), vim.log.levels.INFO)
-		vim.fn.chdir(current_dir)
+		local response = vim.system(vim.split(plugin.build, " "), { cwd = plugin_path }):wait()
+		vim.notify(
+			utils_shared.trim(
+				(
+					not utils_shared.is_empty(response.stderr) and response.stderr
+					or not utils_shared.is_empty(response.stdout) and response.stdout
+					or "exit code: " .. string(response.code)
+				)
+			),
+			response.code ~= 0 and vim.log.levels.ERROR or vim.log.levels.INFO
+		)
 	end
 end
 
 ---@class Utils.Pack
-M = {
+local M = {
 	build = function()
 		local plugins, _ = get_plugins_and_names()
-		local current_dir = vim.fn.getcwd()
 		for _, plugin in ipairs(plugins) do
-			handle_build(plugin, current_dir)
+			handle_build(plugin)
 		end
 	end,
 	load = function()

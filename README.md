@@ -70,6 +70,7 @@
 | :--------: | :----: | :---------------------------------------------------------------------------------------: |
 |    dap     |  n/a   |        [dap](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/dap.lua)        |
 |    pack    |  n/a   |       [pack](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/pack.lua)       |
+|   shared   |  n/a   |     [shared](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/shared.lua)     |
 | treesitter |  n/a   | [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/treesitter.lua) |
 
 ### Lsp
