@@ -38,28 +38,32 @@ local function get_plugins_and_names()
 	return plugins, names
 end
 
+---@param plugin Utils.Pack.Spec
+---@param current_dir string
+local function handle_build(plugin, current_dir)
+	if plugin.build then
+		local plugin_name = string.match(plugin.src, pack.pattern)
+		---@type string
+		local plugin_path = vim.fn.stdpath("data") .. "/site/pack/core/opt/" .. plugin_name
+
+		vim.fn.chdir(plugin_path)
+		vim.notify("Building " .. plugin_name .. "...", vim.log.levels.WARN)
+		vim.notify(vim.fn.system(plugin.build):gsub("^%s*(.-)%s*$", "%1"), vim.log.levels.INFO)
+		vim.fn.chdir(current_dir)
+	end
+end
+
 ---@class Utils.Pack
 M = {
 	build = function()
 		local plugins, _ = get_plugins_and_names()
-
 		local current_dir = vim.fn.getcwd()
 		for _, plugin in ipairs(plugins) do
-			if plugin.build then
-				---@type string
-				local plugin_path = vim.fn.stdpath("data")
-					.. "/site/pack/core/opt/"
-					.. string.match(plugin.src, pack.pattern)
-
-				vim.fn.chdir(plugin_path)
-				vim.fn.system(plugin.build)
-				vim.fn.chdir(current_dir)
-			end
+			handle_build(plugin, current_dir)
 		end
 	end,
 	load = function()
 		local plugins, _ = get_plugins_and_names()
-
 		vim.pack.add(plugins, pack.add_options)
 		for _, plugin in ipairs(plugins) do
 			if plugin.config then
@@ -69,7 +73,6 @@ M = {
 	end,
 	update = function()
 		local _, names = get_plugins_and_names()
-
 		vim.pack.update(names, pack.update_options)
 	end,
 }

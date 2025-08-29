@@ -26,11 +26,11 @@
 | keymaps  |  n/a   |  [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/keymaps.lua)  |
 | options  |  n/a   |  [options](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/options.lua)  |
 
-### Lazy
+### Pack
 
-| Name |                   Source                   |                                 Uri                                 |
-| :--: | :----------------------------------------: | :-----------------------------------------------------------------: |
-| lazy | [repo](https://github.com/folke/lazy.nvim) | [lazy](https://github.com/mezdelex/NeovimConfig/blob/main/init.lua) |
+| Name | Source |                                 Uri                                 |
+| :--: | :----: | :-----------------------------------------------------------------: |
+| pack |  n/a   | [pack](https://github.com/mezdelex/NeovimConfig/blob/main/init.lua) |
 
 ### Plugins
 
@@ -69,6 +69,7 @@
 |    Name    | Source |                                            Uri                                            |
 | :--------: | :----: | :---------------------------------------------------------------------------------------: |
 |    dap     |  n/a   |        [dap](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/dap.lua)        |
+|    pack    |  n/a   |       [pack](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/pack.lua)       |
 | treesitter |  n/a   | [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/treesitter.lua) |
 
 ### Lsp
