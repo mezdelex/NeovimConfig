@@ -1,10 +1,10 @@
 ---@type Utils.Pack.Spec
 return {
-    src = "https://github.com/sainnhe/everforest",
-    config = function()
-        vim.g.everforest_disable_italic_comment = true
-        vim.g.everforest_enable_italic = false
+	config = function()
+		vim.g.everforest_disable_italic_comment = true
+		vim.g.everforest_enable_italic = false
 
-        vim.cmd.colorscheme("everforest")
-    end,
+		vim.cmd.colorscheme("everforest")
+	end,
+	src = "https://github.com/sainnhe/everforest",
 }

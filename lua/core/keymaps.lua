@@ -1,4 +1,7 @@
+---@type vim.keymap.set.Opts
 local options = { silent = true }
+
+vim.g.mapleader = " "
 
 vim.keymap.set("n", "<a-Q>", "<cmd>qa!<cr>")
 vim.keymap.set("n", "<a-q>", "<cmd>qa<cr>")

@@ -1,7 +1,5 @@
 ---@type Utils.Pack.Spec
 return {
-	src = "https://github.com/saghen/blink.cmp",
-	build = "cargo build --release",
 	config = function()
 		require("blink.cmp").setup({
 			completion = {
@@ -10,4 +8,6 @@ return {
 			keymap = { preset = "enter" },
 		})
 	end,
+	data = { build = "cargo build --release" },
+	src = "https://github.com/saghen/blink.cmp",
 }

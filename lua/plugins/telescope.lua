@@ -1,6 +1,5 @@
 ---@type Utils.Pack.Spec
 return {
-	src = "https://github.com/nvim-telescope/telescope.nvim",
 	config = function()
 		local builtin = require("telescope.builtin")
 		local telescope = require("telescope")
@@ -30,7 +29,11 @@ return {
 		vim.keymap.set({ "n", "x" }, "gs", builtin.grep_string)
 	end,
 	dependencies = {
-		{ src = "https://github.com/nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+		{
+			data = { build = "make" },
+			src = "https://github.com/nvim-telescope/telescope-fzf-native.nvim",
+		},
 		{ src = "https://github.com/nvim-telescope/telescope-live-grep-args.nvim" },
 	},
+	src = "https://github.com/nvim-telescope/telescope.nvim",
 }

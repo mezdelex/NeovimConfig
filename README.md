@@ -18,19 +18,14 @@
 
 ---
 
-### Plugin
+### Core
 
-|   Name   | Source |                                        Uri                                         |
-| :------: | :----: | :--------------------------------------------------------------------------------: |
-| autocmds |  n/a   | [autocmds](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/autocmds.lua) |
-| keymaps  |  n/a   |  [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/keymaps.lua)  |
-| options  |  n/a   |  [options](https://github.com/mezdelex/NeovimConfig/blob/main/plugin/options.lua)  |
-
-### Pack
-
-| Name | Source |                                 Uri                                 |
-| :--: | :----: | :-----------------------------------------------------------------: |
-| pack |  n/a   | [pack](https://github.com/mezdelex/NeovimConfig/blob/main/init.lua) |
+|   Name   | Source |                                         Uri                                          |
+| :------: | :----: | :----------------------------------------------------------------------------------: |
+| autocmds |  n/a   | [autocmds](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/autocmds.lua) |
+| keymaps  |  n/a   |  [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/keymaps.lua)  |
+| options  |  n/a   |  [options](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/options.lua)  |
+|   pack   |  n/a   |     [pack](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/pack.lua)     |
 
 ### Plugins
 

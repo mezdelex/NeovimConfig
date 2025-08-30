@@ -1,10 +1,10 @@
 ---@type Utils.Pack.Spec
 return {
-    src = "https://github.com/mistweaverco/kulala.nvim",
-    config = function()
-        require("kulala").setup({
-            global_keymaps = true,
-            global_keymaps_prefix = "<leader>k",
-        })
-    end,
+	config = function()
+		require("kulala").setup({
+			global_keymaps = true,
+			global_keymaps_prefix = "<leader>k",
+		})
+	end,
+	src = "https://github.com/mistweaverco/kulala.nvim",
 }

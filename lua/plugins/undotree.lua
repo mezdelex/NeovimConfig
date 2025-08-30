@@ -1,9 +1,9 @@
 ---@type Utils.Pack.Spec
 return {
-    src = "https://github.com/mbbill/undotree",
-    config = function()
-        vim.g.undotree_DiffCommand = "fc"
+	config = function()
+		vim.g.undotree_DiffCommand = "fc"
 
-        vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
-    end,
+		vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+	end,
+	src = "https://github.com/mbbill/undotree",
 }

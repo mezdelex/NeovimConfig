@@ -1,6 +1,5 @@
 ---@type Utils.Pack.Spec
 return {
-	src = "https://github.com/folke/lazydev.nvim",
 	config = function()
 		require("lazydev").setup({
 			library = {
@@ -9,4 +8,5 @@ return {
 			},
 		})
 	end,
+	src = "https://github.com/folke/lazydev.nvim",
 }

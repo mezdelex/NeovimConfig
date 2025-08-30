@@ -1,6 +1,5 @@
 ---@type Utils.Pack.Spec
 return {
-	src = "https://github.com/mfussenegger/nvim-dap",
 	config = function()
 		local dap = require("dap")
 		local dapui = require("dapui")
@@ -99,4 +98,5 @@ return {
 		{ src = "https://github.com/nvim-neotest/nvim-nio" },
 		{ src = "https://github.com/rcarriga/nvim-dap-ui" },
 	},
+	src = "https://github.com/mfussenegger/nvim-dap",
 }
