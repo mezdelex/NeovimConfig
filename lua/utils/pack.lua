@@ -44,7 +44,7 @@ end
 
 ---@param spec Utils.Pack.Spec
 local function handle_build(spec)
-	if not spec.data or utils_shared.is_null_or_whitespace(spec.data.build) then
+	if not spec.data or spec.data.build:is_null_or_whitespace() then
 		return
 	end
 
@@ -55,13 +55,13 @@ local function handle_build(spec)
 	vim.notify("Building " .. plugin_name .. "...", vim.log.levels.WARN)
 	local response = vim.system(vim.split(spec.data.build, " "), { cwd = plugin_path }):wait()
 	vim.notify(
-		utils_shared.trim(
+		(
 			(
-				not utils_shared.is_null_or_whitespace(response.stderr) and response.stderr
-				or not utils_shared.is_null_or_whitespace(response.stdout) and response.stdout
+				not response.stderr:is_null_or_whitespace() and response.stderr
+				or not response.stdout:is_null_or_whitespace() and response.stdout
 				or "exit code: " .. string(response.code)
 			)
-		),
+		):trim(),
 		response.code ~= 0 and vim.log.levels.ERROR or vim.log.levels.INFO
 	)
 end
