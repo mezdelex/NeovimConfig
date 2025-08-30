@@ -5,5 +5,6 @@ return {
 			preview = { winblend = 0 },
 		})
 	end,
+	defer = true,
 	src = "https://github.com/kevinhwang91/nvim-bqf",
 }

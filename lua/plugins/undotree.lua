@@ -5,5 +5,6 @@ return {
 
 		vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 	end,
+	defer = true,
 	src = "https://github.com/mbbill/undotree",
 }

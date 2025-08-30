@@ -33,8 +33,10 @@ return {
 		vim.keymap.set("n", "<a-/>", "gcc", options)
 		vim.keymap.set("x", "<a-/>", "gc", options)
 	end,
+	defer = true,
 	dependencies = {
 		{
+			defer = true,
 			src = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects",
 			version = "main",
 		},

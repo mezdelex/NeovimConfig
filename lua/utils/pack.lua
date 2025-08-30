@@ -1,5 +1,6 @@
 ---@class Utils.Pack.Spec : vim.pack.Spec
 ---@field config function?
+---@field defer boolean?
 ---@field dependencies Utils.Pack.Spec[]?
 
 local pack = {
@@ -84,7 +85,11 @@ local M = {
 		vim.pack.add(specs, pack.add_options)
 		for _, spec in ipairs(specs) do
 			if spec.config then
-				spec.config()
+				if spec.defer then
+					vim.schedule(spec.config)
+				else
+					spec.config()
+				end
 			end
 		end
 	end,

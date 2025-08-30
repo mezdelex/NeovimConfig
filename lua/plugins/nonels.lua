@@ -13,5 +13,6 @@ return {
 			},
 		})
 	end,
+	defer = true,
 	src = "https://github.com/nvimtools/none-ls.nvim",
 }

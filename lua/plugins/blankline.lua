@@ -8,5 +8,6 @@ return {
 			},
 		})
 	end,
+	defer = true,
 	src = "https://github.com/lukas-reineke/indent-blankline.nvim",
 }

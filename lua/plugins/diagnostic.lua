@@ -39,5 +39,6 @@ return {
 			},
 		})
 	end,
+	defer = true,
 	src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim",
 }

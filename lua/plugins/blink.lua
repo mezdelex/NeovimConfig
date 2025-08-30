@@ -9,5 +9,6 @@ return {
 		})
 	end,
 	data = { build = "cargo build --release" },
+	defer = true,
 	src = "https://github.com/saghen/blink.cmp",
 }

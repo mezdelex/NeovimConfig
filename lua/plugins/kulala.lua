@@ -6,5 +6,6 @@ return {
 			global_keymaps_prefix = "<leader>k",
 		})
 	end,
+	defer = true,
 	src = "https://github.com/mistweaverco/kulala.nvim",
 }

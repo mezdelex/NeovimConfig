@@ -10,5 +10,6 @@ return {
 
 		vim.keymap.set("n", "<leader>g", gitsigns.blame)
 	end,
+	defer = true,
 	src = "https://github.com/lewis6991/gitsigns.nvim",
 }

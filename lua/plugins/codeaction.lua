@@ -16,5 +16,6 @@ return {
 
 		vim.keymap.set("n", "<leader>.", codeaction.code_action)
 	end,
+	defer = true,
 	src = "https://github.com/rachartier/tiny-code-action.nvim",
 }

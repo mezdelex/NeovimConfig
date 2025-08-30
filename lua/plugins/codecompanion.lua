@@ -11,6 +11,7 @@ return {
 
 		vim.keymap.set("n", "<leader>h", codecompanion.chat)
 	end,
+	defer = true,
 	dependencies = {
 		{ src = "https://github.com/nvim-lua/plenary.nvim" },
 	},

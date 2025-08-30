@@ -9,10 +9,20 @@ return {
 
 		vim.keymap.set("n", "<leader>R", "<cmd>Roslyn restart<cr>")
 	end,
+	defer = true,
 	dependencies = {
-		{ src = "https://github.com/seblyng/roslyn.nvim" },
-		{ src = "https://github.com/williamboman/mason-lspconfig.nvim" },
-		{ src = "https://github.com/williamboman/mason.nvim" },
+		{
+			defer = true,
+			src = "https://github.com/seblyng/roslyn.nvim",
+		},
+		{
+			defer = true,
+			src = "https://github.com/williamboman/mason-lspconfig.nvim",
+		},
+		{
+			defer = true,
+			src = "https://github.com/williamboman/mason.nvim",
+		},
 	},
 	src = "https://github.com/neovim/nvim-lspconfig",
 }

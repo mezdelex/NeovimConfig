@@ -6,5 +6,6 @@ return {
 			hint_enable = false,
 		})
 	end,
+	defer = true,
 	src = "https://github.com/ray-x/lsp_signature.nvim",
 }

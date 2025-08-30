@@ -9,5 +9,6 @@ return {
 			},
 		})
 	end,
+	defer = true,
 	src = "https://github.com/tversteeg/registers.nvim",
 }
