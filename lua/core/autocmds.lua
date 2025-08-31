@@ -1,13 +1,17 @@
-local group = "Init"
+local autocmds = {
+	---@type vim.api.keyset.create_augroup
+	augroup_options = { clear = true },
+	group = "Init",
+}
 local utils_pack = require("utils.pack")
 
-vim.api.nvim_create_augroup(group, { clear = true })
+vim.api.nvim_create_augroup(autocmds.group, autocmds.augroup_options)
 
 vim.api.nvim_create_autocmd("FileType", {
 	callback = function(args)
 		pcall(vim.treesitter.start, args.buf)
 	end,
-	group = group,
+	group = autocmds.group,
 })
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(args)
@@ -22,30 +26,31 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "gr", vim.lsp.buf.references, options)
 		vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, options)
 	end,
-	group = group,
+	group = autocmds.group,
 })
 vim.api.nvim_create_autocmd("PackChanged", {
 	callback = function(args)
 		---@type string
 		local kind = args.data.kind
-		---@type Utils.Pack.Spec
-		local spec = args.data.spec
 
 		if kind == "install" or kind == "update" then
+			---@type Utils.Pack.Spec
+			local spec = args.data.spec
+
 			utils_pack.build({ spec })
 		end
 	end,
-	group = group,
+	group = autocmds.group,
 })
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
 		vim.highlight.on_yank({ timeout = 100 })
 	end,
-	group = group,
+	group = autocmds.group,
 })
 vim.api.nvim_create_autocmd("VimEnter", {
 	callback = function()
 		vim.cmd("clearjumps")
 	end,
-	group = group,
+	group = autocmds.group,
 })

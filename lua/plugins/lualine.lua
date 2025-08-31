@@ -71,5 +71,6 @@ return {
 			},
 		})
 	end,
+	defer = true,
 	src = "https://github.com/nvim-lualine/lualine.nvim",
 }
