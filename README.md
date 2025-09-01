@@ -18,6 +18,12 @@
 
 ---
 
+> [!TIP]
+>
+> - To profile non deferred plugins, put `vim.g.start_time = vim.uv.hrtime()` before `vim.loader.enable()` @ [init.lua](https://github.com/mezdelex/NeovimConfig/tree/main/init.lua)
+
+---
+
 ### Core
 
 |    Name    | Source |                                           Uri                                            |
@@ -66,6 +72,7 @@
 | :--------: | :----: | :---------------------------------------------------------------------------------------: |
 |    dap     |  n/a   |        [dap](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/dap.lua)        |
 |    pack    |  n/a   |       [pack](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/pack.lua)       |
+|  profiler  |  n/a   |   [profiler](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/profiler.lua)   |
 |   shared   |  n/a   |     [shared](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/shared.lua)     |
 | treesitter |  n/a   | [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/treesitter.lua) |
 
