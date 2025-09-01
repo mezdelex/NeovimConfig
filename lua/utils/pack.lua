@@ -3,14 +3,15 @@
 ---@field defer boolean?
 ---@field dependencies Utils.Pack.Spec[]?
 
+---@type Utils.Pack.Spec[], string[]
+local cached_specs, cached_names
 local pack = {
 	---@type vim.pack.keyset.add
 	add_options = { confirm = false },
 	---@type vim.pack.keyset.update
 	update_options = { force = true },
 }
----@type Utils.Pack.Spec[], string[]
-local cached_specs, cached_names
+local utils_profiler = require("utils.profiler")
 local utils_shared = require("utils.shared")
 
 ---@return Utils.Pack.Spec[], string[]
@@ -53,14 +54,14 @@ local function handle_build(spec)
 	---@type string
 	local plugin_path = utils_shared.data_path .. utils_shared.pack_path .. plugin_name
 
-	vim.notify("Building " .. plugin_name .. "...", vim.log.levels.WARN)
+	vim.notify(("Building %s..."):format(plugin_name), vim.log.levels.WARN)
 	local response = vim.system(vim.split(spec.data.build, " "), { cwd = plugin_path }):wait()
 	vim.notify(
 		(
 			(
 				not response.stderr:is_null_or_whitespace() and response.stderr
 				or not response.stdout:is_null_or_whitespace() and response.stdout
-				or "exit code: " .. string(response.code)
+				or ("Exit code: %d"):format(response.code)
 			)
 		):trim(),
 		response.code ~= 0 and vim.log.levels.ERROR or vim.log.levels.INFO
@@ -87,6 +88,8 @@ local M = {
 			if spec.config then
 				if spec.defer then
 					vim.schedule(spec.config)
+				elseif vim.g.start_time then
+					utils_profiler.time_to_interaction(spec)
 				else
 					spec.config()
 				end
