@@ -18,12 +18,6 @@
 
 ---
 
-> [!TIP]
->
-> - To profile non deferred plugins, put `vim.g.start_time = vim.uv.hrtime()` before `vim.loader.enable()` @ [init.lua](https://github.com/mezdelex/NeovimConfig/tree/main/init.lua)
-
----
-
 ### Core
 
 |    Name    | Source |                                           Uri                                            |
@@ -67,6 +61,11 @@
 |   undotree    |              [repo](https://github.com/mbbill/undotree)              |      [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)      |
 
 ### Utils
+
+> [!TIP]
+>
+> - To profile non deferred plugins use `vim.g.start_time = vim.uv.hrtime()` @ [init.lua](https://github.com/mezdelex/NeovimConfig/tree/main/init.lua)
+>   ![image](https://github.com/user-attachments/assets/56892eaa-204d-461c-93f1-55dcc05fed1f)
 
 |    Name    | Source |                                            Uri                                            |
 | :--------: | :----: | :---------------------------------------------------------------------------------------: |
