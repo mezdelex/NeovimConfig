@@ -17,16 +17,12 @@
 
 local textobjects = {
 	group = "textobjects",
-	---@type string[]
-	mode_nox = { "n", "o", "x" },
-	---@type string[]
-	mode_ox = { "o", "x" },
-	---@type vim.keymap.set.Opts
-	options = { expr = true },
+	mode_nox = { "n", "o", "x" }, ---@type string[]
+	mode_ox = { "o", "x" }, ---@type string[]
+	options = { expr = true }, ---@type vim.keymap.set.Opts
 }
 
----@class Utils.Treesitter
-local M = {
+local M = { ---@class Utils.Treesitter
 	---@param lhs string
 	---@param to_move Utils.Treesitter.TextObject.Move
 	---@param query string

@@ -1,6 +1,5 @@
 local autocmds = {
-	---@type vim.api.keyset.create_augroup
-	augroup_options = { clear = true },
+	augroup_options = { clear = true }, ---@type vim.api.keyset.create_augroup
 	group = "Init",
 }
 local utils_pack = require("utils.pack")
@@ -15,8 +14,7 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(args)
-		---@type vim.keymap.set.Opts
-		local options = { buffer = args.buf }
+		local options = { buffer = args.buf } ---@type vim.keymap.set.Opts
 
 		vim.keymap.set("n", "<a-f>", vim.lsp.buf.format, options)
 		vim.keymap.set("n", "<leader>i", vim.lsp.buf.hover, options)
@@ -30,12 +28,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 vim.api.nvim_create_autocmd("PackChanged", {
 	callback = function(args)
-		---@type string
-		local kind = args.data.kind
+		local kind = args.data.kind ---@type string
 
 		if kind == "install" or kind == "update" then
-			---@type Utils.Pack.Spec
-			local spec = args.data.spec
+			local spec = args.data.spec ---@type Utils.Pack.Spec
 
 			utils_pack.build({ spec })
 		end

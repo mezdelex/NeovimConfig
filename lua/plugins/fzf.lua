@@ -1,5 +1,4 @@
----@type Utils.Pack.Spec
-return {
+return { ---@type Utils.Pack.Spec
 	config = function()
 		local fzf = require("fzf-lua")
 

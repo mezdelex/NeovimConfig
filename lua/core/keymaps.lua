@@ -1,5 +1,4 @@
----@type vim.keymap.set.Opts
-local options = { silent = true }
+local options = { silent = true } ---@type vim.keymap.set.Opts
 
 vim.g.mapleader = " "
 

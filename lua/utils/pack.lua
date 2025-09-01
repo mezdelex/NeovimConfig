@@ -3,13 +3,10 @@
 ---@field defer boolean?
 ---@field dependencies Utils.Pack.Spec[]?
 
----@type Utils.Pack.Spec[], string[]
-local cached_specs, cached_names
+local cached_specs, cached_names ---@type Utils.Pack.Spec[], string[]
 local pack = {
-	---@type vim.pack.keyset.add
-	add_options = { confirm = false },
-	---@type vim.pack.keyset.update
-	update_options = { force = true },
+	add_options = { confirm = false }, ---@type vim.pack.keyset.add
+	update_options = { force = true }, ---@type vim.pack.keyset.update
 }
 local utils_profiler = require("utils.profiler")
 local utils_shared = require("utils.shared")
@@ -20,15 +17,12 @@ local function get_specs_and_names()
 		return cached_specs, cached_names
 	end
 
-	---@type string[]
-	local plugin_files = vim.fn.glob(utils_shared.config_path .. "/lua/plugins/*.lua", true, true)
-	---@type Utils.Pack.Spec[], string[]
-	local specs, names = {}, {}
+	local plugin_files = vim.fn.glob(utils_shared.config_path .. "/lua/plugins/*.lua", true, true) ---@type string[]
+	local specs, names = {}, {} ---@type Utils.Pack.Spec[], string[]
 
 	for _, file in ipairs(plugin_files) do
 		local plugin_name = vim.fn.fnamemodify(file, ":t:r")
-		---@type Utils.Pack.Spec
-		local spec = require("plugins." .. plugin_name)
+		local spec = require("plugins." .. plugin_name) ---@type Utils.Pack.Spec
 
 		if spec.dependencies then
 			for _, dep in ipairs(spec.dependencies) do
@@ -51,8 +45,7 @@ local function handle_build(spec)
 	end
 
 	local plugin_name = vim.fn.fnamemodify(spec.src, ":t")
-	---@type string
-	local plugin_path = utils_shared.data_path .. utils_shared.pack_path .. plugin_name
+	local plugin_path = utils_shared.data_path .. utils_shared.pack_path .. plugin_name ---@type string
 
 	vim.notify(("Building %s..."):format(plugin_name), vim.log.levels.WARN)
 	local response = vim.system(vim.split(spec.data.build, " "), { cwd = plugin_path }):wait()
@@ -68,8 +61,7 @@ local function handle_build(spec)
 	)
 end
 
----@class Utils.Pack
-local M = {
+local M = { ---@class Utils.Pack
 	---@param specs Utils.Pack.Spec[]?
 	build = function(specs)
 		if not specs or #specs == 0 then

@@ -1,5 +1,4 @@
----@class Utils.Profiler
-local M = {
+local M = { ---@class Utils.Profiler
 	---@param spec Utils.Pack.Spec
 	time_to_interaction = function(spec)
 		spec.config()

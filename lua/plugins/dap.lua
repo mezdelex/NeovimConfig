@@ -1,5 +1,4 @@
----@type Utils.Pack.Spec
-return {
+return { ---@type Utils.Pack.Spec
 	config = function()
 		local dap = require("dap")
 		local dapui = require("dapui")

@@ -1,5 +1,4 @@
----@type Utils.Pack.Spec
-return {
+return { ---@type Utils.Pack.Spec
 	config = function()
 		vim.g.undotree_DiffCommand = "fc"
 

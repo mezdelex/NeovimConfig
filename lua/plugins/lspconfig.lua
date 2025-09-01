@@ -1,5 +1,4 @@
----@type Utils.Pack.Spec
-return {
+return { ---@type Utils.Pack.Spec
 	config = function()
 		require("mason").setup({
 			registries = { "github:crashdummyy/mason-registry", "github:mason-org/mason-registry" },

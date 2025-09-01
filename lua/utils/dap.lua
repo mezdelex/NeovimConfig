@@ -28,14 +28,12 @@ local function scan_dir(dir, latest_file, latest_time)
 	return latest_file, latest_time
 end
 
----@class Utils.Dap
-local M = {
+local M = { ---@class Utils.Dap
 	---@param base_paths string[]
 	---@return string
 	find_file_or_default = function(base_paths)
 		local cwd = vim.fn.getcwd()
-		---@type string[]
-		local build_dirs = vim.tbl_map(function(path)
+		local build_dirs = vim.tbl_map(function(path) ---@type string[]
 			return cwd .. path
 		end, base_paths)
 		local latest_file, latest_time = nil, 0
