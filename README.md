@@ -45,6 +45,7 @@
 |   devicons    |        [repo](https://github.com/nvim-tree/nvim-web-devicons)        |      [devicons](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/devicons.lua)      |
 |  diagnostic   |  [repo](https://github.com/rachartier/tiny-inline-diagnostic.nvim)   |    [diagnostic](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/diagnostic.lua)    |
 |  everforest   |            [repo](https://github.com/sainnhe/everforest)             |    [everforest](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/everforest.lua)    |
+|      fzf      |             [repo](https://github.com/ibhagwan/fzf-lua)              |           [fzf](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/fzf.lua)           |
 |   gitsigns    |          [repo](https://github.com/lewis6991/gitsigns.nvim)          |      [gitsigns](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/gitsigns.lua)      |
 |    kulala     |         [repo](https://github.com/mistweaverco/kulala.nvim)          |        [kulala](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/kulala.lua)        |
 |    lazydev    |            [repo](https://github.com/folke/lazydev.nvim)             |       [lazydev](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/lazydev.lua)       |
@@ -56,7 +57,6 @@
 |      oil      |             [repo](https://github.com/stevearc/oil.nvim)             |           [oil](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/oil.lua)           |
 |    quicker    |           [repo](https://github.com/stevearc/quicker.nvim)           |       [quicker](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/quicker.lua)       |
 |   registers   |         [repo](https://github.com/tversteeg/registers.nvim)          |     [registers](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/registers.lua)     |
-|   telescope   |       [repo](https://github.com/nvim-telescope/telescope.nvim)       |     [telescope](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/telescope.lua)     |
 |  treesitter   |      [repo](https://github.com/nvim-treesitter/nvim-treesitter)      |    [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/treesitter.lua)    |
 |   undotree    |              [repo](https://github.com/mbbill/undotree)              |      [undotree](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/undotree.lua)      |
 
