@@ -1,10 +1,10 @@
----@param this string?
+---@param self string
 ---@return boolean
-string.is_null_or_whitespace = function(this)
-	return not this or this:match("^%s*$") ~= nil
+string.is_empty_or_whitespace = function(self)
+	return self:match("^%s*$")
 end
----@param this string
----@return string
-string.trim = function(this)
-	return (this:gsub("^%s*(.-)%s*$", "%1"))
+---@param self string
+---@return string, number
+string.trim = function(self)
+	return self:gsub("^%s*(.-)%s*$", "%1")
 end

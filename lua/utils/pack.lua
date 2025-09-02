@@ -42,7 +42,12 @@ end
 ---@private
 ---@param spec Utils.Pack.Spec
 local function handle_build(spec)
-	if not spec.data or spec.data.build:is_null_or_whitespace() then
+	if
+		not spec.data
+		or not spec.data.build
+		or not type(spec.data.build) == "string"
+		or spec.data.build:is_empty_or_whitespace()
+	then
 		return
 	end
 
@@ -53,11 +58,9 @@ local function handle_build(spec)
 	local response = vim.system(vim.split(spec.data.build, " "), { cwd = package_path }):wait()
 	vim.notify(
 		(
-			(
-				not response.stderr:is_null_or_whitespace() and response.stderr
-				or not response.stdout:is_null_or_whitespace() and response.stdout
-				or ("Exit code: %d"):format(response.code)
-			)
+			response.stderr and not response.stderr:is_empty_or_whitespace() and response.stderr
+			or response.stdout and not response.stdout:is_empty_or_whitespace() and response.stdout
+			or ("Exit code: %d"):format(response.code)
 		):trim(),
 		response.code ~= 0 and vim.log.levels.ERROR or vim.log.levels.INFO
 	)
