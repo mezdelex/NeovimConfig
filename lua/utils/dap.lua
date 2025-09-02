@@ -1,3 +1,4 @@
+---@private
 ---@param dir string
 ---@param latest_file string?
 ---@param latest_time number
@@ -28,22 +29,22 @@ local function scan_dir(dir, latest_file, latest_time)
 	return latest_file, latest_time
 end
 
-local M = { ---@class Utils.Dap
-	---@param base_paths string[]
-	---@return string
-	find_file_or_default = function(base_paths)
-		local cwd = vim.fn.getcwd()
-		local build_dirs = vim.tbl_map(function(path) ---@type string[]
-			return cwd .. path
-		end, base_paths)
-		local latest_file, latest_time = nil, 0
+local M = {} ---@class Utils.Dap
 
-		for _, dir in ipairs(build_dirs) do
-			latest_file, latest_time = scan_dir(dir, latest_file, latest_time)
-		end
+---@param base_paths string[]
+---@return string
+M.find_file_or_default = function(base_paths)
+	local cwd = vim.fn.getcwd()
+	local build_dirs = vim.tbl_map(function(path) ---@type string[]
+		return cwd .. path
+	end, base_paths)
+	local latest_file, latest_time = nil, 0
 
-		return latest_file or build_dirs[1]
-	end,
-}
+	for _, dir in ipairs(build_dirs) do
+		latest_file, latest_time = scan_dir(dir, latest_file, latest_time)
+	end
+
+	return latest_file or build_dirs[1]
+end
 
 return M

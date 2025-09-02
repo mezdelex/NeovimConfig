@@ -11,13 +11,14 @@ local pack = {
 local utils_profiler = require("utils.profiler")
 local utils_shared = require("utils.shared")
 
+---@private
 ---@return Utils.Pack.Spec[], string[]
 local function get_specs_and_names()
 	if cached_specs and cached_names then
 		return cached_specs, cached_names
 	end
 
-	local plugin_files = vim.fn.glob(utils_shared.config_path .. utils_shared.plugins_path .. "*.lua", true, true) ---@type string[]
+	local plugin_files = vim.fn.glob(utils_shared.config_path .. "/lua/plugins/*.lua", true, true) ---@type string[]
 	local specs, names = {}, {} ---@type Utils.Pack.Spec[], string[]
 
 	for _, file in ipairs(plugin_files) do
@@ -38,6 +39,7 @@ local function get_specs_and_names()
 	return specs, names
 end
 
+---@private
 ---@param spec Utils.Pack.Spec
 local function handle_build(spec)
 	if not spec.data or spec.data.build:is_null_or_whitespace() then
@@ -45,10 +47,10 @@ local function handle_build(spec)
 	end
 
 	local plugin_name = vim.fn.fnamemodify(spec.src, ":t")
-	local plugin_path = utils_shared.data_path .. utils_shared.pack_path .. plugin_name ---@type string
+	local package_path = utils_shared.data_path .. "/site/pack/core/opt/" .. plugin_name ---@type string
 
 	vim.notify(("Building %s..."):format(plugin_name), vim.log.levels.WARN)
-	local response = vim.system(vim.split(spec.data.build, " "), { cwd = plugin_path }):wait()
+	local response = vim.system(vim.split(spec.data.build, " "), { cwd = package_path }):wait()
 	vim.notify(
 		(
 			(
@@ -61,38 +63,38 @@ local function handle_build(spec)
 	)
 end
 
-local M = { ---@class Utils.Pack
-	---@param specs Utils.Pack.Spec[]?
-	build = function(specs)
-		if not specs or #specs == 0 then
-			specs, _ = get_specs_and_names()
-		end
+local M = {} ---@class Utils.Pack
 
-		for _, spec in ipairs(specs) do
-			handle_build(spec)
-		end
-	end,
-	load = function()
-		local specs, _ = get_specs_and_names()
+---@param specs Utils.Pack.Spec[]?
+M.build = function(specs)
+	if not specs or #specs == 0 then
+		specs, _ = get_specs_and_names()
+	end
 
-		vim.pack.add(specs, pack.add_options)
-		for _, spec in ipairs(specs) do
-			if spec.config then
-				if spec.defer then
-					vim.schedule(spec.config)
-				elseif vim.g.start_time then
-					utils_profiler.time_to_interaction(spec)
-				else
-					spec.config()
-				end
+	for _, spec in ipairs(specs) do
+		handle_build(spec)
+	end
+end
+M.load = function()
+	local specs, _ = get_specs_and_names()
+
+	vim.pack.add(specs, pack.add_options)
+	for _, spec in ipairs(specs) do
+		if spec.config then
+			if spec.defer then
+				vim.schedule(spec.config)
+			elseif vim.g.start_time then
+				utils_profiler.time_to_interaction(spec)
+			else
+				spec.config()
 			end
 		end
-	end,
-	update = function()
-		local _, names = get_specs_and_names()
+	end
+end
+M.update = function()
+	local _, names = get_specs_and_names()
 
-		vim.pack.update(names, pack.update_options)
-	end,
-}
+	vim.pack.update(names, pack.update_options)
+end
 
 return M

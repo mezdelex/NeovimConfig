@@ -1,8 +1,6 @@
-local M = { ---@class Utils.Shared
-	config_path = vim.fn.stdpath("config"),
-	data_path = vim.fn.stdpath("data"),
-	pack_path = "/site/pack/core/opt/",
-	plugins_path = "/lua/plugins/",
-}
+local M = {} ---@class Utils.Shared
+
+M.config_path = vim.fn.stdpath("config")
+M.data_path = vim.fn.stdpath("data")
 
 return M
