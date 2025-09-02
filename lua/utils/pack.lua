@@ -17,7 +17,7 @@ local function get_specs_and_names()
 		return cached_specs, cached_names
 	end
 
-	local plugin_files = vim.fn.glob(utils_shared.config_path .. "/lua/plugins/*.lua", true, true) ---@type string[]
+	local plugin_files = vim.fn.glob(utils_shared.config_path .. utils_shared.plugins_path .. "*.lua", true, true) ---@type string[]
 	local specs, names = {}, {} ---@type Utils.Pack.Spec[], string[]
 
 	for _, file in ipairs(plugin_files) do
