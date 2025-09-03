@@ -44,7 +44,7 @@
 |      dap      |           [repo](https://github.com/rcarriga/nvim-dap-ui)            |           [dap](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/dap.lua)           |
 |   devicons    |        [repo](https://github.com/nvim-tree/nvim-web-devicons)        |      [devicons](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/devicons.lua)      |
 |  diagnostic   |  [repo](https://github.com/rachartier/tiny-inline-diagnostic.nvim)   |    [diagnostic](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/diagnostic.lua)    |
-|  everforest   |            [repo](https://github.com/sainnhe/everforest)             |    [everforest](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/everforest.lua)    |
+|  everforest   |          [repo](https://github.com/neanias/everforest-nvim)          |    [everforest](https://github.com/mezdelex/NeovimConfig/blob/main/lua/plugins/everforest.lua)    |
 |      fzf      |             [repo](https://github.com/ibhagwan/fzf-lua)              |           [fzf](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/fzf.lua)           |
 |   gitsigns    |          [repo](https://github.com/lewis6991/gitsigns.nvim)          |      [gitsigns](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/gitsigns.lua)      |
 |    kulala     |         [repo](https://github.com/mistweaverco/kulala.nvim)          |        [kulala](https://github.com/mezdelex/NeovimConfig/tree/main/lua/plugins/kulala.lua)        |
