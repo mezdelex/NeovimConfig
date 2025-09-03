@@ -87,7 +87,7 @@ M.load = function()
 			if spec.defer then
 				vim.schedule(spec.config)
 			elseif vim.g.start_time then
-				utils_profiler.time_to_interaction(spec)
+				utils_profiler.profile(spec)
 			else
 				spec.config()
 			end
