@@ -3,9 +3,10 @@
 ---@field defer boolean?
 ---@field dependencies Utils.Pack.Spec[]?
 
-local cached_specs, cached_names ---@type Utils.Pack.Spec[], string[]
 local pack = {
 	add_options = { confirm = false }, ---@type vim.pack.keyset.add
+	packages_rpath = "/site/pack/core/opt/",
+	plugins_rpath = "/lua/plugins/",
 	update_options = { force = true }, ---@type vim.pack.keyset.update
 }
 local utils_profiler = require("utils.profiler")
@@ -14,15 +15,11 @@ local utils_shared = require("utils.shared")
 ---@private
 ---@return Utils.Pack.Spec[], string[]
 local function get_specs_and_names()
-	if cached_specs and cached_names then
-		return cached_specs, cached_names
-	end
-
-	local plugin_files = vim.fn.glob(utils_shared.config_path .. "/lua/plugins/*.lua", true, true) ---@type string[]
+	local plugin_fpaths = vim.fn.glob(utils_shared.config_path .. pack.plugins_rpath .. "*.lua", true, true) ---@type string[]
 	local specs, names = {}, {} ---@type Utils.Pack.Spec[], string[]
 
-	for _, file in ipairs(plugin_files) do
-		local plugin_name = vim.fn.fnamemodify(file, ":t:r")
+	for _, plugin_fpath in ipairs(plugin_fpaths) do
+		local plugin_name = vim.fn.fnamemodify(plugin_fpath, ":t:r")
 		local spec = require("plugins." .. plugin_name) ---@type Utils.Pack.Spec
 
 		if spec.dependencies then
@@ -34,9 +31,23 @@ local function get_specs_and_names()
 		specs[#specs + 1] = spec
 		names[#names + 1] = vim.fn.fnamemodify(spec.src, ":t")
 	end
-	cached_specs, cached_names = specs, names
 
 	return specs, names
+end
+
+---@private
+---@return  string[]
+local function get_package_names()
+	local package_fpaths = vim.fn.glob(utils_shared.data_path .. pack.packages_rpath .. "*/", false, true) ---@type string[]
+	local package_names = {} ---@type string[]
+
+	for _, package_fpath in ipairs(package_fpaths) do
+		local package_name = vim.fn.fnamemodify(package_fpath:sub(1, -2), ":t")
+
+		package_names[#package_names + 1] = package_name
+	end
+
+	return package_names
 end
 
 ---@private
@@ -51,11 +62,11 @@ local function handle_build(spec)
 		return
 	end
 
-	local plugin_name = vim.fn.fnamemodify(spec.src, ":t")
-	local package_path = utils_shared.data_path .. "/site/pack/core/opt/" .. plugin_name ---@type string
+	local package_name = vim.fn.fnamemodify(spec.src, ":t")
+	local package_fpath = utils_shared.data_path .. pack.packages_rpath .. package_name ---@type string
 
-	vim.notify(("Building %s..."):format(plugin_name), vim.log.levels.WARN)
-	local response = vim.system(vim.split(spec.data.build, " "), { cwd = package_path }):wait()
+	vim.notify(("Building %s..."):format(package_name), vim.log.levels.WARN)
+	local response = vim.system(vim.split(spec.data.build, " "), { cwd = package_fpath }):wait()
 	vim.notify(
 		(
 			response.stderr and not response.stderr:is_empty_or_whitespace() and response.stderr
@@ -77,6 +88,23 @@ M.build = function(specs)
 	for _, spec in ipairs(specs) do
 		handle_build(spec)
 	end
+end
+M.clean = function()
+	local _, names = get_specs_and_names()
+	local package_names = get_package_names()
+	local names_set, packages_to_delete = {}, {} ---@type table<string, boolean>, string[]
+
+	for _, name in ipairs(names) do
+		names_set[name] = true
+	end
+
+	for _, package_name in ipairs(package_names) do
+		if not names_set[package_name] then
+			packages_to_delete[#packages_to_delete + 1] = package_name
+		end
+	end
+
+	vim.pack.del(packages_to_delete)
 end
 M.load = function()
 	local specs, _ = get_specs_and_names()
