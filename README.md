@@ -66,7 +66,7 @@
 >
 > To profile non deferred plugins use `vim.g.start_time = vim.uv.hrtime()` @ [init.lua](https://github.com/mezdelex/NeovimConfig/tree/main/init.lua)
 >
-> ![image](https://github.com/user-attachments/assets/a4451de3-b683-4e47-98dd-b2ae92615f67)
+> ![image](https://github.com/user-attachments/assets/9fec944f-ca82-4d78-a017-284698c77fce)
 
 |    Name    | Source |                                            Uri                                            |
 | :--------: | :----: | :---------------------------------------------------------------------------------------: |
@@ -84,6 +84,8 @@
 
 ### Images
 
-![image](https://github.com/user-attachments/assets/3f59362b-5d91-4c20-a1fd-c880e8530fd2)
-![image](https://github.com/user-attachments/assets/010b7455-4c7f-4899-b118-4043938b2919)
-![image](https://github.com/user-attachments/assets/06cd4c6f-98af-4d18-84ef-a0e6fd34685d)
+![image](https://github.com/user-attachments/assets/dbe09968-a341-4214-a034-fa4954aa4554)
+![image](https://github.com/user-attachments/assets/04789f4d-5481-40a3-8f7a-aee89b026273)
+![image](https://github.com/user-attachments/assets/4d77fb01-9be6-478b-8b11-07408bf67f9d)
+
+
