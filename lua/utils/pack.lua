@@ -1,7 +1,7 @@
 ---@class Utils.Pack.Spec : vim.pack.Spec
----@field config fun()?
----@field defer boolean?
----@field dependencies Utils.Pack.Spec[]?
+---@field config? fun()
+---@field defer? boolean
+---@field dependencies? Utils.Pack.Spec[]
 
 local pack = {
 	add_options = { confirm = false }, ---@type vim.pack.keyset.add
@@ -79,7 +79,7 @@ end
 
 local M = {} ---@class Utils.Pack
 
----@param specs Utils.Pack.Spec[]?
+---@param specs? Utils.Pack.Spec[]
 M.build = function(specs)
 	if not specs or #specs == 0 then
 		specs, _ = get_specs_and_names()

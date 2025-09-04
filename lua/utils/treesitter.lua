@@ -6,7 +6,7 @@
 
 ---@class Utils.Treesitter.TextObject.Repeatable
 ---@field repeat_last_move_opposite fun()
----@field repeat_last_move fun(opts: TSTextObjects.MoveOpts?)
+---@field repeat_last_move fun(opts?: TSTextObjects.MoveOpts)
 ---@field builtin_F_expr fun()
 ---@field builtin_T_expr fun()
 ---@field builtin_f_expr fun()

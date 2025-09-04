@@ -1,6 +1,6 @@
 ---@private
 ---@param dir string
----@param latest_file string?
+---@param latest_file? string
 ---@param latest_time number
 ---@return string?, number
 local function scan_dir(dir, latest_file, latest_time)
