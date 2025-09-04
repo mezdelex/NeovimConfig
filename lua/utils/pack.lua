@@ -64,6 +64,11 @@ local function handle_build(spec)
 
 	local package_name = vim.fn.fnamemodify(spec.src, ":t")
 	local package_fpath = utils_shared.data_path .. pack.packages_rpath .. package_name ---@type string
+	local stat = vim.uv.fs_stat(package_fpath)
+
+	if not stat or not stat.type == "directory" then
+		return
+	end
 
 	vim.notify(("Building %s..."):format(package_name), vim.log.levels.WARN)
 	local response = vim.system(vim.split(spec.data.build, " "), { cwd = package_fpath }):wait()
@@ -110,6 +115,7 @@ M.load = function()
 	local specs, _ = get_specs_and_names()
 
 	vim.pack.add(specs, pack.add_options)
+
 	for _, spec in ipairs(specs) do
 		if spec.config then
 			if spec.defer then
@@ -123,9 +129,7 @@ M.load = function()
 	end
 end
 M.update = function()
-	local _, names = get_specs_and_names()
-
-	vim.pack.update(names, pack.update_options)
+	vim.pack.update(nil, pack.update_options)
 end
 
 return M
