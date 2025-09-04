@@ -1,5 +1,5 @@
 ---@class Utils.Pack.Spec : vim.pack.Spec
----@field config function?
+---@field config fun()?
 ---@field defer boolean?
 ---@field dependencies Utils.Pack.Spec[]?
 
@@ -36,7 +36,7 @@ local function get_specs_and_names()
 end
 
 ---@private
----@return  string[]
+---@return string[]
 local function get_package_names()
 	local package_fpaths = vim.fn.glob(utils_shared.data_path .. pack.packages_rpath .. "*/", false, true) ---@type string[]
 	local package_names = {} ---@type string[]
