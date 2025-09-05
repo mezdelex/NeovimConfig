@@ -2,7 +2,6 @@ local autocmds = {
 	augroup_options = { clear = true }, ---@type vim.api.keyset.create_augroup
 	group = "Init",
 }
-local utils_pack = require("utils.pack")
 
 vim.api.nvim_create_augroup(autocmds.group, autocmds.augroup_options)
 
@@ -23,18 +22,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "gi", vim.lsp.buf.implementation, options)
 		vim.keymap.set("n", "gr", vim.lsp.buf.references, options)
 		vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, options)
-	end,
-	group = autocmds.group,
-})
-vim.api.nvim_create_autocmd("PackChanged", {
-	callback = function(args)
-		local kind = args.data.kind ---@type string
-
-		if kind == "install" or kind == "update" then
-			local spec = args.data.spec ---@type Utils.Pack.Spec
-
-			utils_pack.build({ spec })
-		end
 	end,
 	group = autocmds.group,
 })

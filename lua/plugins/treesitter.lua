@@ -1,4 +1,4 @@
-return { ---@type Utils.Pack.Spec
+return {
 	config = function()
 		local options = { remap = true }
 		local textobjects = {

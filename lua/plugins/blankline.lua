@@ -1,4 +1,4 @@
-return { ---@type Utils.Pack.Spec
+return {
 	config = function()
 		require("ibl").setup({
 			scope = {

@@ -18,15 +18,19 @@
 
 ---
 
+### UnPack
+
+|  Name  |                   Source                   |                                  Uri                                  |
+| :----: | :----------------------------------------: | :-------------------------------------------------------------------: |
+| unpack | [repo](https://github.com/mezdelex/unpack) | [unpack](https://github.com/mezdelex/NeovimConfig/blob/main/init.lua) |
+
 ### Core
 
-|    Name    | Source |                                           Uri                                            |
-| :--------: | :----: | :--------------------------------------------------------------------------------------: |
-|  autocmds  |  n/a   |   [autocmds](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/autocmds.lua)   |
-| extensions |  n/a   | [extensions](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/extensions.lua) |
-|  keymaps   |  n/a   |    [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/keymaps.lua)    |
-|  options   |  n/a   |    [options](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/options.lua)    |
-|    pack    |  n/a   |       [pack](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/pack.lua)       |
+|   Name   | Source |                                         Uri                                          |
+| :------: | :----: | :----------------------------------------------------------------------------------: |
+| autocmds |  n/a   | [autocmds](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/autocmds.lua) |
+| keymaps  |  n/a   |  [keymaps](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/keymaps.lua)  |
+| options  |  n/a   |  [options](https://github.com/mezdelex/NeovimConfig/blob/main/lua/core/options.lua)  |
 
 ### Plugins
 
@@ -62,17 +66,9 @@
 
 ### Utils
 
-> [!TIP]
->
-> To profile non deferred plugins use `vim.g.start_time = vim.uv.hrtime()` @ [init.lua](https://github.com/mezdelex/NeovimConfig/tree/main/init.lua)
->
-> ![image](https://github.com/user-attachments/assets/9fec944f-ca82-4d78-a017-284698c77fce)
-
 |    Name    | Source |                                            Uri                                            |
 | :--------: | :----: | :---------------------------------------------------------------------------------------: |
 |    dap     |  n/a   |        [dap](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/dap.lua)        |
-|    pack    |  n/a   |       [pack](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/pack.lua)       |
-|  profiler  |  n/a   |   [profiler](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/profiler.lua)   |
 |   shared   |  n/a   |     [shared](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/shared.lua)     |
 | treesitter |  n/a   | [treesitter](https://github.com/mezdelex/NeovimConfig/tree/main/lua/utils/treesitter.lua) |
 
