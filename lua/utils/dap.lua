@@ -19,9 +19,9 @@ local function scan_dir(dir, latest_file, latest_time)
 		if t == "directory" then
 			latest_file, latest_time = scan_dir(path, latest_file, latest_time)
 		elseif (name:match("%.dll$") or name:match("%.exe$")) and not name:match("^System") then
-			local st = vim.uv.fs_stat(path)
-			if st and st.mtime.sec > latest_time then
-				latest_file, latest_time = path, st.mtime.sec
+			local stat = vim.uv.fs_stat(path)
+			if stat and stat.mtime.sec > latest_time then
+				latest_file, latest_time = path, stat.mtime.sec
 			end
 		end
 	end
