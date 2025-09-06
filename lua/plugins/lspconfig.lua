@@ -4,7 +4,6 @@ return {
 			registries = { "github:crashdummyy/mason-registry", "github:mason-org/mason-registry" },
 		})
 		require("mason-lspconfig").setup()
-		require("roslyn").setup()
 
 		vim.keymap.set("n", "<leader>R", "<cmd>Roslyn restart<cr>")
 	end,
