@@ -18,11 +18,11 @@
 
 ---
 
-### UnPack
+### Manager
 
-|  Name  |                   Source                   |                                  Uri                                  |
-| :----: | :----------------------------------------: | :-------------------------------------------------------------------: |
-| unpack | [repo](https://github.com/mezdelex/unpack) | [unpack](https://github.com/mezdelex/NeovimConfig/blob/main/init.lua) |
+|       Name        |                                         Source                                          |                                  Uri                                  |
+| :---------------: | :-------------------------------------------------------------------------------------: | :-------------------------------------------------------------------: |
+| vim.pack + UnPack | [repo](https://neovim.io/doc/user/pack.html)/[repo](https://github.com/mezdelex/unpack) | [unpack](https://github.com/mezdelex/NeovimConfig/blob/main/init.lua) |
 
 ### Core
 
