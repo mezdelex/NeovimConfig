@@ -4,29 +4,29 @@
 ---@param latest_time number
 ---@return string?, number
 local function scan_dir(dir, latest_file, latest_time)
-	local fd = vim.uv.fs_scandir(dir)
-	if not fd then
-		return latest_file, latest_time
-	end
+    local dir_handle = vim.uv.fs_scandir(dir)
+    if not dir_handle then
+        return latest_file, latest_time
+    end
 
-	while true do
-		local name, t = vim.uv.fs_scandir_next(fd)
-		if not name then
-			break
-		end
+    while true do
+        local name, type = vim.uv.fs_scandir_next(dir_handle)
+        if not name then
+            break
+        end
 
-		local path = dir .. "/" .. name
-		if t == "directory" then
-			latest_file, latest_time = scan_dir(path, latest_file, latest_time)
-		elseif (name:match("%.dll$") or name:match("%.exe$")) and not name:match("^System") then
-			local stat = vim.uv.fs_stat(path)
-			if stat and stat.mtime.sec > latest_time then
-				latest_file, latest_time = path, stat.mtime.sec
-			end
-		end
-	end
+        local path = dir .. "/" .. name
+        if type == "directory" then
+            latest_file, latest_time = scan_dir(path, latest_file, latest_time)
+        elseif (name:match("%.dll$") or name:match("%.exe$")) and not name:match("^System") then
+            local file_stat = vim.uv.fs_stat(path)
+            if file_stat and file_stat.mtime.sec > latest_time then
+                latest_file, latest_time = path, file_stat.mtime.sec
+            end
+        end
+    end
 
-	return latest_file, latest_time
+    return latest_file, latest_time
 end
 
 local M = {} ---@class Utils.Dap
@@ -34,17 +34,17 @@ local M = {} ---@class Utils.Dap
 ---@param base_paths string[]
 ---@return string
 M.find_file_or_default = function(base_paths)
-	local cwd = vim.fn.getcwd()
-	local build_dirs = vim.tbl_map(function(path) ---@type string[]
-		return cwd .. path
-	end, base_paths)
-	local latest_file, latest_time = nil, 0
+    local cwd = vim.fn.getcwd()
+    local build_dirs = vim.tbl_map(function(path) ---@type string[]
+        return cwd .. path
+    end, base_paths)
+    local latest_file, latest_time = nil, 0
 
-	for _, dir in ipairs(build_dirs) do
-		latest_file, latest_time = scan_dir(dir, latest_file, latest_time)
-	end
+    for _, dir in ipairs(build_dirs) do
+        latest_file, latest_time = scan_dir(dir, latest_file, latest_time)
+    end
 
-	return latest_file or build_dirs[1]
+    return latest_file or build_dirs[1]
 end
 
 return M
