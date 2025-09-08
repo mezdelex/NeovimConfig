@@ -1,13 +1,9 @@
 return {
 	config = function()
-		local everforest = require("everforest")
+		vim.g.everforest_disable_italic_comment = true
+		vim.g.everforest_enable_italic = false
 
-		everforest.setup({
-			disable_italic_comments = true,
-			italics = false,
-		})
-
-		everforest.load()
+		vim.cmd.colorscheme("everforest")
 	end,
-	src = "https://github.com/neanias/everforest-nvim",
+	src = "https://github.com/sainnhe/everforest",
 }
