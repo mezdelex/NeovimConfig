@@ -67,10 +67,9 @@
 
 ### Lsp
 
-|  Name  |                                      Source                                      |                                        Uri                                        |
-| :----: | :------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
-| roslyn |                  [repo](https://github.com/seblyng/roslyn.nvim)                  | [roslyn](https://github.com/mezdelex/NeovimConfig/blob/main/after/lsp/roslyn.lua) |
-| ts_ls  | [repo](https://github.com/typescript-language-server/typescript-language-server) |  [ts_ls](https://github.com/mezdelex/NeovimConfig/blob/main/after/lsp/ts_ls.lua)  |
+| Name  |                                      Source                                      |                                       Uri                                       |
+| :---: | :------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| ts_ls | [repo](https://github.com/typescript-language-server/typescript-language-server) | [ts_ls](https://github.com/mezdelex/NeovimConfig/blob/main/after/lsp/ts_ls.lua) |
 
 ### Images
 
