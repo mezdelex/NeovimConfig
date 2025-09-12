@@ -9,12 +9,12 @@
 
 > [!IMPORTANT]
 >
-> - Install `neovim-nightly`, `fd`, `grpcurl`, `ripgrep`, `rustup` & `tree-sitter` via `scoop install neovim-nightly fd grpcurl ripgrep rustup tree-sitter` @ PowerShell
-> - Install `Desktop development with C++` package with `Visual Studio Build Tools` installer
-> - Allow `cargo` SSL bypass with `setx CARGO_HTTP_CHECK_REVOKE false` @ PowerShell
-> - Allow `curl` SSL bypass with `--ssl-no-revoke` inside `$HOME/_curlrc`
-> - Set `codecompanion` adapter API key with `setx <ADAPTER>_API_KEY <API_KEY>` @ PowerShell
-> - Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`
+> - Install `neovim-nightly`, `fd`, `grpcurl`, `mingw-winlibs-llvm-msvcrt`, `ripgrep`, `rustup` & `tree-sitter` via `scoop install neovim-nightly fd grpcurl mingw-winlibs-llvm-msvcrt ripgrep rustup tree-sitter` @ PowerShell.
+> - Install `Desktop development with C++` package with `Visual Studio Build Tools` installer.
+> - Allow `cargo` SSL bypass with `setx CARGO_HTTP_CHECK_REVOKE false` @ PowerShell (corporate environments).
+> - Allow `curl` SSL bypass with `--ssl-no-revoke` inside `$HOME/_curlrc` (corporate environments).
+> - Set `codecompanion` adapter API key with `setx <ADAPTER>_API_KEY <API_KEY>` @ PowerShell.
+> - Clone this repository `git clone https://github.com/mezdelex/NeovimConfig $HOME/AppData/Local/nvim`.
 
 ---
 
