@@ -1,13 +1,16 @@
 return {
     config = function()
-        local utils_diagnostic = require("utils.diagnostic")
-
         require("mason").setup({
             registries = { "github:crashdummyy/mason-registry", "github:mason-org/mason-registry" },
         })
         require("mason-lspconfig").setup()
 
         vim.diagnostic.config({
+            float = {
+                focus = false,
+                scope = "cursor",
+            },
+            jump = { on_jump = vim.diagnostic.open_float },
             signs = {
                 numhl = {
                     [vim.diagnostic.severity.ERROR] = "DiagnosticSignError",
@@ -25,13 +28,6 @@ return {
             update_in_insert = true,
             virtual_text = true,
         })
-
-        vim.keymap.set("n", "[d", function()
-            utils_diagnostic.jump(-1)
-        end)
-        vim.keymap.set("n", "]d", function()
-            utils_diagnostic.jump(1)
-        end)
     end,
     defer = true,
     dependencies = {
