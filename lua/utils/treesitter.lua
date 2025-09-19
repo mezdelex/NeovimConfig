@@ -15,6 +15,7 @@
 ---@class Utils.Treesitter.TextObject.Select
 ---@field select_textobject fun(query: string, group: string)
 
+---@private
 local textobjects = {
     group = "textobjects",
     mode_nox = { "n", "o", "x" }, ---@type string[]
