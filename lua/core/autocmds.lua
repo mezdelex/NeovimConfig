@@ -24,7 +24,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function()
-        vim.highlight.on_yank({ timeout = 100 })
+        vim.hl.on_yank({ timeout = 100 })
     end,
     group = group,
 })
