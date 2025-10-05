@@ -1,0 +1,45 @@
+{
+  "plugins": {
+    "blink.cmp": [],
+    "bufferline.nvim": [],
+    "codecompanion.nvim": [],
+    "everforest-nvim": [],
+    "gitsigns.nvim": [],
+    "indent-blankline.nvim": [],
+    "kulala.nvim": [],
+    "lazydev.nvim": [],
+    "lsp_signature.nvim": [],
+    "lualine.nvim": [],
+    "mason-lspconfig.nvim": [],
+    "mason.nvim": [],
+    "none-ls.nvim": [],
+    "nvim-autopairs": [],
+    "nvim-bqf": [],
+    "nvim-colorizer.lua": [],
+    "nvim-dap": [],
+    "nvim-dap-go": [],
+    "nvim-dap-python": [],
+    "nvim-dap-ui": [],
+    "nvim-lspconfig": [],
+    "nvim-nio": [],
+    "nvim-treesitter": {
+      "version": "'main'"
+    },
+    "nvim-treesitter-textobjects": {
+      "version": "'main'"
+    },
+    "nvim-ts-autotag": [],
+    "nvim-web-devicons": [],
+    "oil.nvim": [],
+    "plenary.nvim": [],
+    "quicker.nvim": [],
+    "registers.nvim": [],
+    "render-markdown.nvim": [],
+    "roslyn.nvim": [],
+    "telescope-fzf-native.nvim": [],
+    "telescope-live-grep-args.nvim": [],
+    "telescope.nvim": [],
+    "tiny-code-action.nvim": [],
+    "undotree": []
+  }
+}
