@@ -1,28 +1,42 @@
 {
   "plugins": {
-    "blink.cmp": [],
+    "blink.cmp": {
+      "rev": "cc8c9b7",
+      "src": "https://github.com/saghen/blink.cmp"
+    },
     "bufferline.nvim": [],
-    "codecompanion.nvim": [],
+    "codecompanion.nvim": {
+      "rev": "946e186"
+    },
     "everforest-nvim": [],
     "gitsigns.nvim": [],
     "indent-blankline.nvim": [],
     "kulala.nvim": [],
-    "lazydev.nvim": [],
+    "lazydev.nvim": {
+      "rev": "e28ce52"
+    },
     "lsp_signature.nvim": [],
     "lualine.nvim": [],
-    "mason-lspconfig.nvim": [],
+    "mason-lspconfig.nvim": {
+      "rev": "6bdb14f"
+    },
     "mason.nvim": [],
     "none-ls.nvim": [],
     "nvim-autopairs": [],
-    "nvim-bqf": [],
+    "nvim-bqf": {
+      "rev": "a77b17e"
+    },
     "nvim-colorizer.lua": [],
-    "nvim-dap": [],
+    "nvim-dap": {
+      "rev": "881f7dc"
+    },
     "nvim-dap-go": [],
     "nvim-dap-python": [],
     "nvim-dap-ui": [],
     "nvim-lspconfig": [],
     "nvim-nio": [],
     "nvim-treesitter": {
+      "rev": "3ab4f2d2",
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
@@ -34,8 +48,12 @@
     "plenary.nvim": [],
     "quicker.nvim": [],
     "registers.nvim": [],
-    "render-markdown.nvim": [],
-    "roslyn.nvim": [],
+    "render-markdown.nvim": {
+      "rev": "2064980"
+    },
+    "roslyn.nvim": {
+      "rev": "7d88192"
+    },
     "telescope-fzf-native.nvim": [],
     "telescope-live-grep-args.nvim": [],
     "telescope.nvim": [],
