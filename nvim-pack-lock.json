@@ -33,10 +33,12 @@
     "nvim-dap-go": [],
     "nvim-dap-python": [],
     "nvim-dap-ui": [],
-    "nvim-lspconfig": [],
+    "nvim-lspconfig": {
+      "rev": "cc2f5f2"
+    },
     "nvim-nio": [],
     "nvim-treesitter": {
-      "rev": "3ab4f2d2",
+      "rev": "de003000",
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
@@ -49,7 +51,7 @@
     "quicker.nvim": [],
     "registers.nvim": [],
     "render-markdown.nvim": {
-      "rev": "2064980"
+      "rev": "d538564"
     },
     "roslyn.nvim": {
       "rev": "7d88192"
