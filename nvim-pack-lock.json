@@ -1,12 +1,12 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "cb87357",
+      "rev": "a4ab037",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": [],
     "codecompanion.nvim": {
-      "rev": "09e6a8f"
+      "rev": "5efcc8f"
     },
     "everforest-nvim": [],
     "gitsigns.nvim": [],
@@ -20,7 +20,7 @@
       "rev": "3946f01"
     },
     "mason-lspconfig.nvim": {
-      "rev": "6bdb14f"
+      "rev": "2304ff6"
     },
     "mason.nvim": [],
     "none-ls.nvim": {
