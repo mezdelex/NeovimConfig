@@ -14,7 +14,7 @@
     },
     "indent-blankline.nvim": [],
     "kulala.nvim": {
-      "rev": "183bf44"
+      "rev": "9a9308b"
     },
     "lazydev.nvim": {
       "rev": "01bc2aa"
@@ -24,7 +24,7 @@
       "rev": "3946f01"
     },
     "mason-lspconfig.nvim": {
-      "rev": "83db017"
+      "rev": "1d77bd8"
     },
     "mason.nvim": [],
     "none-ls.nvim": {
@@ -55,7 +55,9 @@
       "version": "'main'"
     },
     "nvim-ts-autotag": [],
-    "nvim-web-devicons": [],
+    "nvim-web-devicons": {
+      "rev": "8dcb311"
+    },
     "oil.nvim": {
       "rev": "7e1cd77"
     },
