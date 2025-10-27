@@ -1,12 +1,12 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "8743384",
+      "rev": "afc4f4d",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": [],
     "codecompanion.nvim": {
-      "rev": "96a102b"
+      "rev": "9c646bd"
     },
     "everforest-nvim": [],
     "gitsigns.nvim": {
@@ -17,14 +17,14 @@
       "rev": "9a9308b"
     },
     "lazydev.nvim": {
-      "rev": "01bc2aa"
+      "rev": "c2dfe35"
     },
     "lsp_signature.nvim": [],
     "lualine.nvim": {
       "rev": "3946f01"
     },
     "mason-lspconfig.nvim": {
-      "rev": "1d77bd8"
+      "rev": "3590d66"
     },
     "mason.nvim": [],
     "none-ls.nvim": {
@@ -44,11 +44,11 @@
     "nvim-dap-python": [],
     "nvim-dap-ui": [],
     "nvim-lspconfig": {
-      "rev": "a9b2fb5"
+      "rev": "87d3018"
     },
     "nvim-nio": [],
     "nvim-treesitter": {
-      "rev": "98fe644c",
+      "rev": "64f4755b",
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
@@ -65,7 +65,7 @@
     "quicker.nvim": [],
     "registers.nvim": [],
     "render-markdown.nvim": {
-      "rev": "bfd67f1"
+      "rev": "10126ef"
     },
     "roslyn.nvim": {
       "rev": "7ba2dd0"
@@ -74,7 +74,7 @@
     "telescope-live-grep-args.nvim": [],
     "telescope.nvim": [],
     "tiny-code-action.nvim": {
-      "rev": "0c24efc"
+      "rev": "9c0acd1"
     },
     "undotree": []
   }
