@@ -6,7 +6,7 @@
     },
     "bufferline.nvim": [],
     "codecompanion.nvim": {
-      "rev": "9c646bd"
+      "rev": "50ea30e"
     },
     "everforest-nvim": [],
     "gitsigns.nvim": {
@@ -17,7 +17,7 @@
       "rev": "9a9308b"
     },
     "lazydev.nvim": {
-      "rev": "c2dfe35"
+      "rev": "371cd74"
     },
     "lsp_signature.nvim": [],
     "lualine.nvim": {
@@ -44,7 +44,7 @@
     "nvim-dap-python": [],
     "nvim-dap-ui": [],
     "nvim-lspconfig": {
-      "rev": "87d3018"
+      "rev": "e25994a"
     },
     "nvim-nio": [],
     "nvim-treesitter": {
@@ -52,6 +52,7 @@
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
+      "rev": "5d63945",
       "version": "'main'"
     },
     "nvim-ts-autotag": [],
@@ -74,7 +75,7 @@
     "telescope-live-grep-args.nvim": [],
     "telescope.nvim": [],
     "tiny-code-action.nvim": {
-      "rev": "9c0acd1"
+      "rev": "a43fb81"
     },
     "undotree": []
   }
