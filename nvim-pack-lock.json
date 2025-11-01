@@ -6,7 +6,7 @@
     },
     "bufferline.nvim": [],
     "codecompanion.nvim": {
-      "rev": "50ea30e"
+      "rev": "0334709"
     },
     "everforest-nvim": [],
     "gitsigns.nvim": {
@@ -44,7 +44,7 @@
     "nvim-dap-python": [],
     "nvim-dap-ui": [],
     "nvim-lspconfig": {
-      "rev": "e25994a"
+      "rev": "a89bfcf"
     },
     "nvim-nio": [],
     "nvim-treesitter": {
@@ -52,7 +52,7 @@
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
-      "rev": "5d63945",
+      "rev": "1f29f2f",
       "version": "'main'"
     },
     "nvim-ts-autotag": [],
