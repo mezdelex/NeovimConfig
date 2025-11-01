@@ -6,7 +6,7 @@
     },
     "bufferline.nvim": [],
     "codecompanion.nvim": {
-      "rev": "0334709"
+      "rev": "a4f8505"
     },
     "everforest-nvim": [],
     "gitsigns.nvim": {
@@ -38,7 +38,7 @@
     },
     "nvim-colorizer.lua": [],
     "nvim-dap": {
-      "rev": "6782b09"
+      "rev": "e97dc47"
     },
     "nvim-dap-go": [],
     "nvim-dap-python": [],
@@ -48,7 +48,7 @@
     },
     "nvim-nio": [],
     "nvim-treesitter": {
-      "rev": "64f4755b",
+      "rev": "55820833",
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
