@@ -6,15 +6,17 @@
     },
     "bufferline.nvim": [],
     "codecompanion.nvim": {
-      "rev": "a4f8505"
+      "rev": "79c6908"
     },
-    "everforest-nvim": [],
+    "everforest-nvim": {
+      "rev": "557bce9"
+    },
     "gitsigns.nvim": {
       "rev": "20ad441"
     },
     "indent-blankline.nvim": [],
     "kulala.nvim": {
-      "rev": "9a9308b"
+      "rev": "c328aeb"
     },
     "lazydev.nvim": {
       "rev": "371cd74"
@@ -36,7 +38,9 @@
     "nvim-bqf": {
       "rev": "a77b17e"
     },
-    "nvim-colorizer.lua": [],
+    "nvim-colorizer.lua": {
+      "rev": "81e676d"
+    },
     "nvim-dap": {
       "rev": "e97dc47"
     },
@@ -48,11 +52,11 @@
     },
     "nvim-nio": [],
     "nvim-treesitter": {
-      "rev": "55820833",
+      "rev": "65a266bf",
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
-      "rev": "1f29f2f",
+      "rev": "2e5b873",
       "version": "'main'"
     },
     "nvim-ts-autotag": [],
