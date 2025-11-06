@@ -1,12 +1,12 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "2408f14",
+      "rev": "40380e7",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": [],
     "codecompanion.nvim": {
-      "rev": "5b454ce"
+      "rev": "6ca8768"
     },
     "everforest-nvim": {
       "rev": "557bce9"
@@ -30,7 +30,7 @@
     },
     "mason.nvim": [],
     "none-ls.nvim": {
-      "rev": "a96172f"
+      "rev": "5501975"
     },
     "nvim-autopairs": {
       "rev": "7a2c97c"
@@ -52,7 +52,7 @@
     },
     "nvim-nio": [],
     "nvim-treesitter": {
-      "rev": "896e92a7",
+      "rev": "1ddb2664",
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
@@ -70,7 +70,7 @@
     "quicker.nvim": [],
     "registers.nvim": [],
     "render-markdown.nvim": {
-      "rev": "a1b2bf0"
+      "rev": "060c911"
     },
     "roslyn.nvim": {
       "rev": "7ba2dd0"
@@ -78,10 +78,10 @@
     "telescope-fzf-native.nvim": [],
     "telescope-live-grep-args.nvim": [],
     "telescope.nvim": {
-      "rev": "47a8530"
+      "rev": "a9bb091"
     },
     "tiny-code-action.nvim": {
-      "rev": "03b8e74"
+      "rev": "7aaa18e"
     },
     "undotree": []
   }
