@@ -6,7 +6,7 @@
     },
     "bufferline.nvim": [],
     "codecompanion.nvim": {
-      "rev": "6ca8768"
+      "rev": "0e0cd1d"
     },
     "everforest-nvim": {
       "rev": "557bce9"
@@ -19,9 +19,11 @@
       "rev": "c328aeb"
     },
     "lazydev.nvim": {
-      "rev": "371cd74"
+      "rev": "5231c62"
     },
-    "lsp_signature.nvim": [],
+    "lsp_signature.nvim": {
+      "rev": "1e56259"
+    },
     "lualine.nvim": {
       "rev": "3946f01"
     },
@@ -52,7 +54,7 @@
     },
     "nvim-nio": [],
     "nvim-treesitter": {
-      "rev": "1ddb2664",
+      "rev": "5eca61b3",
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
@@ -75,10 +77,12 @@
     "roslyn.nvim": {
       "rev": "7ba2dd0"
     },
-    "telescope-fzf-native.nvim": [],
+    "telescope-fzf-native.nvim": {
+      "rev": "6fea601"
+    },
     "telescope-live-grep-args.nvim": [],
     "telescope.nvim": {
-      "rev": "a9bb091"
+      "rev": "0294ae3"
     },
     "tiny-code-action.nvim": {
       "rev": "7aaa18e"
