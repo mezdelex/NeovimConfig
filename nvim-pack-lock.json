@@ -54,11 +54,11 @@
     },
     "nvim-nio": [],
     "nvim-treesitter": {
-      "rev": "5eca61b3",
+      "rev": "d97d226c",
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
-      "rev": "2e5b873",
+      "rev": "7024f86",
       "version": "'main'"
     },
     "nvim-ts-autotag": [],
@@ -72,7 +72,7 @@
     "quicker.nvim": [],
     "registers.nvim": [],
     "render-markdown.nvim": {
-      "rev": "060c911"
+      "rev": "6a744f0"
     },
     "roslyn.nvim": {
       "rev": "7ba2dd0"
