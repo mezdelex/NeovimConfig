@@ -6,7 +6,7 @@
     },
     "bufferline.nvim": [],
     "codecompanion.nvim": {
-      "rev": "991dd81"
+      "rev": "ca87f13"
     },
     "everforest-nvim": {
       "rev": "557bce9"
@@ -28,7 +28,7 @@
       "rev": "3946f01"
     },
     "mason-lspconfig.nvim": {
-      "rev": "d7b5feb"
+      "rev": "d627416"
     },
     "mason.nvim": [],
     "none-ls.nvim": {
@@ -44,7 +44,7 @@
       "rev": "81e676d"
     },
     "nvim-dap": {
-      "rev": "e97dc47"
+      "rev": "4c0e3a9"
     },
     "nvim-dap-go": [],
     "nvim-dap-python": [],
