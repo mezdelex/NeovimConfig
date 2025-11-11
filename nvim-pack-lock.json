@@ -16,7 +16,7 @@
     },
     "indent-blankline.nvim": [],
     "kulala.nvim": {
-      "rev": "c328aeb"
+      "rev": "8676a4f"
     },
     "lazydev.nvim": {
       "rev": "5231c62"
@@ -28,7 +28,7 @@
       "rev": "3946f01"
     },
     "mason-lspconfig.nvim": {
-      "rev": "d627416"
+      "rev": "b1d9a91"
     },
     "mason.nvim": [],
     "none-ls.nvim": {
@@ -54,7 +54,7 @@
     },
     "nvim-nio": [],
     "nvim-treesitter": {
-      "rev": "d97d226c",
+      "rev": "f46e3a09",
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
