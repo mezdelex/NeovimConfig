@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "7d79733",
+      "rev": "de57322",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": [],
@@ -75,7 +75,7 @@
       "rev": "f58c05f"
     },
     "roslyn.nvim": {
-      "rev": "7ba2dd0"
+      "rev": "3e62a06"
     },
     "telescope-fzf-native.nvim": {
       "rev": "6fea601"
