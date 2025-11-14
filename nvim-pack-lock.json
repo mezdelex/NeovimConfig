@@ -6,7 +6,7 @@
     },
     "bufferline.nvim": [],
     "codecompanion.nvim": {
-      "rev": "47e6e1d"
+      "rev": "ee7f44ca9c2f22a7b82139719856a2f3d68efd49"
     },
     "everforest-nvim": {
       "rev": "557bce9"
@@ -30,7 +30,9 @@
     "mason-lspconfig.nvim": {
       "rev": "b1d9a91"
     },
-    "mason.nvim": [],
+    "mason.nvim": {
+      "rev": "57e5a8addb8c71fb063ee4acda466c7cf6ad2800"
+    },
     "none-ls.nvim": {
       "rev": "5501975"
     },
@@ -50,15 +52,15 @@
     "nvim-dap-python": [],
     "nvim-dap-ui": [],
     "nvim-lspconfig": {
-      "rev": "b34fbdf"
+      "rev": "95fe3c170753238d3ca4f760e79a991400677abc"
     },
     "nvim-nio": [],
     "nvim-treesitter": {
-      "rev": "b5077407",
+      "rev": "2144e88dacd193cc92a01f622e56feca4a5922f6",
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
-      "rev": "06c00bc",
+      "rev": "227165aaeb07b567fb9c066f224816aa8f3ce63f",
       "version": "'main'"
     },
     "nvim-ts-autotag": [],
@@ -75,7 +77,7 @@
       "rev": "f58c05f"
     },
     "roslyn.nvim": {
-      "rev": "3e62a06"
+      "rev": "e2901d86d7c1702b88c02b9616802845dc6d49f8"
     },
     "telescope-fzf-native.nvim": {
       "rev": "6fea601"
