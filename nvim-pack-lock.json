@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "de57322",
+      "rev": "b19413d214068f316c78978b08264ed1c41830ec",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": [],
@@ -12,7 +12,7 @@
       "rev": "557bce9"
     },
     "gitsigns.nvim": {
-      "rev": "20ad441"
+      "rev": "cdafc320f03f2572c40ab93a4eecb733d4016d07"
     },
     "indent-blankline.nvim": [],
     "kulala.nvim": {
@@ -52,7 +52,7 @@
     "nvim-dap-python": [],
     "nvim-dap-ui": [],
     "nvim-lspconfig": {
-      "rev": "95fe3c170753238d3ca4f760e79a991400677abc"
+      "rev": "abf6d190f2c06818489c0bd4b926e7e3a06c5e51"
     },
     "nvim-nio": [],
     "nvim-treesitter": {
