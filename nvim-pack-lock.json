@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "b19413d214068f316c78978b08264ed1c41830ec",
+      "rev": "73ea297bc665c936b51797d5a55599536ffee0d8",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -9,7 +9,7 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "68fcda022fce25ee380e267d4b0fe98113b3957d",
+      "rev": "b7dc2b19371fa20913b4cc5f7867741b35d3467e",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "everforest-nvim": {
@@ -41,7 +41,7 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mason-lspconfig.nvim": {
-      "rev": "b1d9a914b02ba5660f1e272a03314b31d4576fe2",
+      "rev": "7d527c76c43f46294de9c19d39c5a86317809b4b",
       "src": "https://github.com/williamboman/mason-lspconfig.nvim"
     },
     "mason.nvim": {
@@ -81,7 +81,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "b7c48a7111534b66bee077da8035ac7208a294ff",
+      "rev": "e0fae251f8459940331960106d4bd9457cec23de",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -89,7 +89,7 @@
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
     "nvim-treesitter": {
-      "rev": "c682a239a9404ce5f90a2d0da34790eff1ed2932",
+      "rev": "bb83a676128d95c865e40ba71376d883bdadec14",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
