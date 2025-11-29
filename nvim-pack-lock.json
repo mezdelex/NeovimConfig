@@ -139,11 +139,11 @@
       "src": "https://github.com/nvim-telescope/telescope-live-grep-args.nvim"
     },
     "telescope.nvim": {
-      "rev": "f0caedf064aa8c926325d7fe64c141d29b8e7853",
+      "rev": "e69b434b968a33815e2f02a5c7bd7b8dd4c7d4b2",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "tiny-code-action.nvim": {
-      "rev": "b6c9ee6444196c1ca616bf4ff381124b140db21f",
+      "rev": "188122ee2ea278eb74f55c6d39b5f6b5f8eefe8c",
       "src": "https://github.com/rachartier/tiny-code-action.nvim"
     },
     "undotree": {
