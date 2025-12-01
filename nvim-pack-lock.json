@@ -49,7 +49,7 @@
       "src": "https://github.com/williamboman/mason.nvim"
     },
     "none-ls.nvim": {
-      "rev": "1917c86818b5e058f53c2ea0ad38fc57534d62fc",
+      "rev": "9a5d95cdf9f440683f248f6f0e97f8643804c91b",
       "src": "https://github.com/nvimtools/none-ls.nvim"
     },
     "nvim-autopairs": {
@@ -81,7 +81,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "07f4e93de92e8d4ea7ab99602e3a8c9ac0fb778a",
+      "rev": "effe4bf2e1afb881ea67291c648b68dd3dfc927a",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -89,7 +89,7 @@
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
     "nvim-treesitter": {
-      "rev": "17885756e63df73ed90db62e4630f744ceda6514",
+      "rev": "00c906abb9550e72bc0c640545b5499b9525bb40",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
@@ -107,7 +107,7 @@
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
-      "rev": "01cb3a8ad7d5e8707041edc775af83dbf33838f4",
+      "rev": "cbcb3f997f6f261c577b943ec94e4ef55108dd95",
       "src": "https://github.com/stevearc/oil.nvim"
     },
     "plenary.nvim": {
