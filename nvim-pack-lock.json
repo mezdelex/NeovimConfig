@@ -81,7 +81,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "effe4bf2e1afb881ea67291c648b68dd3dfc927a",
+      "rev": "f7c6e585fd80d5a2c075ab27ac312ac55bcf1550",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -127,7 +127,7 @@
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "roslyn.nvim": {
-      "rev": "88f837a658df7304ae47fdf251c9560ffbc6bf2b",
+      "rev": "ab60e7e674992e12a5f54e5b8e948d8fa28347cb",
       "src": "https://github.com/seblyng/roslyn.nvim"
     },
     "telescope-fzf-native.nvim": {
