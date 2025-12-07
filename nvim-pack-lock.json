@@ -130,13 +130,13 @@
       "rev": "ab60e7e674992e12a5f54e5b8e948d8fa28347cb",
       "src": "https://github.com/seblyng/roslyn.nvim"
     },
+    "telescope-egrepify.nvim": {
+      "rev": "5e6fb91f52a595a0dd554c7eea022c467ff80d86",
+      "src": "https://github.com/fdschmidt93/telescope-egrepify.nvim"
+    },
     "telescope-fzf-native.nvim": {
       "rev": "6fea601bd2b694c6f2ae08a6c6fab14930c60e2c",
       "src": "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
-    },
-    "telescope-live-grep-args.nvim": {
-      "rev": "b80ec2c70ec4f32571478b501218c8979fab5201",
-      "src": "https://github.com/nvim-telescope/telescope-live-grep-args.nvim"
     },
     "telescope.nvim": {
       "rev": "e69b434b968a33815e2f02a5c7bd7b8dd4c7d4b2",
