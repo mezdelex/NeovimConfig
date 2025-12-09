@@ -53,7 +53,7 @@
       "src": "https://github.com/nvimtools/none-ls.nvim"
     },
     "nvim-autopairs": {
-      "rev": "7a2c97cccd60abc559344042fefb1d5a85b3e33b",
+      "rev": "d9e44e54384e5b0f3536339c65484f2e41b528e3",
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-bqf": {
@@ -89,7 +89,7 @@
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
     "nvim-treesitter": {
-      "rev": "f47f549f74cea5d5f25a5205c9e127cd882f1d20",
+      "rev": "b6271b678e035a5cbf62d637364f3eeca0890171",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
@@ -143,7 +143,7 @@
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "tiny-code-action.nvim": {
-      "rev": "188122ee2ea278eb74f55c6d39b5f6b5f8eefe8c",
+      "rev": "46f509d3e0ab7bff1f264c96da76424246cabd4d",
       "src": "https://github.com/rachartier/tiny-code-action.nvim"
     },
     "undotree": {
