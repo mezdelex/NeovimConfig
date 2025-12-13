@@ -5,7 +5,10 @@ return {
         codecompanion.setup({
             ignore_warnings = true,
             strategies = {
-                chat = { adapter = "gemini" },
+                chat = {
+                    adapter = "gemini",
+                    model = "gemini-2.5-pro",
+                },
             },
         })
 
