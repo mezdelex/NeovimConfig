@@ -3,11 +3,12 @@ return {
         local codecompanion = require("codecompanion")
 
         codecompanion.setup({
-            ignore_warnings = true,
-            strategies = {
+            interactions = {
                 chat = {
-                    adapter = "gemini",
-                    model = "gemini-2.5-pro",
+                    adapter = {
+                        model = "gemini-2.5-flash",
+                        name = "gemini",
+                    },
                 },
             },
         })
