@@ -4,12 +4,7 @@ return {
 
         codecompanion.setup({
             interactions = {
-                chat = {
-                    adapter = {
-                        model = "gemini-2.5-flash",
-                        name = "gemini",
-                    },
-                },
+                chat = { adapter = "ollama" },
             },
         })
 

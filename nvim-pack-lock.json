@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "ee7cfac8e1d0bf9b90a27d7a9823c13389bead08",
+      "rev": "b14922e5c4b30efe0857256989b72eaf1f14109f",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -9,7 +9,7 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "689102db718ba29623c044d22a2fa3e4cf238407",
+      "rev": "dfc85fe9299c36a6054ca2318ca0e9ee48f5446b",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "everforest-nvim": {
@@ -81,7 +81,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "0d7d33e40f0c27f57cb29654ed78cab17d705e68",
+      "rev": "c4f67bf85b01a57e3c130352c0a0e453ab8cd5b9",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
