@@ -17,5 +17,5 @@ return {
             src = "https://github.com/nvim-lua/plenary.nvim",
         },
     },
-    src = "https://github.com/olimorris/codecompanion.nvim",
+    src = "https://github.com/mezdelex/codecompanion.nvim",
 }

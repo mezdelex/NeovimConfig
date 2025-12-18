@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "b14922e5c4b30efe0857256989b72eaf1f14109f",
+      "rev": "37ce860d8eeeee92d60b9a72db21e369d97e6a75",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -9,8 +9,8 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "dfc85fe9299c36a6054ca2318ca0e9ee48f5446b",
-      "src": "https://github.com/olimorris/codecompanion.nvim"
+      "rev": "8a739e13c7aefd456618440b97a3488683ef5477",
+      "src": "https://github.com/mezdelex/codecompanion.nvim"
     },
     "everforest-nvim": {
       "rev": "557bce922401e247a596583679bc181d4d688554",
@@ -53,7 +53,7 @@
       "src": "https://github.com/nvimtools/none-ls.nvim"
     },
     "nvim-autopairs": {
-      "rev": "d9e44e54384e5b0f3536339c65484f2e41b528e3",
+      "rev": "c2a0dd0d931d0fb07665e1fedb1ea688da3b80b4",
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-bqf": {
@@ -142,7 +142,7 @@
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "tiny-code-action.nvim": {
-      "rev": "46f509d3e0ab7bff1f264c96da76424246cabd4d",
+      "rev": "0932b80d4de8d1c9c860536d21eff165aa0ced13",
       "src": "https://github.com/rachartier/tiny-code-action.nvim"
     },
     "undotree": {
