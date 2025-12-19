@@ -9,8 +9,8 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "8a739e13c7aefd456618440b97a3488683ef5477",
-      "src": "https://github.com/mezdelex/codecompanion.nvim"
+      "rev": "a226ca071ebc1d8b5ae1f70800fa9cf4a06a2101",
+      "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "everforest-nvim": {
       "rev": "557bce922401e247a596583679bc181d4d688554",
@@ -41,7 +41,7 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mason-lspconfig.nvim": {
-      "rev": "c55bd8a8fb191e24176c206a7af1dd51ce7276a5",
+      "rev": "bf9e7205192015dc48727744f21e09ac986664f9",
       "src": "https://github.com/williamboman/mason-lspconfig.nvim"
     },
     "mason.nvim": {
@@ -73,7 +73,7 @@
       "src": "https://github.com/leoluz/nvim-dap-go"
     },
     "nvim-dap-python": {
-      "rev": "64652d1ae1db80870d9aac7132d76e37acd86a26",
+      "rev": "1808458eba2b18f178f990e01376941a42c7f93b",
       "src": "https://github.com/mfussenegger/nvim-dap-python"
     },
     "nvim-dap-ui": {
