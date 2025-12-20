@@ -93,7 +93,7 @@
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-treesitter-textobjects": {
-      "rev": "af519038afc4ade15bc110efaeb685a9f6a5514f",
+      "rev": "e91c585ac0ee760198dabc1fad2e6227effdcd5e",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter-textobjects",
       "version": "'main'"
     },
@@ -130,8 +130,8 @@
       "src": "https://github.com/seblyng/roslyn.nvim"
     },
     "telescope-egrepify.nvim": {
-      "rev": "5e6fb91f52a595a0dd554c7eea022c467ff80d86",
-      "src": "https://github.com/fdschmidt93/telescope-egrepify.nvim"
+      "rev": "632eed801014b0d5c622f7d197bdbca64eb48394",
+      "src": "https://github.com/mezdelex/telescope-egrepify.nvim"
     },
     "telescope-fzf-native.nvim": {
       "rev": "6fea601bd2b694c6f2ae08a6c6fab14930c60e2c",

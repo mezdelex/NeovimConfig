@@ -30,7 +30,7 @@ return {
             data = { build = "make" },
             src = "https://github.com/nvim-telescope/telescope-fzf-native.nvim",
         },
-        { src = "https://github.com/fdschmidt93/telescope-egrepify.nvim" },
+        { src = "https://github.com/mezdelex/telescope-egrepify.nvim" },
     },
     src = "https://github.com/nvim-telescope/telescope.nvim",
 }
