@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "37ce860d8eeeee92d60b9a72db21e369d97e6a75",
+      "rev": "507424257ba992259f2073ac7ec540af506a0899",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -9,7 +9,7 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "a226ca071ebc1d8b5ae1f70800fa9cf4a06a2101",
+      "rev": "859bc37a4689e793d38a8086737dacd9167d3991",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "everforest-nvim": {
@@ -41,7 +41,7 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mason-lspconfig.nvim": {
-      "rev": "bf9e7205192015dc48727744f21e09ac986664f9",
+      "rev": "8f1a3e6eecb638817e8999aaa16ada27cd54d867",
       "src": "https://github.com/williamboman/mason-lspconfig.nvim"
     },
     "mason.nvim": {
@@ -106,7 +106,7 @@
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
-      "rev": "3b249b71957ee35d5adbfb21f77992809a4c4683",
+      "rev": "756dec855b4811f2d27f067a3aca477f368d99f5",
       "src": "https://github.com/stevearc/oil.nvim"
     },
     "plenary.nvim": {
@@ -142,7 +142,7 @@
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "tiny-code-action.nvim": {
-      "rev": "0932b80d4de8d1c9c860536d21eff165aa0ced13",
+      "rev": "85b3ae30dedb08154d8ec6302820d4076b2e0eb1",
       "src": "https://github.com/rachartier/tiny-code-action.nvim"
     },
     "undotree": {
