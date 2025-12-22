@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "507424257ba992259f2073ac7ec540af506a0899",
+      "rev": "ceed1545929b74cf79b5a8950e7c415683bf690b",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -9,7 +9,7 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "859bc37a4689e793d38a8086737dacd9167d3991",
+      "rev": "b3bb0d73079643d4a5b0d8b621cde619a73bc91a",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "everforest-nvim": {
@@ -81,7 +81,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "d20d83b3f24f5884da73a9fc92fdc47e778b8d0d",
+      "rev": "361dd9d5f3f8ae3d8c721f4f2c21847050538b1f",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -114,7 +114,7 @@
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
     "quicker.nvim": {
-      "rev": "9983d4b28881e1df626e3682167b45c284d4da8c",
+      "rev": "ad367a8f27aff3361db43ea2f41cd505ab573617",
       "src": "https://github.com/stevearc/quicker.nvim"
     },
     "registers.nvim": {
