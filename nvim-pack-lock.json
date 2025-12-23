@@ -9,7 +9,7 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "274b2c69ea17d7f417999b132d81d63eb2cdb73f",
+      "rev": "e6ec73c06d3ed8ce28f144d2f89c30dec0286961",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "everforest-nvim": {
@@ -81,7 +81,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "9926584b606c4f6314d7aa0a34951b4a87d9111e",
+      "rev": "8973916a3d015d65a8c4614e141f4270a713cf33",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -93,7 +93,7 @@
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-treesitter-textobjects": {
-      "rev": "e91c585ac0ee760198dabc1fad2e6227effdcd5e",
+      "rev": "f7122acf1bd2c9e4626651ad33bf5944be9d9392",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter-textobjects",
       "version": "'main'"
     },
@@ -142,7 +142,7 @@
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "tiny-code-action.nvim": {
-      "rev": "85b3ae30dedb08154d8ec6302820d4076b2e0eb1",
+      "rev": "897de9af9e3aa6e59bcb9fec760a7eb02d00e264",
       "src": "https://github.com/rachartier/tiny-code-action.nvim"
     },
     "undotree": {
