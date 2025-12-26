@@ -17,7 +17,7 @@
       "src": "https://github.com/neanias/everforest-nvim"
     },
     "gitsigns.nvim": {
-      "rev": "5813e4878748805f1518cee7abb50fd7205a3a48",
+      "rev": "fb38d3b06f696f05513205d3652cf2467fea8f0a",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "indent-blankline.nvim": {
@@ -25,7 +25,7 @@
       "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
     },
     "kulala.nvim": {
-      "rev": "9fc4831a116fb32b0fd420ed483f5102a873446a",
+      "rev": "cd3eaa83b8d60533837202dede73238334d71832",
       "src": "https://github.com/mistweaverco/kulala.nvim"
     },
     "lazydev.nvim": {
@@ -81,7 +81,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "8973916a3d015d65a8c4614e141f4270a713cf33",
+      "rev": "d696e36d5792daf828f8c8e8d4b9aa90c1a10c2a",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
