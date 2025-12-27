@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "d0c5196dae32c53cde1208161554906f5b982de8",
+      "rev": "18712d9d292dd362067de74d3b54eb90ce860ba9",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -17,7 +17,7 @@
       "src": "https://github.com/neanias/everforest-nvim"
     },
     "gitsigns.nvim": {
-      "rev": "fb38d3b06f696f05513205d3652cf2467fea8f0a",
+      "rev": "3f5ffea8abbb3d58d536abfe65cb7e48caee38f5",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "indent-blankline.nvim": {
@@ -41,7 +41,7 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mason-lspconfig.nvim": {
-      "rev": "9f9c67795d0795a6e8612f5a899ca64a074a1076",
+      "rev": "4cfe411526a7a99c18281135e8b4765ae6330d15",
       "src": "https://github.com/williamboman/mason-lspconfig.nvim"
     },
     "mason.nvim": {
@@ -93,7 +93,7 @@
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-treesitter-textobjects": {
-      "rev": "f7122acf1bd2c9e4626651ad33bf5944be9d9392",
+      "rev": "ecd03f5811eb5c66d2fa420b79121b866feecd82",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter-textobjects",
       "version": "'main'"
     },
