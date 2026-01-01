@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "18712d9d292dd362067de74d3b54eb90ce860ba9",
+      "rev": "10c164bbdf065f9781b6cc2f7d068c016276055b",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -9,7 +9,7 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "4ab7999d6c76d4c5db5d0e1395b1de60bffd7718",
+      "rev": "e39831eb745ebf1e0edcda25431c3255560729d4",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "everforest-nvim": {
@@ -17,7 +17,7 @@
       "src": "https://github.com/neanias/everforest-nvim"
     },
     "gitsigns.nvim": {
-      "rev": "130beacf8a51f00aede9c31064c749136679a321",
+      "rev": "6bd29494e3f79ff08be1d35bc1926ed23c22ed9a",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "indent-blankline.nvim": {
@@ -106,7 +106,7 @@
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
-      "rev": "963c8d2c5538c4a896a31f396b8a5a2683e254dc",
+      "rev": "81b8a91735ad5cd24a6b3137f14a89f19176364f",
       "src": "https://github.com/stevearc/oil.nvim"
     },
     "plenary.nvim": {
