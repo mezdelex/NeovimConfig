@@ -10,5 +10,3 @@ if not vim.uv.fs_stat(unpack_path) then
     })
 end
 vim.opt.runtimepath:prepend(unpack_path)
-
-require("unpack").setup()
