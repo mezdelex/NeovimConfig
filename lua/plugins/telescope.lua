@@ -16,11 +16,10 @@ return {
         telescope.load_extension("egrepify")
         telescope.load_extension("fzf")
 
-        vim.keymap.set("n", "'", builtin.marks)
         vim.keymap.set("n", "<leader>F", telescope.extensions.egrepify.egrepify)
         vim.keymap.set("n", "<leader>d", builtin.diagnostics)
         vim.keymap.set("n", "<leader>f", builtin.fd)
-        vim.keymap.set("n", "<leader>j", builtin.jumplist)
+        vim.keymap.set("n", "<leader>j", builtin.buffers)
         vim.keymap.set("n", "<leader>q", builtin.quickfix)
         vim.keymap.set("n", "<leader>s", builtin.lsp_document_symbols)
         vim.keymap.set({ "n", "x" }, "gs", builtin.grep_string)
