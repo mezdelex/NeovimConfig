@@ -57,7 +57,10 @@ return {
                     statusline = {},
                     winbar = {},
                 },
-                section_separators = {},
+                section_separators = {
+                    left = "",
+                    right = "",
+                },
                 theme = "everforest",
             },
             sections = {
