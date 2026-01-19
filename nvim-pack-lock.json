@@ -9,7 +9,7 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "ed4abfb1c328c1f4c50d6d26e6eb0ebf0ef1d2a0",
+      "rev": "c873ef7235687904e77da7b7656ec50602e8f2cd",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "everforest-nvim": {
@@ -89,7 +89,7 @@
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
     "nvim-treesitter": {
-      "rev": "d9a5fb8484374e8ed5d88dd9e0475a760c168d6a",
+      "rev": "e75c007f2747050c2c620dc862c77b8f242551a8",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-treesitter-textobjects": {
