@@ -138,11 +138,11 @@
       "src": "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
     },
     "telescope.nvim": {
-      "rev": "a8c2223ea6b185701090ccb1ebc7f4e41c4c9784",
+      "rev": "0d8b6eaa0b5ae6bb3d9785f7a3ba4a4c6c1b1af2",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "tiny-code-action.nvim": {
-      "rev": "c4c08075b2d102ea7091dcc14e47d2548068a416",
+      "rev": "6ded5f7cf53e8d804ab4fdc1d728f47ab772007e",
       "src": "https://github.com/rachartier/tiny-code-action.nvim"
     },
     "undotree": {
