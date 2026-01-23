@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "820f1ddf634ec267412e403711bf74be26cac677",
+      "rev": "b137f63d89d0285ca76eed12e1923220e0aff8c1",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -9,7 +9,7 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "c9d74dd667cf609b4f2064ae7f5471285b5356cb",
+      "rev": "e22c04336b5c56e3839bfebd6d88944f014f4b30",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "everforest-nvim": {
