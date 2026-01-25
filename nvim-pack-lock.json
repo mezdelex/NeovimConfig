@@ -89,7 +89,7 @@
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
     "nvim-treesitter": {
-      "rev": "81aca2f9815e26f638f697df1d828ca290847b64",
+      "rev": "568ede7e79172a0fe7c9d631454a97ad968deaf2",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-treesitter-textobjects": {
@@ -126,7 +126,7 @@
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "roslyn.nvim": {
-      "rev": "2b9a8366a29b0a2a7e51cac87f3ca6345f617790",
+      "rev": "5c8ed91fda08ec9692815c506d9df396ad679375",
       "src": "https://github.com/seblyng/roslyn.nvim"
     },
     "telescope-egrepify.nvim": {
