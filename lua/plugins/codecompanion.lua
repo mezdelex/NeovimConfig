@@ -8,7 +8,7 @@ return {
             },
         })
 
-        vim.keymap.set("n", "<leader>h", codecompanion.chat)
+        vim.keymap.set("n", "<leader>h", codecompanion.toggle)
     end,
     defer = true,
     dependencies = {
