@@ -33,7 +33,7 @@
       "src": "https://github.com/folke/lazydev.nvim"
     },
     "lsp_signature.nvim": {
-      "rev": "7d3bb0a641f516f1c7fd2e47852580dadbd7a430",
+      "rev": "0efb088dce050d38a3608ee69f80f2a62cf9849c",
       "src": "https://github.com/ray-x/lsp_signature.nvim"
     },
     "lualine.nvim": {
@@ -41,7 +41,7 @@
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
     "mason-lspconfig.nvim": {
-      "rev": "fb179adb7161b53ec998b1139002473434586c3f",
+      "rev": "3d89e7c92fbd96c5e10e0298fc2b006f21cf9428",
       "src": "https://github.com/williamboman/mason-lspconfig.nvim"
     },
     "mason.nvim": {
@@ -53,7 +53,7 @@
       "src": "https://github.com/nvimtools/none-ls.nvim"
     },
     "nvim-autopairs": {
-      "rev": "c2a0dd0d931d0fb07665e1fedb1ea688da3b80b4",
+      "rev": "007047febaa3681a8d2f3dd5126fdb9c6e81f393",
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-bqf": {
@@ -65,7 +65,7 @@
       "src": "https://github.com/catgoose/nvim-colorizer.lua"
     },
     "nvim-dap": {
-      "rev": "085386b9359ddf8d76ad89b98973b8e332dc5ba3",
+      "rev": "e47878dcf1ccc30136b30d19ab19fe76946d61cd",
       "src": "https://github.com/mfussenegger/nvim-dap"
     },
     "nvim-dap-go": {
@@ -81,7 +81,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "ff9c0af8f9b2097fdd2695058db7e04c193908aa",
+      "rev": "5fef3b4a5f1057553b78d048322782c3a9ae69c6",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -93,7 +93,7 @@
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-treesitter-textobjects": {
-      "rev": "52bda74e087034408e2d563cb4499c1601038f9d",
+      "rev": "a0e182ae21fda68c59d1f36c9ed45600aef50311",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter-textobjects",
       "version": "'main'"
     },
@@ -122,7 +122,7 @@
       "src": "https://github.com/tversteeg/registers.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "c54380dd4d8d1738b9691a7c349ecad7967ac12e",
+      "rev": "99bfa5d61381a29eedc75810898cb9c0fc755064",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "roslyn.nvim": {
