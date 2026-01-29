@@ -26,8 +26,6 @@ return {
             update_in_insert = true,
             virtual_text = true,
         })
-
-        vim.keymap.set("n", "<leader>R", "<cmd>Roslyn restart<cr>")
     end,
     defer = true,
     dependencies = {
