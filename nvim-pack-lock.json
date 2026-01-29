@@ -81,7 +81,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "5fef3b4a5f1057553b78d048322782c3a9ae69c6",
+      "rev": "238583bb00770b079c68c69a860d65e5d1d8acf9",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -89,7 +89,7 @@
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
     "nvim-treesitter": {
-      "rev": "04ab807f8e6d3e42f385b872fd1dc20dcef12193",
+      "rev": "19c729dae6e0eeb79423df0cf37780aa9a7cc3b7",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-treesitter-textobjects": {
@@ -126,8 +126,8 @@
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "roslyn.nvim": {
-      "rev": "0687e3c12731e3d76d3d8bfb5aa873b736105981",
-      "src": "https://github.com/seblyng/roslyn.nvim"
+      "rev": "808b1d8d3a278e1a4daa6fbf262321466486a35b",
+      "src": "https://github.com/mezdelex/roslyn.nvim"
     },
     "telescope-egrepify.nvim": {
       "rev": "cd9342b95c1a8cff2e41ba5041ae3912f47595cc",

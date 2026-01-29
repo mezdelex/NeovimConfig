@@ -1,8 +1,6 @@
 return {
     config = function()
-        require("mason").setup({
-            registries = { "github:crashdummyy/mason-registry", "github:mason-org/mason-registry" },
-        })
+        require("mason").setup()
         require("mason-lspconfig").setup()
 
         vim.diagnostic.config({
@@ -35,7 +33,7 @@ return {
     dependencies = {
         {
             defer = true,
-            src = "https://github.com/seblyng/roslyn.nvim",
+            src = "https://github.com/mezdelex/roslyn.nvim",
         },
         {
             defer = true,
