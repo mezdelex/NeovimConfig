@@ -1,7 +1,7 @@
 return {
     config = function()
         require("lazydev").setup({
-            library = { "nvim-dap-ui", "nvim-treesitter-textobjects" },
+            library = { "nvim-treesitter-textobjects" },
         })
     end,
     defer = true,
