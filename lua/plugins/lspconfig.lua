@@ -1,7 +1,31 @@
 return {
     config = function()
         require("mason").setup()
-        require("mason-lspconfig").setup()
+        require("mason-lspconfig").setup({
+            ensure_installed = {
+                "angularls",
+                "buf_ls",
+                "cssls",
+                "docker_language_server",
+                "dockerls",
+                "gopls",
+                "html",
+                "jsonls",
+                "lemminx",
+                "lua_ls",
+                "marksman",
+                "powershell_es",
+                "pyright",
+                "ruff",
+                "rust_analyzer",
+                "sqlls",
+                "tombi",
+                "ts_ls",
+                "vimls",
+                "vue_ls",
+                "yamlls",
+            },
+        })
 
         vim.diagnostic.config({
             float = {

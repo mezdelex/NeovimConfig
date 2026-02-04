@@ -16,6 +16,34 @@ return {
         local to_select = require("nvim-treesitter-textobjects.select")
         local utils_ts = require("utils.treesitter")
 
+        require("nvim-treesitter").install({
+            "angular",
+            "c_sharp",
+            "css",
+            "dtd",
+            "go",
+            "html",
+            "json",
+            "lua",
+            "luadoc",
+            "markdown",
+            "markdown_inline",
+            "powershell",
+            "python",
+            "rust",
+            "scheme",
+            "scss",
+            "sql",
+            "toml",
+            "tsx",
+            "typescript",
+            "vim",
+            "vimdoc",
+            "vue",
+            "xml",
+            "yaml",
+        })
+
         utils_ts.to_move_mapper("c", to_move, textobjects.co)
         utils_ts.to_move_mapper("f", to_move, textobjects.fo)
         utils_ts.to_move_mapper("i", to_move, textobjects.io)

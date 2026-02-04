@@ -4,6 +4,15 @@ return {
         local dapui = require("dapui")
         local utils_dap = require("utils.dap")
 
+        require("mason-nvim-dap").setup({
+            ensure_installed = {
+                "codelldb",
+                "coreclr",
+                "delve",
+                "python",
+            },
+        })
+
         require("dap-go").setup()
         require("dap-python").setup(vim.fn.stdpath("data") .. "/mason/packages/debugpy/venv/Scripts/python.exe")
         dap.adapters.codelldb = {
@@ -92,6 +101,10 @@ return {
     end,
     defer = true,
     dependencies = {
+        {
+            defer = true,
+            src = "https://github.com/jay-babu/mason-nvim-dap.nvim",
+        },
         {
             defer = true,
             src = "https://github.com/leoluz/nvim-dap-go",
