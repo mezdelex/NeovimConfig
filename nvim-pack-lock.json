@@ -89,7 +89,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "59cd07d8df2fefde32556268b8d52606a32152a1",
+      "rev": "b3a4eb8f5296c4581eaffd5d23f4601a9b17ca99",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -158,7 +158,7 @@
       "src": "https://github.com/mbbill/undotree"
     },
     "unpack.nvim": {
-      "rev": "c48945a4d20bbc817afd44a0c28cf4c6dea41c08",
+      "rev": "da75ccd72a0ad6b20bd78d213b13a2f987ab9d73",
       "src": "https://github.com/mezdelex/unpack.nvim"
     }
   }
