@@ -4,6 +4,7 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "angularls",
+                "bashls",
                 "buf_ls",
                 "cssls",
                 "docker_language_server",
