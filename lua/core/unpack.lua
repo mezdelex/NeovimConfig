@@ -9,4 +9,3 @@ if not vim.uv.fs_stat(unpack_path) then
         unpack_path,
     })
 end
-vim.opt.runtimepath:prepend(unpack_path)
