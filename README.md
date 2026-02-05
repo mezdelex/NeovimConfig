@@ -26,7 +26,7 @@
 | :---------------: | :-----------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
 |      keymaps      |                                                   n/a                                                   |  [keymaps](https://github.com/mezdelex/neovim/blob/main/lua/core/keymaps.lua)  |
 |      options      |                                                   n/a                                                   |  [options](https://github.com/mezdelex/neovim/blob/main/lua/core/options.lua)  |
-| vim.pack + UnPack | [vim.pack](https://neovim.io/doc/user/pack.html)/[unpack.nvim](https://github.com/mezdelex/unpack.nvim) |   [unpack](https://github.com/mezdelex/neovim/blob/main/lua/core/unpack.lua)   |
+| vim.pack + unpack | [vim.pack](https://neovim.io/doc/user/pack.html)/[unpack.nvim](https://github.com/mezdelex/unpack.nvim) |   [unpack](https://github.com/mezdelex/neovim/blob/main/lua/core/unpack.lua)   |
 |     autocmds      |                                                   n/a                                                   | [autocmds](https://github.com/mezdelex/neovim/blob/main/lua/core/autocmds.lua) |
 
 ### Plugins
