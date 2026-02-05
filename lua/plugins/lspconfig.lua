@@ -4,6 +4,7 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "angularls",
+                "basedpyright",
                 "bashls",
                 "buf_ls",
                 "cssls",
@@ -16,7 +17,6 @@ return {
                 "lua_ls",
                 "marksman",
                 "powershell_es",
-                "pyright",
                 "ruff",
                 "rust_analyzer",
                 "sqlls",
