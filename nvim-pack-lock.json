@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "4b18c32adef2898f95cdef6192cbd5796c1a332d",
+      "rev": "f9e855c4d96e1264f7c818844f5a0166ad48c212",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "bufferline.nvim": {
@@ -9,7 +9,7 @@
       "src": "https://github.com/akinsho/bufferline.nvim"
     },
     "codecompanion.nvim": {
-      "rev": "3062e0bd14e5dd11f156d73b653298e538b43193",
+      "rev": "1c9a92c3a30115a1236f19df3bced12481f4feb8",
       "src": "https://github.com/olimorris/codecompanion.nvim"
     },
     "everforest-nvim": {
@@ -134,7 +134,7 @@
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "roslyn.nvim": {
-      "rev": "7b074c73428aa186e74706a1b6e846271e803777",
+      "rev": "e09eb93503232bf2d3487de7ffb1dd30381a8e4e",
       "src": "https://github.com/mezdelex/roslyn.nvim"
     },
     "telescope-egrepify.nvim": {
